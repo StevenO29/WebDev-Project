@@ -68,14 +68,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="w3l_offers">
           <p>
             SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="products.html">SHOP NOW</a>
+            <a href="/products">SHOP NOW</a>
           </p>
         </div>
         <div class="agile-login">
           <ul>
-            <li><a href="registered.html"> Create Account </a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="/registered"> Create Account </a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
         <div class="product_list_header">
@@ -103,7 +103,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </ul>
         </div>
         <div class="w3ls_logo_products_left">
-          <h1><a href="index.html">Aneka Jaya Plastik</a></h1>
+          <h1><a href="/index">Aneka Jaya Plastik</a></h1>
         </div>
         <div class="w3l_search">
           <br />
@@ -150,11 +150,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html" class="act">Home</a></li>
+              <li class="active"><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
               <li class="dropdown">
                 <a
-                  href="groceries.html"
+                  href="/groceries"
                   class="dropdown-toggle"
                   data-toggle="dropdown"
                   >Oriented Polypropylene<b class="caret"></b
@@ -164,13 +164,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>All OPP</h6>
-                        <li><a href="opp.html">Dals & Pulses</a></li>
-                        <li><a href="opp.html">Almonds</a></li>
-                        <li><a href="opp.html">Cashews</a></li>
-                        <li><a href="opp.html">Dry Fruit</a></li>
-                        <li><a href="opp.html"> Mukhwas </a></li>
+                        <li><a href="/opp">Dals & Pulses</a></li>
+                        <li><a href="/opp">Almonds</a></li>
+                        <li><a href="/opp">Cashews</a></li>
+                        <li><a href="/opp">Dry Fruit</a></li>
+                        <li><a href="/opp"> Mukhwas </a></li>
                         <li>
-                          <a href="opp.html">Rice & Rice Products</a>
+                          <a href="/opp">Rice & Rice Products</a>
                         </li>
                       </ul>
                     </div>
@@ -186,12 +186,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>All Polyethylene</h6>
-                        <li><a href="pe.html">Cookware</a></li>
-                        <li><a href="pe.html">Dust Pans</a></li>
-                        <li><a href="pe.html">Scrubbers</a></li>
-                        <li><a href="pe.html">Dust Cloth</a></li>
-                        <li><a href="pe.html"> Mops </a></li>
-                        <li><a href="pe.html">Kitchenware</a></li>
+                        <li><a href="/pe">Cookware</a></li>
+                        <li><a href="/pe">Dust Pans</a></li>
+                        <li><a href="/pe">Scrubbers</a></li>
+                        <li><a href="/pe">Dust Cloth</a></li>
+                        <li><a href="/pe"> Mops </a></li>
+                        <li><a href="/pe">Kitchenware</a></li>
                       </ul>
                     </div>
                   </div>
@@ -206,18 +206,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>High-density Polyethylene</h6>
-                        <li><a href="hdpe.html">Baby Soap</a></li>
+                        <li><a href="/hdpe">Baby Soap</a></li>
                         <li>
-                          <a href="hdpe.html">Baby Care Accessories</a>
+                          <a href="/hdpe">Baby Care Accessories</a>
                         </li>
                         <li>
-                          <a href="hdpe.html">Baby Oil & Shampoos</a>
+                          <a href="/hdpe">Baby Oil & Shampoos</a>
                         </li>
                         <li>
-                          <a href="hdpe.html">Baby Creams & Lotion</a>
+                          <a href="/hdpe">Baby Creams & Lotion</a>
                         </li>
-                        <li><a href="hdpe.html"> Baby Powder</a></li>
-                        <li><a href="hdpe.html">Diapers & Wipes</a></li>
+                        <li><a href="/hdpe"> Baby Powder</a></li>
+                        <li><a href="/hdpe">Diapers & Wipes</a></li>
                       </ul>
                     </div>
                   </div>
@@ -232,15 +232,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>All Plastic</h6>
-                        <li><a href="plastics.html">Baby Food</a></li>
-                        <li><a href="plastics.html">Dessert Items</a></li>
-                        <li><a href="plastics.html">Biscuits</a></li>
+                        <li><a href="/plastics">Baby Food</a></li>
+                        <li><a href="/plastics">Dessert Items</a></li>
+                        <li><a href="/plastics">Biscuits</a></li>
                         <li>
-                          <a href="plastics.html">Breakfast Cereals</a>
+                          <a href="/plastics">Breakfast Cereals</a>
                         </li>
-                        <li><a href="plastics.html"> Canned Food </a></li>
+                        <li><a href="/plastics"> Canned Food </a></li>
                         <li>
-                          <a href="plastics.html">Chocolates & Sweets</a>
+                          <a href="/plastics">Chocolates & Sweets</a>
                         </li>
                       </ul>
                     </div>
@@ -256,12 +256,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>Glass</h6>
-                        <li><a href="glass.html">Green Tea</a></li>
-                        <li><a href="glass.html">Ground Coffee</a></li>
-                        <li><a href="glass.html">Herbal Tea</a></li>
-                        <li><a href="glass.html">Instant Coffee</a></li>
-                        <li><a href="glass.html"> Tea </a></li>
-                        <li><a href="glass.html">Tea Bags</a></li>
+                        <li><a href="/glass">Green Tea</a></li>
+                        <li><a href="/glass">Ground Coffee</a></li>
+                        <li><a href="/glass">Herbal Tea</a></li>
+                        <li><a href="/glass">Instant Coffee</a></li>
+                        <li><a href="/glass"> Tea </a></li>
+                        <li><a href="/glass">Tea Bags</a></li>
                       </ul>
                     </div>
                   </div>
@@ -276,19 +276,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>Paper</h6>
-                        <li><a href="paper.html">Green Tea</a></li>
-                        <li><a href="paper.html">Ground Coffee</a></li>
-                        <li><a href="paper.html">Herbal Tea</a></li>
-                        <li><a href="paper.html">Instant Coffee</a></li>
-                        <li><a href="paper.html"> Tea </a></li>
-                        <li><a href="paper.html">Tea Bags</a></li>
+                        <li><a href="/paper">Green Tea</a></li>
+                        <li><a href="/paper">Ground Coffee</a></li>
+                        <li><a href="/paper">Herbal Tea</a></li>
+                        <li><a href="/paper">Instant Coffee</a></li>
+                        <li><a href="/paper"> Tea </a></li>
+                        <li><a href="/paper">Tea Bags</a></li>
                       </ul>
                     </div>
                   </div>
                 </ul>
               </li>
-              <li><a href="offers.html">Offers</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/offers">Offers</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -304,7 +304,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           data-wow-delay=".5s"
         >
           <li>
-            <a href="index.html"
+            <a href="/index"
               ><span class="glyphicon glyphicon-home" aria-hidden="true"></span
               >Home</a
             >
@@ -323,42 +323,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="cate">
               <li>
                 <!--Category 1: Plastic-->
-                <a href="products.html"
+                <a href="/products"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a
                 >
               </li>
               <!--SubCategory 1-->
               <ul>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i
                     >Sugar Pouch</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh
                     Vegetables</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i
                     >International Vegetables</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
                     Fruits & Vegetables</a
                   >
@@ -366,52 +366,52 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </ul>
               <li>
                 <!--Category 2: Paper-->
-                <a href="products.html"
+                <a href="/products"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a
                 >
               </li>
               <!--SubCategory 2-->
               <ul>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Lunchboxes</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Masalas
                     & Spices</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
                     Staples</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice &
                     Rice Products</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Salt,
                     Sugar & Jaggery</a
                   >
@@ -419,7 +419,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </ul>
               <li>
                 <!--Category 3: Cup & Cuttleries-->
-                <a href="products.html"
+                <a href="/products"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
                   >Cup and Cuttleries</a
                 >
@@ -427,45 +427,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <!--SubCategory 3-->
               <ul>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i
                     >Plastic Cup</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bottle</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Spoons</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i
                     >Forks</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Chopsticks</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i
                     >Personal Hygiene</a
                   >
                 </li>
                 <li>
-                  <a href="products.html"
+                  <a href="/products"
                     ><i class="fa fa-arrow-right" aria-hidden="true"></i>Shaving
                     Needs</a
                   >
@@ -542,7 +542,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img title=" " alt=" " src="images/pf4.png"
                           /></a>
                           <p>Sampann-toor-dal</p>
@@ -609,7 +609,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img title=" " alt=" " src="images/bv3.png"
                           /></a>
                           <p>Parryss-sugar</p>
@@ -683,7 +683,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img
                               src="images/16.png"
                               alt=" "
@@ -756,7 +756,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img title=" " alt=" " src="images/hh4.png"
                           /></a>
                           <p>Sampann-toor-dal</p>
@@ -823,7 +823,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img title=" " alt=" " src="images/gu5.png"
                           /></a>
                           <p>Parryss-sugar</p>
@@ -897,7 +897,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img
                               src="images/pc6.png"
                               alt=" "
@@ -970,7 +970,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img title=" " alt=" " src="images/gu4.png"
                           /></a>
                           <p>Sampann-toor-dal</p>
@@ -1037,7 +1037,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img title=" " alt=" " src="images/5.png"
                           /></a>
                           <p>Parryss-sugar</p>
@@ -1111,7 +1111,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="single.html"
+                          <a href="/single"
                             ><img
                               src="images/6.png"
                               alt=" "
@@ -1224,15 +1224,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="about.html">About Us</a>
+                ><a href="/about">About Us</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="contact.html">Contact Us</a>
+                ><a href="/contact">Contact Us</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="faq.html">FAQ's</a>
+                ><a href="/faq">FAQ's</a>
               </li>
             </ul>
           </div>
@@ -1241,27 +1241,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="opp.html">Oriented Polypropylene</a>
+                ><a href="/opp">Oriented Polypropylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="pe.html">Polyethylene</a>
+                ><a href="/pe">Polyethylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="hdpe.html">High-density Polyethylene</a>
+                ><a href="/hdpe">High-density Polyethylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="plastics.html">Plastic Bag</a>
+                ><a href="/plastics">Plastic Bag</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="glass.html">Glass</a>
+                ><a href="/glass">Glass</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="paper.html">Paper</a>
+                ><a href="/paper">Paper</a>
               </li>
             </ul>
           </div>
@@ -1270,19 +1270,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="products.html">My Wishlist</a>
+                ><a href="/products">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="checkout.html">My Cart</a>
+                ><a href="/checkout">My Cart</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="login.html">Login</a>
+                ><a href="/login">Login</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="registered.html">Create Account</a>
+                ><a href="/registered">Create Account</a>
               </li>
             </ul>
           </div>

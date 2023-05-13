@@ -68,14 +68,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3l_offers">
           <p>
             SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="products.html">SHOP NOW</a>
+            <a href="/products">SHOP NOW</a>
           </p>
         </div>
         <div class="agile-login">
           <ul>
-            <li><a href="registered.html"> Create Account </a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="/registered"> Create Account </a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
         <div class="product_list_header">
@@ -103,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </ul>
         </div>
         <div class="w3ls_logo_products_left">
-          <h1><a href="index.html">Aneka Jaya Plastik</a></h1>
+          <h1><a href="/index">Aneka Jaya Plastik</a></h1>
         </div>
         <div class="w3l_search">
           <br />
@@ -150,11 +150,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html" class="act">Home</a></li>
+              <li class="active"><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
               <li class="dropdown">
                 <a
-                  href="groceries.html"
+                  href="/groceries"
                   class="dropdown-toggle"
                   data-toggle="dropdown"
                   >Oriented Polypropylene<b class="caret"></b
@@ -164,13 +164,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>All OPP</h6>
-                        <li><a href="opp.html">Dals & Pulses</a></li>
-                        <li><a href="opp.html">Almonds</a></li>
-                        <li><a href="opp.html">Cashews</a></li>
-                        <li><a href="opp.html">Dry Fruit</a></li>
-                        <li><a href="opp.html"> Mukhwas </a></li>
+                        <li><a href="/opp">Dals & Pulses</a></li>
+                        <li><a href="/opp">Almonds</a></li>
+                        <li><a href="/opp">Cashews</a></li>
+                        <li><a href="/opp">Dry Fruit</a></li>
+                        <li><a href="/opp"> Mukhwas </a></li>
                         <li>
-                          <a href="opp.html">Rice & Rice Products</a>
+                          <a href="/opp">Rice & Rice Products</a>
                         </li>
                       </ul>
                     </div>
@@ -186,12 +186,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>All Polyethylene</h6>
-                        <li><a href="pe.html">Cookware</a></li>
-                        <li><a href="pe.html">Dust Pans</a></li>
-                        <li><a href="pe.html">Scrubbers</a></li>
-                        <li><a href="pe.html">Dust Cloth</a></li>
-                        <li><a href="pe.html"> Mops </a></li>
-                        <li><a href="pe.html">Kitchenware</a></li>
+                        <li><a href="/pe">Cookware</a></li>
+                        <li><a href="/pe">Dust Pans</a></li>
+                        <li><a href="/pe">Scrubbers</a></li>
+                        <li><a href="/pe">Dust Cloth</a></li>
+                        <li><a href="/pe"> Mops </a></li>
+                        <li><a href="/pe">Kitchenware</a></li>
                       </ul>
                     </div>
                   </div>
@@ -206,18 +206,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>High-density Polyethylene</h6>
-                        <li><a href="hdpe.html">Baby Soap</a></li>
+                        <li><a href="/hdpe">Baby Soap</a></li>
                         <li>
-                          <a href="hdpe.html">Baby Care Accessories</a>
+                          <a href="/hdpe">Baby Care Accessories</a>
                         </li>
                         <li>
-                          <a href="hdpe.html">Baby Oil & Shampoos</a>
+                          <a href="/hdpe">Baby Oil & Shampoos</a>
                         </li>
                         <li>
-                          <a href="hdpe.html">Baby Creams & Lotion</a>
+                          <a href="/hdpe">Baby Creams & Lotion</a>
                         </li>
-                        <li><a href="hdpe.html"> Baby Powder</a></li>
-                        <li><a href="hdpe.html">Diapers & Wipes</a></li>
+                        <li><a href="/hdpe"> Baby Powder</a></li>
+                        <li><a href="/hdpe">Diapers & Wipes</a></li>
                       </ul>
                     </div>
                   </div>
@@ -232,15 +232,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>All Plastic</h6>
-                        <li><a href="plastics.html">Baby Food</a></li>
-                        <li><a href="plastics.html">Dessert Items</a></li>
-                        <li><a href="plastics.html">Biscuits</a></li>
+                        <li><a href="/plastics">Baby Food</a></li>
+                        <li><a href="/plastics">Dessert Items</a></li>
+                        <li><a href="/plastics">Biscuits</a></li>
                         <li>
-                          <a href="plastics.html">Breakfast Cereals</a>
+                          <a href="/plastics">Breakfast Cereals</a>
                         </li>
-                        <li><a href="plastics.html"> Canned Food </a></li>
+                        <li><a href="/plastics"> Canned Food </a></li>
                         <li>
-                          <a href="plastics.html">Chocolates & Sweets</a>
+                          <a href="/plastics">Chocolates & Sweets</a>
                         </li>
                       </ul>
                     </div>
@@ -256,12 +256,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>Glass</h6>
-                        <li><a href="glass.html">Green Tea</a></li>
-                        <li><a href="glass.html">Ground Coffee</a></li>
-                        <li><a href="glass.html">Herbal Tea</a></li>
-                        <li><a href="glass.html">Instant Coffee</a></li>
-                        <li><a href="glass.html"> Tea </a></li>
-                        <li><a href="glass.html">Tea Bags</a></li>
+                        <li><a href="/glass">Green Tea</a></li>
+                        <li><a href="/glass">Ground Coffee</a></li>
+                        <li><a href="/glass">Herbal Tea</a></li>
+                        <li><a href="/glass">Instant Coffee</a></li>
+                        <li><a href="/glass"> Tea </a></li>
+                        <li><a href="/glass">Tea Bags</a></li>
                       </ul>
                     </div>
                   </div>
@@ -276,19 +276,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="multi-gd-img">
                       <ul class="multi-column-dropdown">
                         <h6>Paper</h6>
-                        <li><a href="paper.html">Green Tea</a></li>
-                        <li><a href="paper.html">Ground Coffee</a></li>
-                        <li><a href="paper.html">Herbal Tea</a></li>
-                        <li><a href="paper.html">Instant Coffee</a></li>
-                        <li><a href="paper.html"> Tea </a></li>
-                        <li><a href="paper.html">Tea Bags</a></li>
+                        <li><a href="/paper">Green Tea</a></li>
+                        <li><a href="/paper">Ground Coffee</a></li>
+                        <li><a href="/paper">Herbal Tea</a></li>
+                        <li><a href="/paper">Instant Coffee</a></li>
+                        <li><a href="/paper"> Tea </a></li>
+                        <li><a href="/paper">Tea Bags</a></li>
                       </ul>
                     </div>
                   </div>
                 </ul>
               </li>
-              <li><a href="offers.html">Offers</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/offers">Offers</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -383,7 +383,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img title=" " alt=" " src="images/1.png"
                                 /></a>
                                 <p>Tata-salt</p>
@@ -486,7 +486,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img title=" " alt=" " src="images/2.png"
                                 /></a>
                                 <p>Fortune-sunflower</p>
@@ -589,7 +589,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img
                                     src="images/3.png"
                                     alt=" "
@@ -698,7 +698,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img title=" " alt=" " src="images/4.png"
                                 /></a>
                                 <p>Sampann-toor-dal</p>
@@ -801,7 +801,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img title=" " alt=" " src="images/5.png"
                                 /></a>
                                 <p>Parryss-sugar</p>
@@ -911,7 +911,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img
                                     src="images/6.png"
                                     alt=" "
@@ -1034,7 +1034,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img title=" " alt=" " src="images/7.png"
                                 /></a>
                                 <p>Sona-masoori-rice</p>
@@ -1137,7 +1137,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img title=" " alt=" " src="images/8.png"
                                 /></a>
                                 <p>Milky-mist-paneer</p>
@@ -1247,7 +1247,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img
                                     src="images/9.png"
                                     alt=" "
@@ -1356,7 +1356,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img title=" " alt=" " src="images/10.png"
                                 /></a>
                                 <p>Fortune-sunflower</p>
@@ -1459,7 +1459,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img title=" " alt=" " src="images/12.png"
                                 /></a>
                                 <p>Nestle-a-slim</p>
@@ -1562,7 +1562,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <figure>
                             <div class="snipcart-item block">
                               <div class="snipcart-thumb">
-                                <a href="products.html"
+                                <a href="/products"
                                   ><img
                                     src="images/13.png"
                                     alt=" "
@@ -1674,17 +1674,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <a href="beverages.html">
+          <a href="/beverages">
             <img class="first-slide" src="images/b1.jpg" alt="First slide"
           /></a>
         </div>
         <div class="item">
-          <a href="personalcare.html">
+          <a href="/personalcare">
             <img class="second-slide" src="images/b3.jpg" alt="Second slide"
           /></a>
         </div>
         <div class="item">
-          <a href="household.html"
+          <a href="/household"
             ><img class="third-slide" src="images/b1.jpg" alt="Third slide"
           /></a>
         </div>
@@ -1846,7 +1846,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <figure>
                     <div class="snipcart-item block">
                       <div class="snipcart-thumb">
-                        <a href="products.html"
+                        <a href="/products"
                           ><img title=" " alt=" " src="images/14.png"
                         /></a>
                         <p>Fried-gram</p>
@@ -1927,7 +1927,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <figure>
                     <div class="snipcart-item block">
                       <div class="snipcart-thumb">
-                        <a href="products.html"
+                        <a href="/products"
                           ><img title=" " alt=" " src="images/15.png"
                         /></a>
                         <p>Navaratan-dal</p>
@@ -2011,7 +2011,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <figure>
                     <div class="snipcart-item block">
                       <div class="snipcart-thumb">
-                        <a href="products.html"
+                        <a href="/products"
                           ><img
                             src="images/16.png"
                             alt=" "
@@ -2095,7 +2095,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <figure>
                     <div class="snipcart-item block">
                       <div class="snipcart-thumb">
-                        <a href="products.html"
+                        <a href="/products"
                           ><img title=" " alt=" " src="images/17.png"
                         /></a>
                         <p>Channa-dal</p>
@@ -2200,15 +2200,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="about.html">About Us</a>
+                ><a href="/about">About Us</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="contact.html">Contact Us</a>
+                ><a href="/contact">Contact Us</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="faq.html">FAQ's</a>
+                ><a href="/faq">FAQ's</a>
               </li>
             </ul>
           </div>
@@ -2217,27 +2217,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="opp.html">Oriented Polypropylene</a>
+                ><a href="/opp">Oriented Polypropylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="pe.html">Polyethylene</a>
+                ><a href="/pe">Polyethylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="hdpe.html">High-density Polyethylene</a>
+                ><a href="/hdpe">High-density Polyethylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="plastics.html">Plastic Bag</a>
+                ><a href="/plastics">Plastic Bag</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="glass.html">Glass</a>
+                ><a href="/glass">Glass</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="paper.html">Paper</a>
+                ><a href="/paper">Paper</a>
               </li>
             </ul>
           </div>
@@ -2246,19 +2246,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="products.html">My Wishlist</a>
+                ><a href="/products">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="checkout.html">My Cart</a>
+                ><a href="/checkout">My Cart</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="login.html">Login</a>
+                ><a href="/login">Login</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="registered.html">Create Account</a>
+                ><a href="/registered">Create Account</a>
               </li>
             </ul>
           </div>
