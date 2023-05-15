@@ -307,171 +307,84 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Checkout Page</li>
+          <li>
+            <a href="/order"
+              >Order</a
+            >
+          </li>
+          <li class="active">Order Details Page</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
     <!-- checkout -->
-    <div class="checkout">
-      <div class="container">
-        <h2>Your shopping cart contains: <span>3 Products</span></h2>
-        <div class="checkout-right">
-          <table class="timetable_sub">
-            <thead>
-              <tr>
-                <th>SL No.</th>
-                <th>Product</th>
-                <th>Quality</th>
-                <th>Product Name</th>
-
-                <th>Price</th>
-                <th>Remove</th>
-              </tr>
-            </thead>
-            <tr class="rem1">
-              <td class="invert">1</td>
-              <td class="invert-image">
-                <a href="/single"
-                  ><img src="images/1.png" alt=" " class="img-responsive"
-                /></a>
-              </td>
-              <td class="invert">
-                <div class="quantity">
-                  <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
-                    <div class="entry value-plus active">&nbsp;</div>
-                  </div>
-                </div>
-              </td>
-              <td class="invert">Tata Salt</td>
-
-              <td class="invert">$290.00</td>
-              <td class="invert">
-                <div class="rem">
-                  <div class="close1"></div>
-                </div>
-                <script>
-                  $(document).ready(function (c) {
-                    $(".close1").on("click", function (c) {
-                      $(".rem1").fadeOut("slow", function (c) {
-                        $(".rem1").remove();
-                      });
-                    });
-                  });
-                </script>
-              </td>
-            </tr>
-            <tr class="rem2">
-              <td class="invert">2</td>
-              <td class="invert-image">
-                <a href="/single"
-                  ><img src="images/2.png" alt=" " class="img-responsive"
-                /></a>
-              </td>
-              <td class="invert">
-                <div class="quantity">
-                  <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
-                    <div class="entry value-plus active">&nbsp;</div>
-                  </div>
-                </div>
-              </td>
-              <td class="invert">Fortune oil</td>
-
-              <td class="invert">$250.00</td>
-              <td class="invert">
-                <div class="rem">
-                  <div class="close2"></div>
-                </div>
-                <script>
-                  $(document).ready(function (c) {
-                    $(".close2").on("click", function (c) {
-                      $(".rem2").fadeOut("slow", function (c) {
-                        $(".rem2").remove();
-                      });
-                    });
-                  });
-                </script>
-              </td>
-            </tr>
-            <tr class="rem3">
-              <td class="invert">3</td>
-              <td class="invert-image">
-                <a href="/single"
-                  ><img src="images/3.png" alt=" " class="img-responsive"
-                /></a>
-              </td>
-              <td class="invert">
-                <div class="quantity">
-                  <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
-                    <div class="entry value-plus active">&nbsp;</div>
-                  </div>
-                </div>
-              </td>
-              <td class="invert">Aashirvaad atta</td>
-
-              <td class="invert">$15.00</td>
-              <td class="invert">
-                <div class="rem">
-                  <div class="close3"></div>
-                </div>
-                <script>
-                  $(document).ready(function (c) {
-                    $(".close3").on("click", function (c) {
-                      $(".rem3").fadeOut("slow", function (c) {
-                        $(".rem3").remove();
-                      });
-                    });
-                  });
-                </script>
-              </td>
-            </tr>
-            <!--quantity-->
-            <script>
-              $(".value-plus").on("click", function () {
-                var divUpd = $(this).parent().find(".value"),
-                  newVal = parseInt(divUpd.text(), 10) + 1;
-                divUpd.text(newVal);
-              });
-
-              $(".value-minus").on("click", function () {
-                var divUpd = $(this).parent().find(".value"),
-                  newVal = parseInt(divUpd.text(), 10) - 1;
-                if (newVal >= 1) divUpd.text(newVal);
-              });
-            </script>
-            <!--quantity-->
-          </table>
-        </div>
-        <div class="checkout-left">
-          <div class="checkout-left-basket">
-            <h4>Continue to basket</h4>
-            <ul>
-              <li>Product1 <i>-</i> <span>$15.00 </span></li>
-              <li>Product2 <i>-</i> <span>$25.00 </span></li>
-              <li>Product3 <i>-</i> <span>$29.00 </span></li>
-              <li>Total Service Charges <i>-</i> <span>$15.00</span></li>
-              <li>Total <i>-</i> <span>$84.00</span></li>
-            </ul>
+    <section class="h-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-10 col-xl-8">
+        <div class="card" style="border-radius: 10px;">
+          <div class="card-header px-4 py-5">
+            <br>
+            <h3 class="text-muted mb-0">Amy Robert</h3>
           </div>
-          <div class="checkout-right-basket">
-            <a href="/single"
-              ><span
-                class="glyphicon glyphicon-menu-left"
-                aria-hidden="true"
-              ></span
-              >Continue Shopping</a
-            >
-          </div>
-          <div class="clearfix"></div>
+          <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <p class="lead fw-normal mb-0" style="color: #a8729a;">Receipt</p>
+              
+            </div>
+            <div class="card shadow-0 border mb-4">
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0">1.</p>
+                  </div>
+                  <div class="col-md-2">
+                    <img src="images/1.png"
+                      class="img-fluid" alt="Phone">
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0">Plastik OPP 8X10</p>
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0 small">10.000</p>
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0 small">1</p>
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0 small">10.000</p>
+                  </div>
+                  
+                </div>
+                <hr class="mb-4" style="background-color: #e0e0e0; opacity: 1;">
+              </div>
+            </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="d-flex justify-content-between pt-2">
+                <p class="fw-bold mb-0">Order Details</p>
+                <p class="text-muted mb-0"><span class="fw-bold me-4">Total</span> Rp10.000</p>
+                </div>
+
+                <div class="d-flex justify-content-between pt-2">
+                <p class="text-muted mb-0">Order Number : O001</p>
+                
+                </div>
+
+                <div class="d-flex justify-content-between">
+                <p class="text-muted mb-0">Invoice Date : 15 May,2023</p>
+
+                </div>
+
+                <div class="d-flex justify-content-between mb-5">
+                <p class="text-muted mb-0"><span class="fw-bold me-4">Delivery Charges:</span> Free</p>
+                </div>
+                <br>
+            </div>
         </div>
-      </div>
     </div>
+  </div>
+</section>
     <!-- //checkout -->
     <!-- //footer -->
     <div class="footer">

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('indexLogout');
 });
 
 Route::get('/about', function () {
@@ -46,6 +46,9 @@ Route::get('/hdpe', function () {
 Route::get('/index', function () {
     return view('index');
 });
+Route::get('/indexLogout', function () {
+    return view('indexLogout');
+});
 
 Route::get('/login', function () {
     return view('login');
@@ -58,7 +61,12 @@ Route::get('/offers', function () {
 Route::get('/opp', function () {
     return view('opp');
 });
-
+Route::get('/order', function () {
+    return view('order');
+});
+Route::get('/orderdetails', function () {
+    return view('orderdetails');
+});
 Route::get('/paper', function () {
     return view('paper');
 });
@@ -86,3 +94,8 @@ Route::get('/short-codes', function () {
 Route::get('/single', function () {
     return view('single');
 });
+
+Route::get('/newproduct', function () {
+    return view('newproduct');
+});
+

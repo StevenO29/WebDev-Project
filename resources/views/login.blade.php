@@ -74,7 +74,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="agile-login">
           <ul>
             <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/login">Login</a></li>
+            <li><a href="/login">Log In</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>

@@ -68,8 +68,9 @@
         <div class="agile-login">
         <ul>
             <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/login">Login</a></li>
+            <li><a href="/newproduct">New Product</a></li>
             <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/indexLogout"> Log Out </a></li>
           </ul>
         </div>
         <div class="product_list_header">
@@ -283,6 +284,7 @@
               </li>
               <li><a href="/offers">Offers</a></li>
               <li><a href="/contact">Contact</a></li>
+              
             </ul>
           </div>
         </nav>
@@ -627,12 +629,17 @@
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/order">My Order</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/login">Login</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/registered">Create Account</a>
               </li>
+
             </ul>
           </div>
           <div class="clearfix"></div>
