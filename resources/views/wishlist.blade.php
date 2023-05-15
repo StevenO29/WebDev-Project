@@ -154,8 +154,6 @@
               <li><a href="/paper" class="act">Paper</a></li>
               <li><a href="/offers">Offers</a></li>
               <li><a href="/contact">Contact</a></li>
-              <li><a href="/offers">Offers</a></li>
-              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -376,7 +374,7 @@
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">My Wishlist</a>
+                ><a href="/wishlist">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
