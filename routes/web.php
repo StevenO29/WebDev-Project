@@ -86,3 +86,7 @@ Route::get('/short-codes', function () {
 Route::get('/single', function () {
     return view('single');
 });
+
+Route::get('/wishlist', function () {
+    return view('wishlist');
+});

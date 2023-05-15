@@ -1,9 +1,3 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
   <head>
@@ -179,7 +173,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Checkout Page</li>
+          <li class="active">Wishlist</li>
         </ol>
       </div>
     </div>
@@ -187,14 +181,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- checkout -->
     <div class="checkout">
       <div class="container">
-        <h2>Your shopping cart: </h2>
+        <h2>Wishlist: </h2>
         <div class="checkout-right">
           <table class="timetable_sub">
             <thead>
               <tr>
                 <th>No.</th>
                 <th>Product</th>
-                <th>Quantity</th>
                 <th>Product Name</th>
 
                 <th>Price</th>
@@ -208,18 +201,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   ><img src="images/1.png" alt=" " class="img-responsive"
                 /></a>
               </td>
-              <td class="invert">
-                <div class="quantity">
-                  <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
-                    <div class="entry value-plus active">&nbsp;</div>
-                  </div>
-                </div>
-              </td>
               <td class="invert">Tata Salt</td>
 
-              <td class="invert">$15.00</td>
+              <td class="invert">$290.00</td>
               <td class="invert">
                 <div class="rem">
                   <div class="close1"></div>
@@ -242,18 +226,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   ><img src="images/2.png" alt=" " class="img-responsive"
                 /></a>
               </td>
-              <td class="invert">
-                <div class="quantity">
-                  <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
-                    <div class="entry value-plus active">&nbsp;</div>
-                  </div>
-                </div>
-              </td>
               <td class="invert">Fortune oil</td>
 
-              <td class="invert">$25.00</td>
+              <td class="invert">$250.00</td>
               <td class="invert">
                 <div class="rem">
                   <div class="close2"></div>
@@ -276,18 +251,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   ><img src="images/3.png" alt=" " class="img-responsive"
                 /></a>
               </td>
-              <td class="invert">
-                <div class="quantity">
-                  <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
-                    <div class="entry value-plus active">&nbsp;</div>
-                  </div>
-                </div>
-              </td>
               <td class="invert">Aashirvaad atta</td>
 
-              <td class="invert">$29.00</td>
+              <td class="invert">$15.00</td>
               <td class="invert">
                 <div class="rem">
                   <div class="close3"></div>
@@ -321,18 +287,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </table>
         </div>
         <div class="checkout-left">
-          <div class="checkout-left-basket">
-            <h4>Continue to basket</h4>
-            <ul>
-              <li>Product1 <i>-</i> <span>$15.00 </span></li>
-              <li>Product2 <i>-</i> <span>$25.00 </span></li>
-              <li>Product3 <i>-</i> <span>$29.00 </span></li>
-              <li>Total Service Charges <i>-</i> <span>$15.00</span></li>
-              <li>Total <i>-</i> <span>$84.00</span></li>
-            </ul>
-          </div>
           <div class="checkout-right-basket">
-            <a href="/products"
+            <a href="/single"
               ><span
                 class="glyphicon glyphicon-menu-left"
                 aria-hidden="true"
@@ -420,7 +376,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/wishlist">My Wishlist</a>
+                ><a href="/products">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
