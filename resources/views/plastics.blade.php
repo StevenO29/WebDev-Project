@@ -419,11 +419,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pf9.png"
-                          /></a>
-                          <p>GADING 35H</p>
-                          <h4>Rp13,500 <span>Rp17,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Gading28M" width="150" height="150" src="webdev_image_assets/Gading28M.png"/>
+                          </a>
+                          <p>GADING 28M</p>
+                          <h4>Rp10,000 <span>Rp12,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -486,9 +486,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pf1.png"
-                          /></a>
+                          <a href="/single">
+                            <img title=" " alt="Gading35M" width="150" height="150" src="webdev_image_assets/Gading35M.png"/>
+                          </a>
                           <p>GADING 35M</p>
                           <h4>Rp13,500 <span>Rp17,000</span></h4>
                         </div>
@@ -560,14 +560,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/pf2.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>GADING 40P</p>
-                          <h4>Rp20,000 <span>Rp25,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Gading35P" width="150" height="150" src="webdev_image_assets/Gading35P.png"/>
+                          </a>
+                          <p>GADING 35P</p>
+                          <h4>Rp13,500 <span>Rp17,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -633,11 +630,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pf3.png"
-                          /></a>
-                          <p>ALFA 35</p>
-                          <h4>Rp18,000 <span>Rp20,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Gading40H" width="150" height="150" src="webdev_image_assets/Gading40H.png"/>
+                          </a>
+                          <p>Gading 40H</p>
+                          <h4>Rp20,000 <span>Rp23,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -700,11 +697,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pf4.png"
-                          /></a>
-                          <p>Parryss-sugar</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Gading40M" width="150" height="150" src="webdev_image_assets/Gading40M.png"/>
+                          </a>
+                          <p>Gading40M</p>
+                          <h4>Rp20,000 <span>Rp23,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -774,14 +771,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/pf5.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Saffola-gold</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Kamboja15" width="150" height="150" src="webdev_image_assets/Kamboja15.png"/>
+                          </a>
+                          <p>Kamboja15</p>
+                          <h4>Rp5,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -847,11 +841,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pf6.png"
-                          /></a>
-                          <p>Sampann-toor-dal</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Kamboja21" width="150" height="150" src="webdev_image_assets/Kamboja21.png"/>
+                          </a>
+                          <p>Kamboja21</p>
+                          <h4>Rp6,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -914,11 +908,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pf7.png"
-                          /></a>
-                          <p>Parryss-sugar</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Dozer15M" width="150" height="150" src="webdev_image_assets/Dozer15M.png"/>
+                          </a>
+                          <p>Dozer15M</p>
+                          <h4>Rp13,500</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -988,14 +982,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/pf8.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Saffola-gold</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Dozer24M" width="150" height="150" src="webdev_image_assets/Dozer24M.png"/>
+                          </a>
+                          <p>Dozer24M</p>
+                          <h4>Rp13,500</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">

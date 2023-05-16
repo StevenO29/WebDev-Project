@@ -148,9 +148,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
+           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li"><a href="/index" class="act">Home</a></li>
+              <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
               <li><a href="/opp" class="act">Oriented Polypropylene</a></li>
               <li><a href="/pe" class="act">Polyethylene</a></li>

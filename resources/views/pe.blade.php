@@ -420,9 +420,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/hh1.png"
+                            ><img title=" " alt="Puma4x15" width="150" height="150" src="webdev_image_assets/Puma4x15.png"
                           /></a>
-                          <p>PUMA 6x15</p>
+                          <p>PUMA 4x15</p>
                           <h4>Rp5,500<span>Rp8,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -486,10 +486,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/hh2.png"
-                          /></a>
-                          <p>PUMA 7x15</p>
+                          <a href="/single">
+                            <img title=" " alt="Puma5x15" width="150" height="150" src="webdev_image_assets/Puma5x15.png"/>
+                          </a>
+                          <p>PUMA 5x15</p>
                           <h4>Rp5,500<span>Rp8,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -560,14 +560,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/hh3.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Dosa Tawa</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Puma8x15" width="150" height="150" src="webdev_image_assets/Puma8x15.png"/>
+                          </a>
+                          <p>Puma 8x15</p>
+                          <h4>Rp5,000 <span>Rp8,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -633,11 +630,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/hh4.png"
-                          /></a>
-                          <p>Flask</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Puma8x35" width="150" height="150" src="webdev_image_assets/Puma8x35.png"/>
+                          </a>
+                          <p>Puma 8x35</p>
+                          <h4>Rp5,000 <span>Rp8,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -700,11 +697,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/hh5.png"
-                          /></a>
-                          <p>Kadai Idly</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Puma10x18" width="150" height="150" src="webdev_image_assets/Puma10x18.png"/>
+                          </a>
+                          <p>Puma 10x18</p>
+                          <h4>Rp5,000 <span>Rp8,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -774,14 +771,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/hh6.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Breakfast Pan</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Puma12x25" width="150" height="150" src="webdev_image_assets/Puma12x25.png"/>
+                          </a>
+                          <p>Puma 12x25</p>
+                          <h4>Rp5,000<span>Rp8,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -847,11 +841,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/hh7.png"
-                          /></a>
-                          <p>Elite Set</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Puma15x28" width="150" height="150" src="webdev_image_assets/Puma15x28.png"/>
+                          </a>
+                          <p>Puma 15x28</p>
+                          <h4>Rp5,000 <span>Rp8,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -914,11 +908,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/hh8.png"
-                          /></a>
-                          <p>Coated Pan</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <a href="/single">
+                          <img title=" " alt="Puma18x35" width="150" height="150" src="webdev_image_assets/Puma18x35.png"/>
+                          </a>
+                          <p>Puma 18x35</p>
+                          <h4>Rp5,000<span>Rp8,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">

@@ -419,11 +419,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/bv2.png"
-                          /></a>
-                          <p>KERTAS GAJAH</p>
-                          <h4>Rp25,000 <span>Rp29,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Beo.png"/>
+                          </a>
+                          <p>KERTAS BEO</p>
+                          <h4>Rp23,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -486,11 +486,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/bv3.png"
-                          /></a>
+                          <a href="/single">
+                            <img title=" " alt="Kertas Gajah" width="150" height="150" src="webdev_image_assets/KertasGajah.png"/>
+                          </a>
                           <p>KERTAS GAJAH</p>
-                          <h4>Rp25,000 <span>Rp27,000</span></h4>
+                          <h4>Rp25,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
