@@ -490,7 +490,7 @@
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">My Wishlist</a>
+                ><a href="/wishlist">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
