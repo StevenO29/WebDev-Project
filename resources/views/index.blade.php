@@ -2259,12 +2259,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/login">Login</a>
+                ><a href="/indexLogout">Log Out</a>
               </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/registered">Create Account</a>
-              </li>
+             
             </ul>
           </div>
           <div class="clearfix"></div>
