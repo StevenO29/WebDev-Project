@@ -189,7 +189,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- login -->
     <div class="login">
       <div class="container">
-        <h2>Login Form</h2>
+        <h2>Login</h2>
 
         <div
           class="login-form-grids animated wow slideInUp"
@@ -197,11 +197,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         >
           <form>
             <input type="email" placeholder="Email Address" required=" " />
-            <input type="password" placeholder="Password" required=" " />
+            <input type="password" placeholder="Password" required=" " /><br>
+            <input type="checkbox" placeholder="Remember Me" required=" ">
+            <label>Remember Me</label>
             <div class="forgot">
               <a href="#">Forgot Password?</a>
             </div>
-            <input type="submit" value="Login" />
+            <a href="/index"><input type="submit" value="Login" /></a>
           </form>
         </div>
         <h4>For New People</h4>
