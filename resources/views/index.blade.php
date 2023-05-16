@@ -77,6 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <li><a href="/newproduct">New Product</a></li>
             <li><a href="/contact">Contact Us</a></li>
             <li><a href="/indexLogout"> Log Out </a></li>
+            
           </ul>
         </div>
         <div class="product_list_header">
@@ -158,135 +159,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   href="/groceries"
                   class="dropdown-toggle"
                   data-toggle="dropdown"
-                  >Oriented Polypropylene<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>All OPP</h6>
-                        <li><a href="/opp">Dals & Pulses</a></li>
-                        <li><a href="/opp">Almonds</a></li>
-                        <li><a href="/opp">Cashews</a></li>
-                        <li><a href="/opp">Dry Fruit</a></li>
-                        <li><a href="/opp"> Mukhwas </a></li>
-                        <li>
-                          <a href="/opp">Rice & Rice Products</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Oriented Polypropylene</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>All Polyethylene</h6>
-                        <li><a href="/pe">Cookware</a></li>
-                        <li><a href="/pe">Dust Pans</a></li>
-                        <li><a href="/pe">Scrubbers</a></li>
-                        <li><a href="/pe">Dust Cloth</a></li>
-                        <li><a href="/pe"> Mops </a></li>
-                        <li><a href="/pe">Kitchenware</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Polyethylene</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >HDPE<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>High-density Polyethylene</h6>
-                        <li><a href="/hdpe">Baby Soap</a></li>
-                        <li>
-                          <a href="/hdpe">Baby Care Accessories</a>
-                        </li>
-                        <li>
-                          <a href="/hdpe">Baby Oil & Shampoos</a>
-                        </li>
-                        <li>
-                          <a href="/hdpe">Baby Creams & Lotion</a>
-                        </li>
-                        <li><a href="/hdpe"> Baby Powder</a></li>
-                        <li><a href="/hdpe">Diapers & Wipes</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >HDPE
+                </a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>All Plastic</h6>
-                        <li><a href="/plastics">Baby Food</a></li>
-                        <li><a href="/plastics">Dessert Items</a></li>
-                        <li><a href="/plastics">Biscuits</a></li>
-                        <li>
-                          <a href="/plastics">Breakfast Cereals</a>
-                        </li>
-                        <li><a href="/plastics"> Canned Food </a></li>
-                        <li>
-                          <a href="/plastics">Chocolates & Sweets</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Plastic</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>Glass</h6>
-                        <li><a href="/glass">Green Tea</a></li>
-                        <li><a href="/glass">Ground Coffee</a></li>
-                        <li><a href="/glass">Herbal Tea</a></li>
-                        <li><a href="/glass">Instant Coffee</a></li>
-                        <li><a href="/glass"> Tea </a></li>
-                        <li><a href="/glass">Tea Bags</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Glass</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>Paper</h6>
-                        <li><a href="/paper">Green Tea</a></li>
-                        <li><a href="/paper">Ground Coffee</a></li>
-                        <li><a href="/paper">Herbal Tea</a></li>
-                        <li><a href="/paper">Instant Coffee</a></li>
-                        <li><a href="/paper"> Tea </a></li>
-                        <li><a href="/paper">Tea Bags</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Paper</a>
               </li>
               <li><a href="/offers">Offers</a></li>
               <li><a href="/contact">Contact</a></li>
@@ -1664,174 +1558,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
     </div>
     <!-- //top-brands -->
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <a href="/beverages">
-            <img class="first-slide" src="images/b1.jpg" alt="First slide"
-          /></a>
-        </div>
-        <div class="item">
-          <a href="/personalcare">
-            <img class="second-slide" src="images/b3.jpg" alt="Second slide"
-          /></a>
-        </div>
-        <div class="item">
-          <a href="/household"
-            ><img class="third-slide" src="images/b1.jpg" alt="Third slide"
-          /></a>
-        </div>
-      </div>
-    </div>
-    <!-- /.carousel -->
-    <!--banner-bottom-->
-    <div class="ban-bottom-w3l">
-      <div class="container">
-        <div class="col-md-6 ban-bottom3">
-          <div class="ban-top">
-            <img src="images/p2.jpg" class="img-responsive" alt="" />
-          </div>
-          <div class="ban-img">
-            <div class="ban-bottom1">
-              <div class="ban-top">
-                <img src="images/p3.jpg" class="img-responsive" alt="" />
-              </div>
-            </div>
-            <div class="ban-bottom2">
-              <div class="ban-top">
-                <img src="images/p4.jpg" class="img-responsive" alt="" />
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-        <div class="col-md-6 ban-bottom">
-          <div class="ban-top">
-            <img src="images/111.jpg" class="img-responsive" alt="" />
-          </div>
-        </div>
-
-        <div class="clearfix"></div>
-      </div>
-    </div>
-    <!--banner-bottom-->
-    <!--brands-->
-    <div class="brands">
-      <div class="container">
-        <h3>Brand Store</h3>
-        <div class="brands-agile">
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Puma</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Jeruk</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Dozer</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Tomat</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Kharisma</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Starindo</a></p>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="brands-agile-1">
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Bravia</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Gading</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Kilat</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Boyo</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Kijang</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Milenium</a></p>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="brands-agile-2">
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Nemo</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Semangka</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Kamboja</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Alfa</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Gajah</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 w3layouts-brand">
-            <div class="brands-w3l">
-              <p><a href="#">Beo</a></p>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-    <!--//brands-->
     <!-- new -->
     <div class="newproducts-w3agile">
       <div class="container">

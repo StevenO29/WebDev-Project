@@ -158,135 +158,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   href="/groceries"
                   class="dropdown-toggle"
                   data-toggle="dropdown"
-                  >Oriented Polypropylene<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>All OPP</h6>
-                        <li><a href="/opp">Dals & Pulses</a></li>
-                        <li><a href="/opp">Almonds</a></li>
-                        <li><a href="/opp">Cashews</a></li>
-                        <li><a href="/opp">Dry Fruit</a></li>
-                        <li><a href="/opp"> Mukhwas </a></li>
-                        <li>
-                          <a href="/opp">Rice & Rice Products</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Oriented Polypropylene</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>All Polyethylene</h6>
-                        <li><a href="/pe">Cookware</a></li>
-                        <li><a href="/pe">Dust Pans</a></li>
-                        <li><a href="/pe">Scrubbers</a></li>
-                        <li><a href="/pe">Dust Cloth</a></li>
-                        <li><a href="/pe"> Mops </a></li>
-                        <li><a href="/pe">Kitchenware</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Polyethylene</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >HDPE<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>High-density Polyethylene</h6>
-                        <li><a href="/hdpe">Baby Soap</a></li>
-                        <li>
-                          <a href="/hdpe">Baby Care Accessories</a>
-                        </li>
-                        <li>
-                          <a href="/hdpe">Baby Oil & Shampoos</a>
-                        </li>
-                        <li>
-                          <a href="/hdpe">Baby Creams & Lotion</a>
-                        </li>
-                        <li><a href="/hdpe"> Baby Powder</a></li>
-                        <li><a href="/hdpe">Diapers & Wipes</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >HDPE
+                </a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>All Plastic</h6>
-                        <li><a href="/plastics">Baby Food</a></li>
-                        <li><a href="/plastics">Dessert Items</a></li>
-                        <li><a href="/plastics">Biscuits</a></li>
-                        <li>
-                          <a href="/plastics">Breakfast Cereals</a>
-                        </li>
-                        <li><a href="/plastics"> Canned Food </a></li>
-                        <li>
-                          <a href="/plastics">Chocolates & Sweets</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Plastic</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>Glass</h6>
-                        <li><a href="/glass">Green Tea</a></li>
-                        <li><a href="/glass">Ground Coffee</a></li>
-                        <li><a href="/glass">Herbal Tea</a></li>
-                        <li><a href="/glass">Instant Coffee</a></li>
-                        <li><a href="/glass"> Tea </a></li>
-                        <li><a href="/glass">Tea Bags</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Glass</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper<b class="caret"></b
-                ></a>
-                <ul class="dropdown-menu multi-column columns-3">
-                  <div class="row">
-                    <div class="multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <h6>Paper</h6>
-                        <li><a href="/paper">Green Tea</a></li>
-                        <li><a href="/paper">Ground Coffee</a></li>
-                        <li><a href="/paper">Herbal Tea</a></li>
-                        <li><a href="/paper">Instant Coffee</a></li>
-                        <li><a href="/paper"> Tea </a></li>
-                        <li><a href="/paper">Tea Bags</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
+                  >Paper</a>
               </li>
               <li><a href="/offers">Offers</a></li>
               <li><a href="/contact">Contact</a></li>
