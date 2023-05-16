@@ -159,7 +159,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <li><a href="/plastics" class="act">Plastic</a></li>
               <li><a href="/glass" class="act">Glass</a></li>
               <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/offers">Offers</a></li>
+              <li><a href="/products">More Products</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
