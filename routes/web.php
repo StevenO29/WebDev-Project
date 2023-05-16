@@ -90,3 +90,19 @@ Route::get('/single', function () {
 Route::get('/wishlist', function () {
     return view('wishlist');
 });
+
+Route::get('/products2', function () {
+    return view('products2');
+});
+
+Route::get('/products3', function () {
+    return view('products3');
+});
+
+Route::get('/products4', function () {
+    return view('products4');
+});
+
+Route::get('/products5', function () {
+    return view('products5');
+});
