@@ -79,13 +79,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </ul>
         </div>
         <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
+         <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
-          </form>
+          </a>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -97,8 +95,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <ul class="phone_email">
             <br />
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
+            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
+
             </li>
           </ul>
         </div>
@@ -238,117 +236,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </li>
             </ul>
           </li>
-          <li class="item5">
-            <a href="#" title="click here"
-              >Euismod tincidunt laoreet Etiam faucibus viverra libero vel
-              efficitur ?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  At vero eos et Lorem ipsum dolor sit amet, consectetuer
-                  adipiscing elit, sed diam nonummy nibh euismod consectetuer
-                  adipiscing elit, sed diam nonummy nibh euismod accusamus et
-                  iusto odio dignissimos ducimus qui blanditiis praesentium
-                  voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi sint occaecati cupiditate non provident.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="item6">
-            <a href="#" title="click here"
-              >Voluptas sit aspernatur aut Ut semper nisl ut laoreet ultrices
-              ?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  At vero eos et Lorem ipsum dolor sit amet, consectetuer
-                  adipiscing elit, sed diam nonummy nibh euismod consectetuer
-                  adipiscing elit, sed diam nonummy nibh euismod accusamus et
-                  iusto odio dignissimos ducimus qui blanditiis praesentium
-                  voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi sint occaecati cupiditate non provident.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="item7">
-            <a href="#" title="click here"
-              >Donec ut quam ligula feugiat Ut semper nisl ut laoreet ultrices
-              ?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  At vero eos et Lorem ipsum dolor sit amet, consectetuer
-                  adipiscing elit, sed diam nonummy nibh euismod consectetuer
-                  adipiscing elit, sed diam nonummy nibh euismod accusamus et
-                  iusto odio dignissimos ducimus qui blanditiis praesentium
-                  voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi sint occaecati cupiditate non provident.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="item8">
-            <a href="#" title="click here"
-              >The standard Lorem Ipsum Ut semper nisl ut laoreet ultrices
-              passage ?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  Lorem ipsum dolor sit amet At vero eos et Lorem ipsum dolor
-                  sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                  euismod consectetuer adipiscing elit, sed diam nonummy nibh
-                  euismod accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque corrupti quos
-                  dolores et quas molestias excepturi sint occaecati cupiditate
-                  non provident.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="item9">
-            <a href="#" title="click here"
-              >Consectetuer adipiscing Ut semper nisl ut laoreet ultrices elit
-              ?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  Lorem ipsum dolor sit amet At vero eos et Lorem ipsum dolor
-                  sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                  euismod consectetuer adipiscing elit, sed diam nonummy nibh
-                  euismod accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque corrupti quos
-                  dolores et quas molestias excepturi sint occaecati cupiditate
-                  non provident.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="item10">
-            <a href="#" title="click here"
-              >Sed diam nonummy Ut semper nisl ut laoreet ultrices nibh euismod
-              ?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  Consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                  consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                  accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque corrupti quos dolores et
-                  quas molestias excepturi sint occaecati cupiditate non
-                  provident.
-                </p>
-              </li>
-            </ul>
-          </li>
-        </ul>
+   
         <!-- script for tabs -->
         <script type="text/javascript">
           $(function () {

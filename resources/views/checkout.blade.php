@@ -78,15 +78,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
-        <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
+
+        <!-- <div class="product_list_header">
+         <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
-          </form>
-        </div>
+          </a>
+        </div> -->
+
         <div class="clearfix"></div>
       </div>
     </div>
@@ -97,9 +97,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <ul class="phone_email">
             <br />
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
-            </li>
+            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
+
+                    </li>
           </ul>
         </div>
         <div class="w3ls_logo_products_left">

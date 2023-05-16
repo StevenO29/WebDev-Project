@@ -78,15 +78,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
+
         <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
+         <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
-          </form>
+          </a>
         </div>
+
         <div class="clearfix"></div>
       </div>
     </div>
@@ -97,8 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <ul class="phone_email">
             <br />
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
+              <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
             </li>
           </ul>
         </div>
@@ -1537,7 +1536,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- new -->
     <div class="newproducts-w3agile">
       <div class="container">
-        <h3>Products Highlight</h3>
+        <h3>Products Recommendation</h3>
         <div class="agile_top_brands_grids">
           <div class="col-md-3 top_brand_left-1">
             <div class="hover14 column">
