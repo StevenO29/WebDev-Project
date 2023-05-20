@@ -4256,15 +4256,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navbar-nav > li {
-    float: left;
+    flex: 0 0 auto;
+    margin-right: 15px; /* Optional: Add some spacing between the links */
   }
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .navbar-nav>li:last-child {
+    margin-right: 0; /* Remove margin from the last link to prevent extra spacing */
   }
 }
 .navbar-form {
