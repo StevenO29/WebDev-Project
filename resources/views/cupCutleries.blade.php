@@ -148,15 +148,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li><a href="/index" class="act">Home</a></li>
+            <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li class="active"><a href="/opp" class="act">Oriented Polypropylene</a></li>
-              <li><a href="/pe" class="act">Polyethylene</a></li>
-              <li><a href="/hdpe" class="act">HDPE</a></li>
-              <li><a href="/plastics" class="act">Plastic</a></li>
-              <li><a href="/glass" class="act">Glass</a></li>
+              <li><a href="/plastic" class="act">Plastic</a></li>
               <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/products">More Products</a></li>
+              <li><a href="/cupCutleries" class="act">Cup</a></li>
+              <li><a href="/cupCutleries" class="act">Cutleries</a></li>
+              <li class="active"><a href="/products">More Products</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -178,12 +176,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">OPP</li>
+          <li class="active">HDPE</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- OPP --->
+    <!--- HDPE --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
@@ -340,10 +338,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/14.png"
+                            ><img title=" " alt=" " src="images/pc1.png"
                           /></a>
-                          <p>OPP 8x8</p>
-                          <h4>Rp3,000 <span>Rp5,000</span></h4>
+                          <p>KIJANG 9x18</p>
+                          <h4>Rp5,000 <span>Rp7,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -407,10 +405,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/15.png"
+                            ><img title=" " alt=" " src="images/pc2.png"
                           /></a>
-                          <p>OPP 9x9</p>
-                          <h4>Rp4,000 <span>Rp6,000</span></h4>
+                          <p>KIJANG 11x22</p>
+                          <h4>Rp6,500 <span>Rp9,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -482,11 +480,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/16.png"
+                              src="images/pc3.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Channa</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -554,9 +552,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/17.png"
+                            ><img title=" " alt=" " src="images/pc4.png"
                           /></a>
-                          <p>Arhar Dal</p>
+                          <p>Rash Cream</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -621,9 +619,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/14.png"
+                            ><img title=" " alt=" " src="images/pc5.png"
                           /></a>
-                          <p>Toor Dal</p>
+                          <p>Baby Lotion</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -696,11 +694,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/15.png"
+                              src="images/pc6.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Moong Dal</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -768,9 +766,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/16.png"
+                            ><img title=" " alt=" " src="images/pc7.png"
                           /></a>
-                          <p>Channa</p>
+                          <p>Baby Lotion</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -835,9 +833,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/17.png"
+                            ><img title=" " alt=" " src="images/pc8.png"
                           /></a>
-                          <p>Arhar Dal</p>
+                          <p>Wipes Gentle</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -910,11 +908,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/14.png"
+                              src="images/pc9.jpg"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Toor Dal</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -991,7 +989,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- OPP --->
+    <!--- HDPE --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">

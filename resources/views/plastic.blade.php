@@ -148,16 +148,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li><a href="/index" class="act">Home</a></li>
+            <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/opp" class="act">Oriented Polypropylene</a></li>
-              <li><a href="/pe" class="act">Polyethylene</a></li>
-              <li><a href="/hdpe" class="act">HDPE</a></li>
-              <li class="active"><a href="/plastics" class="act">Plastic</a></li>
-              <li><a href="/glass" class="act">Glass</a></li>
+              <li><a href="/plastic" class="act">Plastic</a></li>
               <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/products">More Products</a></li>
-              <li><a href="/contact">Contact</a></li>                
+              <li><a href="/cupCutleries" class="act">Cup</a></li>
+              <li><a href="/cupCutleries" class="act">Cutleries</a></li>
+              <li class="active"><a href="/products">More Products</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -178,12 +176,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Plastic</li>
+          <li class="active">OPP</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- pakagedfoods --->
+    <!--- OPP --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
@@ -203,12 +201,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </li>
                 <li>
                   <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
                 </li>
                 <li>
                   <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
                 </li>
+
               </ul>
               <li>
                 <!--Category 2: Paper-->
@@ -217,13 +216,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </li>
               <!--SubCategory 2-->
               <ul>
-                <li>
+              <li>
                   <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
                 </li>
                 <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Lunchboxes</a>
+                  <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
                 </li>
                 <li>
                   <a href="/paper">
@@ -231,41 +230,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </li>
                 <li>
                   <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
                 </li>
+
               </ul>
               <li>
-                <!--Category 3: Cup & Cuttleries-->
+                <!--Category 3: Cup and Cutleries-->
                 <a href="/products"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cup and Cuttleries</a
+                  >Cup and Cutleries</a
                 >
               </li>
               <!--SubCategory 3-->
               <ul>
-                <li>
+              <li>
                   <a href="/products">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
-                </li>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
+                </li>  
                 <li>
                   <a href="/products">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bottle</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Spoons</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Forks</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Chopsticks</a>
                 </li>
               </ul>
             </ul>
@@ -339,11 +323,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Gading28M" width="150" height="150" src="webdev_image_assets/Gading28M.png"/>
-                          </a>
-                          <p>GADING 28M</p>
-                          <h4>Rp10,000 <span>Rp12,000</span></h4>
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/14.png"
+                          /></a>
+                          <p>OPP 8x8</p>
+                          <h4>Rp3,000 <span>Rp5,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -406,11 +390,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Gading35M" width="150" height="150" src="webdev_image_assets/Gading35M.png"/>
-                          </a>
-                          <p>GADING 35M</p>
-                          <h4>Rp13,500 <span>Rp17,000</span></h4>
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/15.png"
+                          /></a>
+                          <p>OPP 9x9</p>
+                          <h4>Rp4,000 <span>Rp6,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -480,11 +464,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Gading35P" width="150" height="150" src="webdev_image_assets/Gading35P.png"/>
-                          </a>
-                          <p>GADING 35P</p>
-                          <h4>Rp13,500 <span>Rp17,000</span></h4>
+                          <a href="/single"
+                            ><img
+                              src="images/16.png"
+                              alt=" "
+                              class="img-responsive"
+                          /></a>
+                          <p>Channa</p>
+                          <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -550,11 +537,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Gading40H" width="150" height="150" src="webdev_image_assets/Gading40H.png"/>
-                          </a>
-                          <p>Gading 40H</p>
-                          <h4>Rp20,000 <span>Rp23,000</span></h4>
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/17.png"
+                          /></a>
+                          <p>Arhar Dal</p>
+                          <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -617,11 +604,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Gading40M" width="150" height="150" src="webdev_image_assets/Gading40M.png"/>
-                          </a>
-                          <p>Gading40M</p>
-                          <h4>Rp20,000 <span>Rp23,000</span></h4>
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/14.png"
+                          /></a>
+                          <p>Toor Dal</p>
+                          <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -691,11 +678,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Kamboja15" width="150" height="150" src="webdev_image_assets/Kamboja15.png"/>
-                          </a>
-                          <p>Kamboja15</p>
-                          <h4>Rp5,000</h4>
+                          <a href="/single"
+                            ><img
+                              src="images/15.png"
+                              alt=" "
+                              class="img-responsive"
+                          /></a>
+                          <p>Moong Dal</p>
+                          <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -761,11 +751,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Kamboja21" width="150" height="150" src="webdev_image_assets/Kamboja21.png"/>
-                          </a>
-                          <p>Kamboja21</p>
-                          <h4>Rp6,000</h4>
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/16.png"
+                          /></a>
+                          <p>Channa</p>
+                          <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -828,11 +818,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Dozer15M" width="150" height="150" src="webdev_image_assets/Dozer15M.png"/>
-                          </a>
-                          <p>Dozer15M</p>
-                          <h4>Rp13,500</h4>
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/17.png"
+                          /></a>
+                          <p>Arhar Dal</p>
+                          <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -902,11 +892,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Dozer24M" width="150" height="150" src="webdev_image_assets/Dozer24M.png"/>
-                          </a>
-                          <p>Dozer24M</p>
-                          <h4>Rp13,500</h4>
+                          <a href="/single"
+                            ><img
+                              src="images/14.png"
+                              alt=" "
+                              class="img-responsive"
+                          /></a>
+                          <p>Toor Dal</p>
+                          <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -982,7 +975,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- pakagedfoods --->
+    <!--- OPP --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">

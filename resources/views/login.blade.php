@@ -149,15 +149,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
            
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li><a href="/index" class="act">Home</a></li>
+            <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/opp" class="act">Oriented Polypropylene</a></li>
-              <li><a href="/pe" class="act">Polyethylene</a></li>
-              <li><a href="/hdpe" class="act">HDPE</a></li>
-              <li><a href="/plastics" class="act">Plastic</a></li>
-              <li><a href="/glass" class="act">Glass</a></li>
+              <li><a href="/plastic" class="act">Plastic</a></li>
               <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/products">More Products</a></li>
+              <li><a href="/cupCutleries" class="act">Cup</a></li>
+              <li><a href="/cupCutleries" class="act">Cutleries</a></li>
+              <li class="active"><a href="/products">More Products</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>

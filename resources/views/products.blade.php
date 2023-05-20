@@ -146,16 +146,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
+          <!-- I couldn't find the css for this (the megadropdown) to edit the padding, etc; i edited n the end result wasnt placed at the center. cant find the css pls help -->
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/opp" class="act">Oriented Polypropylene</a></li>
-              <li><a href="/pe" class="act">Polyethylene</a></li>
-              <li><a href="/hdpe" class="act">HDPE</a></li>
-              <li><a href="/plastics" class="act">Plastic</a></li>
-              <li><a href="/glass" class="act">Glass</a></li>
+              <li><a href="/plastic" class="act">Plastic</a></li>
               <li><a href="/paper" class="act">Paper</a></li>
+              <li><a href="/cupCutleries" class="act">Cup</a></li>
+              <li><a href="/cupCutleries" class="act">Cutleries</a></li>
               <li class="active"><a href="/products">More Products</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
@@ -203,12 +202,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </li>
                 <li>
                   <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
                 </li>
                 <li>
                   <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
                 </li>
+
               </ul>
               <li>
                 <!--Category 2: Paper-->
@@ -217,13 +217,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </li>
               <!--SubCategory 2-->
               <ul>
-                <li>
+              <li>
                   <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
                 </li>
                 <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Lunchboxes</a>
+                  <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
                 </li>
                 <li>
                   <a href="/paper">
@@ -231,42 +231,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </li>
                 <li>
                   <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
                 </li>
+
               </ul>
               <li>
-                <!--Category 3: Cup & Cuttleries-->
+                <!--Category 3: Cup and Cutleries-->
                 <a href="/products"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cup and Cuttleries</a
+                  >Cup and Cutleries</a
                 >
               </li>
               <!--SubCategory 3-->
               <ul>
-                <li>
+              <li>
                   <a href="/products">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
-                </li>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
+                </li>  
                 <li>
                   <a href="/products">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
                 </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bottle</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Spoons</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Forks</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Chopsticks</a>
-                </li>
+             
               </ul>
             </ul>
           </div>

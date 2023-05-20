@@ -55,20 +55,16 @@ Route::get('/offers', function () {
     return view('offers');
 });
 
-Route::get('/opp', function () {
-    return view('opp');
+Route::get('/plastic', function () {
+    return view('plastic');
+});
+
+Route::get('/cupCutleries', function () {
+    return view('cupCutleries');
 });
 
 Route::get('/paper', function () {
     return view('paper');
-});
-
-Route::get('/pe', function () {
-    return view('pe');
-});
-
-Route::get('/plastics', function () {
-    return view('plastics');
 });
 
 Route::get('/products', function () {
@@ -106,3 +102,4 @@ Route::get('/products4', function () {
 Route::get('/products5', function () {
     return view('products5');
 });
+
