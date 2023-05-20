@@ -63,7 +63,6 @@
           <p>
             SALE UP TO 70% OFF. USE CODE "SALE70%" .
             <a href="/products">SHOP NOW</a>
-            <p>coba pat 1</p>
           </p>
         </div>
         <div class="agile-login">
