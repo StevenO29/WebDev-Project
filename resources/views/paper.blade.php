@@ -190,160 +190,82 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
-              <li>
-                <a href="/products"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fruits
-                  And Vegetables</a
-                >
+            <li>
+                <!--Category 1: Plastic-->
+                <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
               </li>
+              <!--SubCategory 1-->
               <ul>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Cuts &
-                    Sprouts</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Flowers</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh
-                    Herbs & Seasonings</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh
-                    Vegetables</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >International Vegetables</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
-                    Fruits & Vegetables</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
                 </li>
               </ul>
               <li>
-                <a href="/products"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i>Grocery &
-                  Staples</a
-                >
+                <!--Category 2: Paper-->
+                <a href="/paper">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a>
               </li>
+              <!--SubCategory 2-->
               <ul>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Dals &
-                    Pulses</a
-                  >
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Dry
-                    Fruits</a
-                  >
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Lunchboxes</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Edible
-                    Oils & Ghee</a
-                  >
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Flours
-                    & Sooji</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Masalas
-                    & Spices</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
-                    Staples</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice &
-                    Rice Products</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Salt,
-                    Sugar & Jaggery</a
-                  >
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
                 </li>
               </ul>
               <li>
+                <!--Category 3: Cup & Cuttleries-->
                 <a href="/products"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >PersonalCare</a
+                  >Cup and Cuttleries</a
                 >
               </li>
+              <!--SubCategory 3-->
               <ul>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Baby
-                    Care</a
-                  >
+                  <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Cosmetics</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Deos &
-                    Perfumes</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bottle</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Skin
-                    Care</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Spoons</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Sanitary Needs</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Forks</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Oral
-                    Care</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Personal Hygiene</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Shaving
-                    Needs</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Chopsticks</a>
                 </li>
               </ul>
             </ul>

@@ -185,23 +185,20 @@
         <h3 class="w3_agile_header">About Us</h3>
         <div class="about-agileinfo w3layouts">
           <div class="col-md-8 about-wthree-grids grid-top">
-            <h4>Blanditiis praesentium deleniti atque corrupti quos</h4>
             <p class="top">
-              Gnissimos voluptatum deleniti atque corrupti quos dolores et quas
-              molestias excepturi. atque corrupti quos dolores et quas molestias
-              excepturi sint occaecat officia deserunt mollitia laborum et
-              dolorum fuga
+              Welcome to Aneka Jaya Plastik, your one-stop shop for all your plastic needs! 
+              We take pride in offering a wide variety of high-quality plastics, paper packaging, 
+              cups, and cutlery for both personal and commercial use. As a trusted provider in 
+              the industry, we strive to meet the demands of our customers by offering a diverse 
+              range of products to suit their needs.
             </p>
+            <h4>Extensive Product Selection:</h4>
             <p>
-              Dignissimos at vero eos et accusamus et iusto odio ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecat officia deserunt
-              mollitia laborum et dolorum fuga. At vero eos et accusamus et
-              iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecat atque corrupti quos dolores et quas
-              molestias excepturi sint occaecat officia deserunt mollitia
-              laborum et dolorum
+            We take pride in offering a wide selection of plastics to cater to various applications. 
+            Whether you need plastic containers for storage, food-grade packaging solutions, or 
+            disposable cutlery for your next event, we have got you covered. Our inventory includes 
+            an array of sizes, shapes, and colors, ensuring that you find the perfect plastic products 
+            to suit your requirements.
             </p>
             <div class="about-w3agilerow">
               <div class="col-md-4 about-w3imgs">
@@ -319,101 +316,17 @@
     <div class="about-slid agileits-w3layouts">
       <div class="container">
         <div class="about-slid-info">
-          <h2>Lorem Ipsum is that it has a moreless normal</h2>
+          <h2>Convenience and Reliability</h2>
           <p>
-            Lorem Ipsum generators on the Internet tend to repeat predefined
-            chunks on the Internet tend as necessary, making this the first true
-            generator on the Internet embarrassing hidden in the middle of text
-            Lorem Ipsum generators on the Internet tend to repeat
-            predefinedchunks as necessary, making this the first true generator
-            on the.
+            Whether you are a business owner looking for reliable packaging solutions 
+            or an individual in need of plastic products for daily use, Aneka Jaya Plastik 
+            is here to meet your needs. We invite you to explore our wide selection of plastics, 
+            paper packaging, cups, and cutlery and experience the quality and convenience that 
+            sets us apart. Shop with us today and discover the perfect plastic solutions for your needs.
           </p>
         </div>
       </div>
     </div>
-    <!-- //about-slid -->
-    <!-- about-team -->
-    <div class="about-team">
-      <div class="container">
-        <h3 class="w3_agile_header">Meet Our Team</h3>
-        <div class="team-agileitsinfo">
-          <div class="col-md-3 about-team-grids">
-            <img src="images/t4.jpg" alt="" />
-            <div class="team-w3lstext">
-              <h4><span>ANDERSON,</span> Manager</h4>
-              <p>
-                Odio dignissimos vero eos voluptatem accusantium doloremque
-                laudantium reader will be distracted.
-              </p>
-            </div>
-            <div class="social-icons caption">
-              <ul>
-                <li><a href="#" class="fa fa-facebook facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus googleplus"> </a></li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="col-md-3 about-team-grids">
-            <img src="images/t2.jpg" alt="" />
-            <div class="team-w3lstext">
-              <h4><span>ELIFS,</span> Director</h4>
-              <p>
-                Odio dignissimos vero eos voluptatem accusantium doloremque
-                laudantium reader will be distracted.
-              </p>
-            </div>
-            <div class="social-icons caption">
-              <ul>
-                <li><a href="#" class="fa fa-facebook facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus googleplus"> </a></li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="col-md-3 about-team-grids">
-            <img src="images/t1.jpg" alt="" />
-            <div class="team-w3lstext">
-              <h4><span>JESSICA,</span> Supervisior</h4>
-              <p>
-                Odio dignissimos vero eos voluptatem accusantium doloremque
-                laudantium reader will be distracted.
-              </p>
-            </div>
-            <div class="social-icons caption">
-              <ul>
-                <li><a href="#" class="fa fa-facebook facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus googleplus"> </a></li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="col-md-3 about-team-grids">
-            <img src="images/t3.jpg" alt="" />
-            <div class="team-w3lstext">
-              <h4><span>RACKHAM,</span> Staff</h4>
-              <p>
-                Odio dignissimos vero eos voluptatem accusantium doloremque
-                laudantium reader will be distracted.
-              </p>
-            </div>
-            <div class="social-icons caption">
-              <ul>
-                <li><a href="#" class="fa fa-facebook facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus googleplus"> </a></li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-    <!-- //about-team -->
 
     <!-- //footer -->
     <div class="footer">

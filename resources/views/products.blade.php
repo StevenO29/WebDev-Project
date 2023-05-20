@@ -192,98 +192,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="cate">
               <li>
                 <!--Category 1: Plastic-->
-                <a href="/products"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a
-                >
+                <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
               </li>
               <!--SubCategory 1-->
               <ul>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Sugar Pouch</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh
-                    Vegetables</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >International Vegetables</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
-                    Fruits & Vegetables</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
                 </li>
               </ul>
               <li>
                 <!--Category 2: Paper-->
-                <a href="/products"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a
-                >
+                <a href="/paper">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a>
               </li>
               <!--SubCategory 2-->
               <ul>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a
-                  >
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Lunchboxes</a
-                  >
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Lunchboxes</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a
-                  >
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Masalas
-                    & Spices</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
-                    Staples</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice &
-                    Rice Products</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Salt,
-                    Sugar & Jaggery</a
-                  >
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
                 </li>
               </ul>
               <li>
@@ -296,48 +244,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <!--SubCategory 3-->
               <ul>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a
-                  >
+                  <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
                 </li>
                 <li>
-                  <a href="/products
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Plastic Cup</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bottle</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bottle</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Spoons</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Spoons</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Forks</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Forks</a>
                 </li>
                 <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Chopsticks</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Personal Hygiene</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Shaving
-                    Needs</a
-                  >
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Chopsticks</a>
                 </li>
               </ul>
             </ul>

@@ -172,20 +172,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <img src="images/11.jpg" alt="" />
         <!--Slider Description example-->
         <div class="slide-desc">
-          <h3>Buy Rice Products Are Now On Line With Us</h3>
+          <h3>Cups and Cuttleries Are Now On Line With Us</h3>
         </div>
       </li>
       <li>
         <img src="images/22.jpg" alt="" />
         <div class="slide-desc">
-          <h3>Whole Spices Products Are Now On Line With Us</h3>
+          <h3>Various Plastic Products Are Now On Line With Us</h3>
         </div>
       </li>
 
       <li>
         <img src="images/44.jpg" alt="" />
         <div class="slide-desc">
-          <h3>Whole Spices Products Are Now On Line With Us</h3>
+          <h3>Whole Paper packaging Products Are Now On Line With Us</h3>
         </div>
       </li>
     </ul>
