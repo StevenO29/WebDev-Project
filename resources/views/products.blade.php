@@ -983,7 +983,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="w3_footer_grids">
           <div class="col-md-3 w3_footer_grid">
             <h3>Contact</h3>
-
             <ul class="address">
               <li>
                 <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i
@@ -1023,27 +1022,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/opp">Oriented Polypropylene</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/pe">Polyethylene</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/hdpe">High-density Polyethylene</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastics">Plastic Bag</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/glass">Glass</a>
+                ><a href="/plastic">Plastic</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/paper">Paper</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/cupCutleries">Cup</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/cupCutleries">Cutleries</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/products">Products</a>
               </li>
             </ul>
           </div>
