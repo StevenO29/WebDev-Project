@@ -252,7 +252,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   <a href="/products">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
                 </li>
-             
               </ul>
             </ul>
           </div>

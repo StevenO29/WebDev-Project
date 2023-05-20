@@ -189,8 +189,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <h2>Categories</h2>
             <ul class="cate">
             <li>
-                <!--Category 1: Plastic-->
-                <a href="/products">
+                 <!--Category 1: Plastic-->
+                 <a href="/products">
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
               </li>
               <!--SubCategory 1-->
@@ -251,7 +251,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   <a href="/products">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
                 </li>
-              </ul>
+             </ul>
             </ul>
           </div>
         </div>

@@ -189,8 +189,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <h2>Categories</h2>
             <ul class="cate">
             <li>
-                <!--Category 1: Plastic-->
-                <a href="/products">
+                 <!--Category 1: Plastic-->
+                 <a href="/products">
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
               </li>
               <!--SubCategory 1-->
@@ -201,12 +201,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </li>
                 <li>
                   <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
                 </li>
                 <li>
                   <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
                 </li>
+
               </ul>
               <li>
                 <!--Category 2: Paper-->
@@ -215,13 +216,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </li>
               <!--SubCategory 2-->
               <ul>
-                <li>
+              <li>
                   <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
                 </li>
                 <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Lunchboxes</a>
+                  <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
                 </li>
                 <li>
                   <a href="/paper">
@@ -229,43 +230,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </li>
                 <li>
                   <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
                 </li>
+
               </ul>
               <li>
-                <!--Category 3: Cup & Cuttleries-->
+                <!--Category 3: Cup and Cutleries-->
                 <a href="/products"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cup and Cuttleries</a
+                  >Cup and Cutleries</a
                 >
               </li>
               <!--SubCategory 3-->
               <ul>
-                <li>
+              <li>
                   <a href="/products">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
-                </li>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
+                </li>  
                 <li>
                   <a href="/products">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
                 </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bottle</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Spoons</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Forks</a>
-                </li>
-                <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Chopsticks</a>
-                </li>
-              </ul>
+            </ul>
             </ul>
           </div>
         </div>
