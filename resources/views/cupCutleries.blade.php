@@ -176,19 +176,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Products</li>
+          <li class="active">HDPE</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- products --->
+    <!--- HDPE --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
           <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
-              <li>
+            <li>
                  <!--Category 1: Plastic-->
                  <a href="/products">
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
@@ -251,8 +251,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   <a href="/products">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
                 </li>
-             
-              </ul>
+            </ul>
             </ul>
           </div>
         </div>
@@ -325,10 +324,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/pf4.png"
+                            ><img title=" " alt=" " src="images/pc1.png"
                           /></a>
-                          <p>Sampann-toor-dal</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <p>KIJANG 9x18</p>
+                          <h4>Rp5,000 <span>Rp7,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -392,10 +391,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv3.png"
+                            ><img title=" " alt=" " src="images/pc2.png"
                           /></a>
-                          <p>Parryss-sugar</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <p>KIJANG 11x22</p>
+                          <h4>Rp6,500 <span>Rp9,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -467,11 +466,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/16.png"
+                              src="images/pc3.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Saffola-gold</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -539,9 +538,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/hh4.png"
+                            ><img title=" " alt=" " src="images/pc4.png"
                           /></a>
-                          <p>Sampann-toor-dal</p>
+                          <p>Rash Cream</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -606,9 +605,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu5.png"
+                            ><img title=" " alt=" " src="images/pc5.png"
                           /></a>
-                          <p>Parryss-sugar</p>
+                          <p>Baby Lotion</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -685,7 +684,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Saffola-gold</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -753,9 +752,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu4.png"
+                            ><img title=" " alt=" " src="images/pc7.png"
                           /></a>
-                          <p>Sampann-toor-dal</p>
+                          <p>Baby Lotion</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -820,9 +819,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/5.png"
+                            ><img title=" " alt=" " src="images/pc8.png"
                           /></a>
-                          <p>Parryss-sugar</p>
+                          <p>Wipes Gentle</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -895,11 +894,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/6.png"
+                              src="images/pc9.jpg"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Saffola-gold</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -954,19 +953,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <nav class="numbering">
             <ul class="pagination paging">
               <li>
-                <a href="/products3" aria-label="Previous">
+                <a href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
                 </a>
               </li>
-              <li>
-                <a href="/products">1</a>
+              <li class="active">
+                <a href="#">1<span class="sr-only">(current)</span></a>
               </li>
-              <li><a href="/products2">2</a></li>
-              <li><a href="/products3">3</a></li>
-              <li class="active"><a href="/products4">4<span class="sr-only">(current)<span></a></li>
-              <li><a href="/products5">5</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
               <li>
-                <a href="/products5" aria-label="Next">
+                <a href="#" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
                 </a>
               </li>
@@ -976,7 +975,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- products --->
+    <!--- HDPE --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -1071,8 +1070,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="footer-copy">
         <div class="container">
           <p>
-            © 2017 Super Market. All rights reserved | Design by
-            <a href="http://w3layouts.com/">W3layouts</a>
+            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
           </p>
         </div>
       </div>

@@ -39,6 +39,9 @@ Route::get('/glass', function () {
 Route::get('/gourmet', function () {
     return view('gourmet');
 });
+Route::get('/hdpe', function () {
+    return view('hdpe');
+});
 
 Route::get('/index', function () {
     return view('index');

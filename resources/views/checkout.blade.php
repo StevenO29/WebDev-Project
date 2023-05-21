@@ -154,8 +154,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <!-- Mega Menu -->
               <li><a href="/plastic" class="act">Plastic</a></li>
               <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/cup" class="act">Cup</a></li>
-              <li><a href="/cutleries" class="act">Cutleries</a></li>
+              <li><a href="/cupCutleries" class="act">Cup</a></li>
+              <li><a href="/cupCutleries" class="act">Cutleries</a></li>
               <li class="active"><a href="/products">More Products</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
@@ -395,11 +395,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cup">Cup</a>
+                ><a href="/cupCutleries">Cup</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cutleries">Cutleries</a>
+                ><a href="/cupCutleries">Cutleries</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i

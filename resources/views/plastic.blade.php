@@ -176,86 +176,82 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Plastic</li>
+          <li class="active">OPP</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- Plastic --->
+    <!--- OPP --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
-          <div class="cate">
+          <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
             <li>
-                  <!--Category 1: Plastic-->
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
+                 <!--Category 1: Plastic-->
+                 <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
               </li>
-                <!--SubCategory 1-->
-                <ul>
-                  <li>
-                    <a href="/plastic">
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
-                  </li>
-                  <li>
-                    <a href="/plastic">
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
-                  </li>
-                  <li>
-                    <a href="/plastic">                      
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
-                  </li>
-                </ul>
+              <!--SubCategory 1-->
+              <ul>
+                <li>
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
+                </li>
+                <li>
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
+                </li>
+                <li>
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
+                </li>
+
+              </ul>
               <li>
                 <!--Category 2: Paper-->
                 <a href="/paper">
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a>
               </li>
-                <!--SubCategory 2-->
-                <ul>
-                  <li>
-                    <a href="/paper">
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
-                  </li>
-                  <li>
-                    <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
-                  </li>
-                  <li>
-                    <a href="/paper">
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a>
-                  </li>
-                  <li>
-                    <a href="/paper">
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
-                  </li>
-                </ul>
+              <!--SubCategory 2-->
+              <ul>
               <li>
-                <!--Category 3: Cup-->
-                <a href="/cup">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Cup</a>
-              </li>
-                <!--SubCategory 3-->
-                <ul> 
-                  <li>
-                    <a href="/cup">
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
-                  </li>
-                </ul>
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
+                </li>
+                <li>
+                  <a href="/products">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
+                </li>
+                <li>
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a>
+                </li>
+                <li>
+                  <a href="/paper">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
+                </li>
+
+              </ul>
               <li>
-                <!--Category 4: Cutleries-->
-                <a href="/cutleries">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Cutleries</a>
+                <!--Category 3: Cup and Cutleries-->
+                <a href="/products"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Cup and Cutleries</a
+                >
               </li>
-                <!--SubCategory 4-->
-                <ul>
-                  <li>
-                    <a href="/cutleries">
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
-                  </li>
-                </ul>
+              <!--SubCategory 3-->
+              <ul>
+              <li>
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
+                </li>  
+                <li>
+                  <a href="/products">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
+                </li>
+             </ul>
             </ul>
           </div>
         </div>
@@ -979,7 +975,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- Plastic --->
+    <!--- OPP --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
