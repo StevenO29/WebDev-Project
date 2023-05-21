@@ -153,8 +153,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <!-- Mega Menu -->
               <li><a href="/plastic" class="act">Plastic</a></li>
               <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/cupCutleries" class="act">Cup</a></li>
-              <li><a href="/cupCutleries" class="act">Cutleries</a></li>
+              <li><a href="/cup" class="act">Cup</a></li>
+              <li><a href="/cutleries" class="act">Cutleries</a></li>
               <li class="active"><a href="/products">More Products</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
@@ -189,23 +189,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
-              <li>
-                <!--Category 1: Plastic-->
-                <a href="/products">
+            <li>
+                 <!--Category 1: Plastic-->
+                 <a href="/plastic">
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
               </li>
               <!--SubCategory 1-->
               <ul>
                 <li>
-                  <a href="/products">
+                  <a href="/plastic">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
                 </li>
                 <li>
-                  <a href="/products">
+                  <a href="/plastic">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
                 </li>
                 <li>
-                  <a href="/products">
+                  <a href="/plastic">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
                 </li>
 
@@ -237,22 +237,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </ul>
               <li>
                 <!--Category 3: Cup and Cutleries-->
-                <a href="/products"
+                <a href="/cup"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
                   >Cup and Cutleries</a
                 >
               </li>
-              <!--SubCategory 3-->
+              <!--SubCategory 4-->
               <ul>
-              <li>
-                  <a href="/products">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
-                </li>  
                 <li>
-                  <a href="/products">
+                  <a href="/cup">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
                 </li>
-              </ul>
+             </ul>
+             <li>
+                <!--Category 4: Cutleries-->
+                <a href="/cutleries"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Cutleries</a
+                >
+              </li>
+              <ul>
+                <li>
+                  <a href="/cutleries">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
+                </li>
+             </ul>
             </ul>
           </div>
         </div>
