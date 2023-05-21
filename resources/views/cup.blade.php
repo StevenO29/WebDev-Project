@@ -176,19 +176,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Gourmet</li>
+          <li class="active">HDPE</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- gourmet --->
+    <!--- Cup --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
           <div class="cate">
             <h2>Categories</h2>
             <ul class="cate">
-            <li>
+              <li>
                   <!--Category 1: Plastic-->
                   <a href="/plastic">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
@@ -328,10 +328,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu1.png"
+                            ><img title=" " alt=" " src="images/pc1.png"
                           /></a>
-                          <p>Milk Caramel</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <p>KIJANG 9x18</p>
+                          <h4>Rp5,000 <span>Rp7,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -395,10 +395,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu2.png"
+                            ><img title=" " alt=" " src="images/pc2.png"
                           /></a>
-                          <p>Gourmet</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <p>KIJANG 11x22</p>
+                          <h4>Rp6,500 <span>Rp9,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -470,11 +470,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/gu3.png"
+                              src="images/pc3.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Strawberry</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -542,9 +542,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu4.png"
+                            ><img title=" " alt=" " src="images/pc4.png"
                           /></a>
-                          <p>Miniatures</p>
+                          <p>Rash Cream</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -609,9 +609,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu5.png"
+                            ><img title=" " alt=" " src="images/pc5.png"
                           /></a>
-                          <p>Le-Gourmet</p>
+                          <p>Baby Lotion</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -684,11 +684,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/gu6.png"
+                              src="images/pc6.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Chocolate Bar</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -756,9 +756,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu7.png"
+                            ><img title=" " alt=" " src="images/pc7.png"
                           /></a>
-                          <p>Poultry Rub</p>
+                          <p>Baby Lotion</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -823,9 +823,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu8.png"
+                            ><img title=" " alt=" " src="images/pc8.png"
                           /></a>
-                          <p>Sandwich</p>
+                          <p>Wipes Gentle</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -898,11 +898,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/gu9.png"
+                              src="images/pc9.jpg"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Fruit Nut</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -979,7 +979,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- gourmet --->
+    <!--- HDPE --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -1074,8 +1074,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="footer-copy">
         <div class="container">
           <p>
-            © 2017 Super Market. All rights reserved | Design by
-            <a href="http://w3layouts.com/">W3layouts</a>
+            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
           </p>
         </div>
       </div>

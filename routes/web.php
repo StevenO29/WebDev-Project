@@ -39,9 +39,6 @@ Route::get('/glass', function () {
 Route::get('/gourmet', function () {
     return view('gourmet');
 });
-Route::get('/hdpe', function () {
-    return view('hdpe');
-});
 
 Route::get('/index', function () {
     return view('index');
@@ -59,8 +56,11 @@ Route::get('/plastic', function () {
     return view('plastic');
 });
 
-Route::get('/cupCutleries', function () {
-    return view('cupCutleries');
+Route::get('/cup', function () {
+    return view('cup');
+});
+Route::get('/cutleries', function () {
+    return view('cutleries');
 });
 
 Route::get('/paper', function () {
