@@ -150,11 +150,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/plastic" class="act">Plastic</a></li>
-              <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/cup" class="act">Cup</a></li>
-              <li><a href="/cutleries" class="act">Cutleries</a></li>
-              <li class="active"><a href="/products">More Products</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li class="active"><a href="/gelas" class="act">Gelas</a></li>
+              <li><a href="/kertas">Kertas</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -176,91 +177,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Paper</li>
+          <li class="active">Gelas</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- Paper --->
+    <!--- Gelas --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
           <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
-            <li>
-                 <!--Category 1: Plastic-->
-                 <a href="/plastic">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
+              <li>
+                 <!--Category 1: Opp-->
+                 <a href="/opp">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Opp</a>
               </li>
-              <!--SubCategory 1-->
-              <ul>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
-                </li>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
-                </li>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
-                </li>
-
-              </ul>
               <li>
-                <!--Category 2: Paper-->
-                <a href="/paper">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a>
+                <!--Category 2: HDPE-->
+                <a href="/hdpe">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>HDPE</a>
               </li>
-              <!--SubCategory 2-->
-              <ul>
               <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
-                </li>
-                <li>
-                  <a href="/products">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
-                </li>
-                <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a>
-                </li>
-                <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
-                </li>
-
-              </ul>
-              <li>
-                <!--Category 3: Cup and Cutleries-->
-                <a href="/cup"
+                <!--Category 3: PE-->
+                <a href="/pe"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cup and Cutleries</a
+                  >PE</a
                 >
               </li>
-              <!--SubCategory 4-->
-              <ul>
-                <li>
-                  <a href="/cup">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
-                </li>
-             </ul>
              <li>
-                <!--Category 4: Cutleries-->
-                <a href="/cutleries"
+                <!--Category 4: Kresek-->
+                <a href="/kresek"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cutleries</a
+                  >Kresek</a
                 >
               </li>
-              <ul>
-                <li>
-                  <a href="/cutleries">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
-                </li>
-             </ul>
+              <li>
+                <!--Category 5: Gelas-->
+                <a href="/gelas"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Gelas</a
+                >
+              </li>
+              <li>
+                <!--Category 6: Kertas-->
+                <a href="/kertas"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Kertas</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -332,11 +298,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Beo.png"/>
-                          </a>
-                          <p>KERTAS BEO</p>
-                          <h4>Rp23,000</h4>
+                        <a href="/single">
+                          <img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"/>
+                        </a>
+                          <p>OPP 8x8</p>
+                          <h4>Rp3,000 <span>Rp5,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -399,11 +365,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="Kertas Gajah" width="150" height="150" src="webdev_image_assets/KertasGajah.png"/>
-                          </a>
-                          <p>KERTAS GAJAH</p>
-                          <h4>Rp25,000</h4>
+                          <a href="/single"
+                            ><img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"
+                          /></a>
+                          <p>OPP 9x9</p>
+                          <h4>Rp4,000 <span>Rp6,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -475,225 +441,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/bv4.png"
+                              src="images/16.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>KERTAS BEO</p>
-                          <h4>Rp23,000 <span>Rp25,000</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/bv5.png"
-                          /></a>
-                          <p>KERTAS NASI</p>
-                          <h4>Rp12,000 <span>Rp15,000</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/bv6.png"
-                          /></a>
-                          <p>GADING 35M</p>
-                          <h4>Rp13,500 <span>Rp15,000</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/bv7.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Appy</p>
+                          <p>Channa</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -761,9 +513,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv8.png"
+                            ><img title=" " alt=" " src="images/17.png"
                           /></a>
-                          <p>Real</p>
+                          <p>Arhar Dal</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -828,9 +580,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv9.png"
+                            ><img title=" " alt=" " src="images/14.png"
                           /></a>
-                          <p>Red Bull</p>
+                          <p>Toor Dal</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -903,11 +655,225 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/bv1.png"
+                              src="images/15.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Minute Maid</p>
+                          <p>Moong Dal</p>
+                          <h4>$80.99 <span>$105.00</span></h4>
+                        </div>
+                        <div class="snipcart-details top_brand_home_details">
+                          <form action="#" method="post">
+                            <fieldset>
+                              <input type="hidden" name="cmd" value="_cart" />
+                              <input type="hidden" name="add" value="1" />
+                              <input type="hidden" name="business" value=" " />
+                              <input
+                                type="hidden"
+                                name="item_name"
+                                value="Pepsi soft drink"
+                              />
+                              <input
+                                type="hidden"
+                                name="amount"
+                                value="80.00"
+                              />
+                              <input
+                                type="hidden"
+                                name="discount_amount"
+                                value="1.00"
+                              />
+                              <input
+                                type="hidden"
+                                name="currency_code"
+                                value="USD"
+                              />
+                              <input type="hidden" name="return" value=" " />
+                              <input
+                                type="hidden"
+                                name="cancel_return"
+                                value=" "
+                              />
+                              <input
+                                type="submit"
+                                name="submit"
+                                value="Add to cart"
+                                class="button"
+                              />
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="agile_top_brands_grids">
+            <div class="col-md-4 top_brand_left">
+              <div class="hover14 column">
+                <div class="agile_top_brand_left_grid">
+                  <div class="agile_top_brand_left_grid_pos">
+                    <img
+                      src="images/offer.png"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="agile_top_brand_left_grid1">
+                    <figure>
+                      <div class="snipcart-item block">
+                        <div class="snipcart-thumb">
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/16.png"
+                          /></a>
+                          <p>Channa</p>
+                          <h4>$35.99 <span>$55.00</span></h4>
+                        </div>
+                        <div class="snipcart-details top_brand_home_details">
+                          <form action="#" method="post">
+                            <fieldset>
+                              <input type="hidden" name="cmd" value="_cart" />
+                              <input type="hidden" name="add" value="1" />
+                              <input type="hidden" name="business" value=" " />
+                              <input
+                                type="hidden"
+                                name="item_name"
+                                value="Fortune Sunflower Oil"
+                              />
+                              <input
+                                type="hidden"
+                                name="amount"
+                                value="35.99"
+                              />
+                              <input
+                                type="hidden"
+                                name="discount_amount"
+                                value="1.00"
+                              />
+                              <input
+                                type="hidden"
+                                name="currency_code"
+                                value="USD"
+                              />
+                              <input type="hidden" name="return" value=" " />
+                              <input
+                                type="hidden"
+                                name="cancel_return"
+                                value=" "
+                              />
+                              <input
+                                type="submit"
+                                name="submit"
+                                value="Add to cart"
+                                class="button"
+                              />
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 top_brand_left">
+              <div class="hover14 column">
+                <div class="agile_top_brand_left_grid">
+                  <div class="agile_top_brand_left_grid_pos">
+                    <img
+                      src="images/offer.png"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="agile_top_brand_left_grid1">
+                    <figure>
+                      <div class="snipcart-item block">
+                        <div class="snipcart-thumb">
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/17.png"
+                          /></a>
+                          <p>Arhar Dal</p>
+                          <h4>$30.99 <span>$45.00</span></h4>
+                        </div>
+                        <div class="snipcart-details top_brand_home_details">
+                          <form action="#" method="post">
+                            <fieldset>
+                              <input type="hidden" name="cmd" value="_cart" />
+                              <input type="hidden" name="add" value="1" />
+                              <input type="hidden" name="business" value=" " />
+                              <input
+                                type="hidden"
+                                name="item_name"
+                                value="basmati rise"
+                              />
+                              <input
+                                type="hidden"
+                                name="amount"
+                                value="30.99"
+                              />
+                              <input
+                                type="hidden"
+                                name="discount_amount"
+                                value="1.00"
+                              />
+                              <input
+                                type="hidden"
+                                name="currency_code"
+                                value="USD"
+                              />
+                              <input type="hidden" name="return" value=" " />
+                              <input
+                                type="hidden"
+                                name="cancel_return"
+                                value=" "
+                              />
+                              <input
+                                type="submit"
+                                name="submit"
+                                value="Add to cart"
+                                class="button"
+                              />
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 top_brand_left">
+              <div class="hover14 column">
+                <div class="agile_top_brand_left_grid">
+                  <div class="agile_top_brand_left_grid_pos">
+                    <img
+                      src="images/offer.png"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="agile_top_brand_left_grid_pos">
+                    <img
+                      src="images/offer.png"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="agile_top_brand_left_grid1">
+                    <figure>
+                      <div class="snipcart-item block">
+                        <div class="snipcart-thumb">
+                          <a href="/single"
+                            ><img
+                              src="images/14.png"
+                              alt=" "
+                              class="img-responsive"
+                          /></a>
+                          <p>Toor Dal</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -984,7 +950,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- paper --->
+    <!--- Gelas --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -1031,23 +997,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastic">Plastic</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cup">Cup</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cutleries">Cutleries</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">Products</a>
+                ><a href="/gelas">Gelas</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>

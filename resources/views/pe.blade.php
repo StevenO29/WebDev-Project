@@ -150,11 +150,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/plastic" class="act">Plastic</a></li>
-              <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/cup" class="act">Cup</a></li>
-              <li><a href="/cutleries" class="act">Cutleries</a></li>
-              <li class="active"><a href="/products">More Products</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li class="active"><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li><a href="/gelas" class="act">Gelas</a></li>
+              <li><a href="/kertas">Kertas</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -176,90 +177,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Products</li>
+          <li class="active">PE</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- products --->
+    <!--- Cup --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
           <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
-            <li>
-                 <!--Category 1: Plastic-->
-                 <a href="/plastic">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
-              </li>
-              <!--SubCategory 1-->
-              <ul>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
-                </li>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
-                </li>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
-                </li>
-
-              </ul>
               <li>
-                <!--Category 2: Paper-->
-                <a href="/paper">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a>
-              </li>
-              <!--SubCategory 2-->
-              <ul>
-              <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
-                </li>
-                <li>
-                  <a href="/products">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
-                </li>
-                <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a>
-                </li>
-                <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
-                </li>
-
-              </ul>
-              <li>
-                <!--Category 3: Cup and Cutleries-->
-                <a href="/cup"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cup and Cutleries</a
-                >
-              </li>
-              <!--SubCategory 4-->
-              <ul>
-                <li>
-                  <a href="/cup">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
-                </li>
-             </ul>
+                <!--Category 1: Opp-->
+                <a href="/opp">
+                 <i class="fa fa-arrow-right" aria-hidden="true"></i>Opp</a>
+             </li>
              <li>
-                <!--Category 4: Cutleries-->
-                <a href="/cutleries"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cutleries</a
-                >
-              </li>
-              <ul>
-                <li>
-                  <a href="/cutleries">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
-                </li>
+               <!--Category 2: HDPE-->
+               <a href="/hdpe">
+                 <i class="fa fa-arrow-right" aria-hidden="true"></i>HDPE</a>
+             </li>
+             <li>
+               <!--Category 3: PE-->
+               <a href="/pe"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >PE</a
+               >
+             </li>
+            <li>
+               <!--Category 4: Kresek-->
+               <a href="/kresek"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Kresek</a
+               >
+             </li>
+             <li>
+               <!--Category 5: Gelas-->
+               <a href="/gelas"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Gelas</a
+               >
+             </li>
+             <li>
+               <!--Category 6: Kertas-->
+               <a href="/kertas"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Kertas</a
+               >
+             </li>
              </ul>
             </ul>
           </div>
@@ -333,10 +300,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/pf4.png"
+                            ><img title=" " alt=" " src="images/pc1.png"
                           /></a>
-                          <p>Sampann-toor-dal</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <p>KIJANG 9x18</p>
+                          <h4>Rp5,000 <span>Rp7,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -400,10 +367,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv3.png"
+                            ><img title=" " alt=" " src="images/pc2.png"
                           /></a>
-                          <p>Parryss-sugar</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <p>KIJANG 11x22</p>
+                          <h4>Rp6,500 <span>Rp9,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -475,11 +442,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/16.png"
+                              src="images/pc3.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Saffola-gold</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -547,9 +514,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/hh4.png"
+                            ><img title=" " alt=" " src="images/pc4.png"
                           /></a>
-                          <p>Sampann-toor-dal</p>
+                          <p>Rash Cream</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -614,9 +581,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu5.png"
+                            ><img title=" " alt=" " src="images/pc5.png"
                           /></a>
-                          <p>Parryss-sugar</p>
+                          <p>Baby Lotion</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -693,7 +660,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Saffola-gold</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -761,9 +728,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/gu4.png"
+                            ><img title=" " alt=" " src="images/pc7.png"
                           /></a>
-                          <p>Sampann-toor-dal</p>
+                          <p>Baby Lotion</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -828,9 +795,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/5.png"
+                            ><img title=" " alt=" " src="images/pc8.png"
                           /></a>
-                          <p>Parryss-sugar</p>
+                          <p>Wipes Gentle</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -903,11 +870,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/6.png"
+                              src="images/pc9.jpg"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Saffola-gold</p>
+                          <p>Rash Cream</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -962,19 +929,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <nav class="numbering">
             <ul class="pagination paging">
               <li>
-                <a href="/products3" aria-label="Previous">
+                <a href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
                 </a>
               </li>
-              <li>
-                <a href="/products">1</a>
+              <li class="active">
+                <a href="#">1<span class="sr-only">(current)</span></a>
               </li>
-              <li><a href="/products2">2</a></li>
-              <li><a href="/products3">3</a></li>
-              <li class="active"><a href="/products4">4<span class="sr-only">(current)<span></a></li>
-              <li><a href="/products5">5</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
               <li>
-                <a href="/products5" aria-label="Next">
+                <a href="#" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
                 </a>
               </li>
@@ -984,7 +951,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- products --->
+    <!--- PE --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -1031,23 +998,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastic">Plastic</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cup">Cup</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cutleries">Cutleries</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">Products</a>
+                ><a href="/gelas">Gelas</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>
@@ -1079,8 +1050,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="footer-copy">
         <div class="container">
           <p>
-            © 2017 Super Market. All rights reserved | Design by
-            <a href="http://w3layouts.com/">W3layouts</a>
+            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
           </p>
         </div>
       </div>

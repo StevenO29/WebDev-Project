@@ -151,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/plastic" class="act">Plastic</a></li>
+              <li><a href="/opp" class="act">Opp</a></li>
               <li><a href="/paper" class="act">Paper</a></li>
               <li><a href="/cup" class="act">Cup</a></li>
               <li><a href="/cutleries" class="act">Cutleries</a></li>
@@ -2586,7 +2586,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastic">Plastic</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
@@ -2598,7 +2598,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cutleries">Cutleries</a>
+                ><a href="/cup">Cutleries</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i

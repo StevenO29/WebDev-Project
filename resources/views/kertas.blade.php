@@ -146,15 +146,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
+          <!-- I couldn't find the css for this (the megadropdown) to edit the padding, etc; i edited n the end result wasnt placed at the center. cant find the css pls help -->
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/plastic" class="act">Plastic</a></li>
-              <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/cup" class="act">Cup</a></li>
-              <li><a href="/cutleries" class="act">Cutleries</a></li>
-              <li class="active"><a href="/products">More Products</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li><a href="/gelas" class="act">Gelas</a></li>
+              <li class="active"><a href="/kertas">Kertas</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -176,90 +178,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Plastic</li>
+          <li class="active">Kertas</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- OPP --->
+    <!--- Kertas --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
           <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
-            <li>
-                 <!--Category 1: Plastic-->
-                 <a href="/plastic">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
-              </li>
-              <!--SubCategory 1-->
-              <ul>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
-                </li>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
-                </li>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
-                </li>
-
-              </ul>
               <li>
-                <!--Category 2: Paper-->
-                <a href="/paper">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a>
-              </li>
-              <!--SubCategory 2-->
-              <ul>
-              <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
-                </li>
-                <li>
-                  <a href="/products">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
-                </li>
-                <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a>
-                </li>
-                <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
-                </li>
-
-              </ul>
-              <li>
-                <!--Category 3: Cup and Cutleries-->
-                <a href="/cup"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cup and Cutleries</a
-                >
-              </li>
-              <!--SubCategory 4-->
-              <ul>
-                <li>
-                  <a href="/cup">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
-                </li>
-             </ul>
+                <!--Category 1: Opp-->
+                <a href="/opp">
+                 <i class="fa fa-arrow-right" aria-hidden="true"></i>Opp</a>
+             </li>
              <li>
-                <!--Category 4: Cutleries-->
-                <a href="/cutleries"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cutleries</a
-                >
-              </li>
-              <ul>
-                <li>
-                  <a href="/cutleries">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
-                </li>
+               <!--Category 2: HDPE-->
+               <a href="/hdpe">
+                 <i class="fa fa-arrow-right" aria-hidden="true"></i>HDPE</a>
+             </li>
+             <li>
+               <!--Category 3: PE-->
+               <a href="/pe"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >PE</a
+               >
+             </li>
+            <li>
+               <!--Category 4: Kresek-->
+               <a href="/kresek"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Kresek</a
+               >
+             </li>
+             <li>
+               <!--Category 5: Gelas-->
+               <a href="/gelas"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Gelas</a
+               >
+             </li>
+             <li>
+               <!--Category 6: Kertas-->
+               <a href="/kertas"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Kertas</a
+               >
+             </li>
              </ul>
             </ul>
           </div>
@@ -332,11 +300,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                        <a href="/single">
-                          <img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"/>
-                        </a>
-                          <p>OPP 8x8</p>
-                          <h4>Rp3,000 <span>Rp5,000</span></h4>
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/pf4.png"
+                          /></a>
+                          <p>Sampann-toor-dal</p>
+                          <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -400,10 +368,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"
+                            ><img title=" " alt=" " src="images/bv3.png"
                           /></a>
-                          <p>OPP 9x9</p>
-                          <h4>Rp4,000 <span>Rp6,000</span></h4>
+                          <p>Parryss-sugar</p>
+                          <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -479,7 +447,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Channa</p>
+                          <p>Saffola-gold</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -547,9 +515,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/17.png"
+                            ><img title=" " alt=" " src="images/hh4.png"
                           /></a>
-                          <p>Arhar Dal</p>
+                          <p>Sampann-toor-dal</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -614,9 +582,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/14.png"
+                            ><img title=" " alt=" " src="images/gu5.png"
                           /></a>
-                          <p>Toor Dal</p>
+                          <p>Parryss-sugar</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -689,11 +657,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/15.png"
+                              src="images/pc6.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Moong Dal</p>
+                          <p>Saffola-gold</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -761,9 +729,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/16.png"
+                            ><img title=" " alt=" " src="images/gu4.png"
                           /></a>
-                          <p>Channa</p>
+                          <p>Sampann-toor-dal</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -828,9 +796,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/17.png"
+                            ><img title=" " alt=" " src="images/5.png"
                           /></a>
-                          <p>Arhar Dal</p>
+                          <p>Parryss-sugar</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -903,11 +871,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/14.png"
+                              src="images/6.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Toor Dal</p>
+                          <p>Saffola-gold</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -984,14 +952,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- OPP --->
+    <!--- Kertas --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
         <div class="w3_footer_grids">
           <div class="col-md-3 w3_footer_grid">
             <h3>Contact</h3>
-
             <ul class="address">
               <li>
                 <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i
@@ -1031,23 +998,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastic">Plastic</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cup">Cup</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cutleries">Cutleries</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">Products</a>
+                ><a href="/gelas">Gelas</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>

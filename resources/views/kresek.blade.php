@@ -150,11 +150,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/plastic" class="act">Plastic</a></li>
-              <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/cup" class="act">Cup</a></li>
-              <li><a href="/cutleries" class="act">Cutleries</a></li>
-              <li class="active"><a href="/products">More Products</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li><a href="/gelas" class="act">Gelas</a></li>
+              <li class="active"><a href="/kertas">Kertas</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -176,90 +177,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">HDPE</li>
+          <li class="active">Kresek</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- Cup --->
+    <!--- Kresek --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
           <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
-            <li>
-                 <!--Category 1: Plastic-->
-                 <a href="/plastic">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic</a>
-              </li>
-              <!--SubCategory 1-->
-              <ul>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Bag</a>
-                </li>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Standing Pouch</a>
-                </li>
-                <li>
-                  <a href="/plastic">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sugar Pouch</a>
-                </li>
-
-              </ul>
               <li>
-                <!--Category 2: Paper-->
-                <a href="/paper">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper</a>
-              </li>
-              <!--SubCategory 2-->
-              <ul>
-              <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Baking Paper</a>
-                </li>
-                <li>
-                  <a href="/products">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Cup</a>
-                </li>
-                <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Paper Plate</a>
-                </li>
-                <li>
-                  <a href="/paper">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Rice Paper</a>
-                </li>
-
-              </ul>
-              <li>
-                <!--Category 3: Cup and Cutleries-->
-                <a href="/cup"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cup and Cutleries</a
-                >
-              </li>
-              <!--SubCategory 4-->
-              <ul>
-                <li>
-                  <a href="/cup">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Plastic Cup</a>
-                </li>
-             </ul>
+                <!--Category 1: Opp-->
+                <a href="/opp">
+                 <i class="fa fa-arrow-right" aria-hidden="true"></i>Opp</a>
+             </li>
              <li>
-                <!--Category 4: Cutleries-->
-                <a href="/cutleries"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Cutleries</a
-                >
-              </li>
-              <ul>
-                <li>
-                  <a href="/cutleries">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Disposable Cutleries</a>
-                </li>
+               <!--Category 2: HDPE-->
+               <a href="/hdpe">
+                 <i class="fa fa-arrow-right" aria-hidden="true"></i>HDPE</a>
+             </li>
+             <li>
+               <!--Category 3: PE-->
+               <a href="/pe"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >PE</a
+               >
+             </li>
+            <li>
+               <!--Category 4: Kresek-->
+               <a href="/kresek"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Kresek</a
+               >
+             </li>
+             <li>
+               <!--Category 5: Gelas-->
+               <a href="/gelas"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Gelas</a
+               >
+             </li>
+             <li>
+               <!--Category 6: Kertas-->
+               <a href="/kertas"
+                 ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                 >Kertas</a
+               >
+             </li>
              </ul>
             </ul>
           </div>
@@ -984,7 +951,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- HDPE --->
+    <!--- Kresek --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -1031,23 +998,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastic">Plastic</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cup">Cup</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cutleries">Cutleries</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">Products</a>
+                ><a href="/gelas">Gelas</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>
