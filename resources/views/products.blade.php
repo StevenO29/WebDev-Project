@@ -1039,11 +1039,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cupCutleries">Cup</a>
+                ><a href="/cup">Cup</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cupCutleries">Cutleries</a>
+                ><a href="/cutleries">Cutleries</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
