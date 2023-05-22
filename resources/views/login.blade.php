@@ -151,11 +151,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/plastic" class="act">Plastic</a></li>
-              <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/cup" class="act">Cup</a></li>
-              <li><a href="/cutleries" class="act">Cutleries</a></li>
-              <li class="active"><a href="/products">More Products</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li><a href="/gelas" class="act">Gelas</a></li>
+              <li><a href="/kertas">Kertas</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -261,23 +262,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastic">Plastic</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cup">Cup</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cutleries">Cutleries</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">Products</a>
+                ><a href="/gelas">Gelas</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>
@@ -309,8 +314,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="footer-copy">
         <div class="container">
           <p>
-            © 2017 Super Market. All rights reserved | Design by
-            <a href="http://w3layouts.com/">W3layouts</a>
+            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
           </p>
         </div>
       </div>
