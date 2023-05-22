@@ -272,23 +272,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastic">Plastic</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cup">Cup</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/cutleries">Cutleries</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">Products</a>
+                ><a href="/gelas">Gelas</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>
