@@ -68,7 +68,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="w3l_offers">
           <p>
             SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="/products">SHOP NOW</a>
+            <a>SHOP NOW</a>
           </p>
         </div>
         <div class="agile-login">
@@ -300,11 +300,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pf4.png"
-                          /></a>
-                          <p>Sampann-toor-dal</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Beo.png"/>
+                          </a>
+                          <p>Kertas Beo</p>
+                          <h4>Rp23,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -367,11 +367,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/bv3.png"
-                          /></a>
-                          <p>Parryss-sugar</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Gajah" width="150" height="150" src="webdev_image_assets/KertasGajah.png"/>
+                          </a>
+                          <p>Kertas Gajah</p>
+                          <h4>Rp25,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -441,14 +441,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/16.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Saffola-gold</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/KertasNasi.png"/>
+                          </a>
+                          <p>Kertas Nasi</p>
+                          <h4>Rp12,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -499,457 +496,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="clearfix"></div>
           </div>
-          <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/hh4.png"
-                          /></a>
-                          <p>Sampann-toor-dal</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/gu5.png"
-                          /></a>
-                          <p>Parryss-sugar</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/pc6.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Saffola-gold</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/gu4.png"
-                          /></a>
-                          <p>Sampann-toor-dal</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/5.png"
-                          /></a>
-                          <p>Parryss-sugar</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/6.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Saffola-gold</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <nav class="numbering">
-            <ul class="pagination paging">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">1<span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        
         <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
       </div>
     </div>
     <!--- Kertas --->

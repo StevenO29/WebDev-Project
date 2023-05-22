@@ -68,7 +68,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="w3l_offers">
           <p>
             SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="/products">SHOP NOW</a>
+            <a>SHOP NOW</a>
           </p>
         </div>
         <div class="agile-login">
@@ -299,10 +299,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                         <a href="/single">
-                          <img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"/>
+                          <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
                         </a>
-                          <p>OPP 8x8</p>
-                          <h4>Rp3,000 <span>Rp5,000</span></h4>
+                          <p>Gelas Plastik 12oz</p>
+                          <h4>Rp10,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -365,12 +365,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"
-                          /></a>
-                          <p>OPP 9x9</p>
-                          <h4>Rp4,000 <span>Rp6,000</span></h4>
-                        </div>
+                          <a href="/single">
+                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
+                          </a>
+                            <p>Gelas Plastik 10oz</p>
+                            <h4>Rp10,000</h4>
+                          </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
                             <fieldset>
@@ -439,15 +439,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/16.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Channa</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
+                          <a href="/single">
+                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
+                          </a>
+                            <p>Gelas Plastik 14oz</p>
+                            <h4>Rp10,000</h4>
+                          </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
                             <fieldset>
@@ -512,12 +509,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/17.png"
-                          /></a>
-                          <p>Arhar Dal</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
-                        </div>
+                          <a href="/single">
+                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
+                          </a>
+                            <p>Gelas Plastik 16oz</p>
+                            <h4>Rp10,000</h4>
+                          </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
                             <fieldset>
@@ -579,12 +576,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/14.png"
-                          /></a>
-                          <p>Toor Dal</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
-                        </div>
+                          <a href="/single">
+                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
+                          </a>
+                            <p>Gelas Plastik 18oz</p>
+                            <h4>Rp16,000</h4>
+                          </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
                             <fieldset>
@@ -653,15 +650,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/15.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Moong Dal</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
+                          <a href="/single">
+                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
+                          </a>
+                            <p>Gelas Plastik 18oz</p>
+                            <h4>Rp18,000</h4>
+                          </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
                             <fieldset>
@@ -726,12 +720,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/16.png"
-                          /></a>
-                          <p>Channa</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
-                        </div>
+                          <a href="/single">
+                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
+                          </a>
+                            <p>Gelas Plastik 22oz</p>
+                            <h4>Rp20,000</h4>
+                          </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
                             <fieldset>
@@ -779,173 +773,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
               </div>
             </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/17.png"
-                          /></a>
-                          <p>Arhar Dal</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/14.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Toor Dal</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="clearfix"></div>
           </div>
-          <nav class="numbering">
-            <ul class="pagination paging">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">1<span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+
         </div>
         <div class="clearfix"></div>
       </div>

@@ -62,7 +62,7 @@
         <div class="w3l_offers">
           <p>
             SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="/products">SHOP NOW</a>
+            <a>SHOP NOW</a>
           </p>
         </div>
         <div class="agile-login">
