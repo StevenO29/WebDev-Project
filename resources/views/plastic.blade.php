@@ -176,7 +176,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">OPP</li>
+          <li class="active">Plastic</li>
         </ol>
       </div>
     </div>
@@ -332,9 +332,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/14.png"
-                          /></a>
+                        <a href="/single">
+                          <img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"/>
+                        </a>
                           <p>OPP 8x8</p>
                           <h4>Rp3,000 <span>Rp5,000</span></h4>
                         </div>
@@ -400,7 +400,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/15.png"
+                            ><img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"
                           /></a>
                           <p>OPP 9x9</p>
                           <h4>Rp4,000 <span>Rp6,000</span></h4>
