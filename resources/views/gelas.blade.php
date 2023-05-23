@@ -74,19 +74,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="agile-login">
           <ul>
             <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/newproduct">New Product</a></li>
+            <li><a href="/login">Login</a></li>
             <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/indexLogout"> Log Out </a></li>
           </ul>
         </div>
         <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
+         <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
-          </form>
+          </a>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -98,8 +95,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <ul class="phone_email">
             <br />
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
+            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
+
             </li>
           </ul>
         </div>
@@ -151,39 +148,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/index" class="act">Home</a></li>
+            <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li class="dropdown">
-                <a
-                  href="/groceries"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Oriented Polypropylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >HDPE
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper</a>
-              </li>
-              <li><a href="/offers">Offers</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li class="active"><a href="/gelas" class="act">Gelas</a></li>
+              <li><a href="/kertas">Kertas</a></li>
               <li><a href="/contact">Contact</a></li>
-           </ul>
+            </ul>
           </div>
         </nav>
       </div>
@@ -203,12 +177,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Glass</li>
+          <li class="active">Gelas</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!--- glass --->
+    <!--- Gelas --->
     <div class="products">
       <div class="container">
         <div class="col-md-4 products-left">
@@ -216,161 +190,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <h2>Categories</h2>
             <ul class="cate">
               <li>
-                <a href="/products"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fruits
-                  And Vegetables</a
-                >
+                 <!--Category 1: Opp-->
+                 <a href="/opp">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Opp</a>
               </li>
-              <ul>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Cuts &
-                    Sprouts</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Flowers</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh
-                    Herbs & Seasonings</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh
-                    Vegetables</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >International Vegetables</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
-                    Fruits & Vegetables</a
-                  >
-                </li>
-              </ul>
               <li>
-                <a href="/products"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i>Grocery &
-                  Staples</a
-                >
+                <!--Category 2: HDPE-->
+                <a href="/hdpe">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>HDPE</a>
               </li>
-              <ul>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Dals &
-                    Pulses</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Dry
-                    Fruits</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Edible
-                    Oils & Ghee</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Flours
-                    & Sooji</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Masalas
-                    & Spices</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
-                    Staples</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice &
-                    Rice Products</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Salt,
-                    Sugar & Jaggery</a
-                  >
-                </li>
-              </ul>
               <li>
-                <a href="/products"
+                <!--Category 3: PE-->
+                <a href="/pe"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >PersonalCare</a
+                  >PE</a
                 >
               </li>
-              <ul>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Baby
-                    Care</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Cosmetics</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Deos &
-                    Perfumes</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Skin
-                    Care</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Sanitary Needs</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Oral
-                    Care</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Personal Hygiene</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Shaving
-                    Needs</a
-                  >
-                </li>
-              </ul>
+             <li>
+                <!--Category 4: Kresek-->
+                <a href="/kresek"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Kresek</a
+                >
+              </li>
+              <li>
+                <!--Category 5: Gelas-->
+                <a href="/gelas"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Gelas</a
+                >
+              </li>
+              <li>
+                <!--Category 6: Kertas-->
+                <a href="/kertas"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Kertas</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -442,11 +298,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/bv2.png"
-                          /></a>
-                          <p>PAPERCUP</p>
-                          <h4>Rp18,000 <span>Rp20,000</span></h4>
+                        <a href="/single">
+                          <img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"/>
+                        </a>
+                          <p>OPP 8x8</p>
+                          <h4>Rp3,000 <span>Rp5,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -510,10 +366,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv3.png"
+                            ><img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"
                           /></a>
-                          <p>GELAS BOLA</p>
-                          <h4>Rp9,000 <span>Rp11,000</span></h4>
+                          <p>OPP 9x9</p>
+                          <h4>Rp4,000 <span>Rp6,000</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -585,11 +441,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/bv4.png"
+                              src="images/16.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Tropicana</p>
+                          <p>Channa</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -657,9 +513,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv5.png"
+                            ><img title=" " alt=" " src="images/17.png"
                           /></a>
-                          <p>Coca Cola</p>
+                          <p>Arhar Dal</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -724,9 +580,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv6.png"
+                            ><img title=" " alt=" " src="images/14.png"
                           /></a>
-                          <p>Coca Cola</p>
+                          <p>Toor Dal</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -799,11 +655,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/bv7.png"
+                              src="images/15.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Appy</p>
+                          <p>Moong Dal</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -871,9 +727,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv8.png"
+                            ><img title=" " alt=" " src="images/16.png"
                           /></a>
-                          <p>Real</p>
+                          <p>Channa</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -938,9 +794,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/bv9.png"
+                            ><img title=" " alt=" " src="images/17.png"
                           /></a>
-                          <p>Red Bull</p>
+                          <p>Arhar Dal</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -1013,11 +869,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/bv1.png"
+                              src="images/14.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Minute Maid</p>
+                          <p>Toor Dal</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -1094,9 +950,101 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- glass --->
+    <!--- Gelas --->
     <!-- //footer -->
     <div class="footer">
+      <div class="container">
+        <div class="w3_footer_grids">
+          <div class="col-md-3 w3_footer_grid">
+            <h3>Contact</h3>
+
+            <ul class="address">
+              <li>
+                <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i
+                >Ruko Grand CBD Wedoro A-09, <span>Sidoarjo City.</span>
+              </li>
+              <li>
+                <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i
+                ><a href="mailto:mrkentang.sby@gmail.com"
+                  >mrkentang.sby@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i
+                >+62 896-3781-5553
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 w3_footer_grid">
+            <h3>Information</h3>
+            <ul class="info">
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/about">About Us</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/contact">Contact Us</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/faq">FAQ's</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 w3_footer_grid">
+            <h3>Category</h3>
+            <ul class="info">
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/opp">Opp</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/hdpe">HDPE</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/pe">PE</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/kresek">Kresek</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/gelas">Gelas</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/kertas">Kertas</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 w3_footer_grid">
+            <h3>Profile</h3>
+            <ul class="info">
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/wishlist">My Wishlist</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/checkout">My Cart</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/login">Login</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/registered">Create Account</a>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
 
       <div class="footer-copy">
         <div class="container">
