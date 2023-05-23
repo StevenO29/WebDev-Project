@@ -74,19 +74,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="agile-login">
           <ul>
             <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/newproduct">New Product</a></li>
+            <li><a href="/login">Login</a></li>
             <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/indexLogout"> Log Out </a></li>
           </ul>
         </div>
         <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
+         <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
-          </form>
+          </a>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -98,8 +95,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <ul class="phone_email">
             <br />
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
+            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
+
             </li>
           </ul>
         </div>
@@ -151,37 +148,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/index" class="act">Home</a></li>
+            <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li class="dropdown">
-                <a
-                  href="/groceries"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Oriented Polypropylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >HDPE
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper</a>
-              </li>
-              <li><a href="/offers">Offers</a></li>
+              <li><a href="/opp" class="act">Opp</a></li>
+              <li class="active"><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li><a href="/gelas" class="act">Gelas</a></li>
+              <li><a href="/kertas">Kertas</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -215,162 +189,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="categories">
             <h2>Categories</h2>
             <ul class="cate">
-              <li>
-                <a href="/products"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fruits
-                  And Vegetables</a
-                >
+            <li>
+                 <!--Category 1: Plastic-->
+                 <a href="/opp">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Opp</a>
               </li>
-              <ul>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Cuts &
-                    Sprouts</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Flowers</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh
-                    Herbs & Seasonings</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh
-                    Vegetables</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >International Vegetables</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
-                    Fruits & Vegetables</a
-                  >
-                </li>
-              </ul>
               <li>
-                <a href="/products"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i>Grocery &
-                  Staples</a
-                >
+                <!--Category 2: HDPE-->
+                <a href="/hdpe">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>HDPE</a>
               </li>
-              <ul>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Dals &
-                    Pulses</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Dry
-                    Fruits</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Edible
-                    Oils & Ghee</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Flours
-                    & Sooji</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Masalas
-                    & Spices</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic
-                    Staples</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice &
-                    Rice Products</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Salt,
-                    Sugar & Jaggery</a
-                  >
-                </li>
-              </ul>
               <li>
-                <a href="/products"
+                <!--Category 3: PE-->
+                <a href="/pe"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >PersonalCare</a
+                  >PE</a
                 >
               </li>
-              <ul>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Baby
-                    Care</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Cosmetics</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Deos &
-                    Perfumes</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Skin
-                    Care</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Sanitary Needs</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Oral
-                    Care</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    >Personal Hygiene</a
-                  >
-                </li>
-                <li>
-                  <a href="/products"
-                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>Shaving
-                    Needs</a
-                  >
-                </li>
-              </ul>
+             <li>
+                <!--Category 4: Kresek-->
+                <a href="/kresek"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Kresek</a
+                >
+              </li>
+              <li>
+                <!--Category 5: Gelas-->
+                <a href="/gelas"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Gelas</a
+                >
+              </li>
+              <li>
+                <!--Category 6: Kertas-->
+                <a href="/kertas"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  >Kertas</a
+                >
+              </li>
+             </ul>
             </ul>
           </div>
         </div>
@@ -442,11 +299,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc1.png"
-                          /></a>
-                          <p>KIJANG 9x18</p>
-                          <h4>Rp5,000 <span>Rp7,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Beo.png"/>
+                          </a>
+                          <p>KERTAS BEO</p>
+                          <h4>Rp23,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -509,11 +366,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc2.png"
-                          /></a>
-                          <p>KIJANG 11x22</p>
-                          <h4>Rp6,500 <span>Rp9,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Kertas Gajah" width="150" height="150" src="webdev_image_assets/KertasGajah.png"/>
+                          </a>
+                          <p>KERTAS GAJAH</p>
+                          <h4>Rp25,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -585,11 +442,225 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/pc3.png"
+                              src="images/bv4.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Rash Cream</p>
+                          <p>KERTAS BEO</p>
+                          <h4>Rp23,000 <span>Rp25,000</span></h4>
+                        </div>
+                        <div class="snipcart-details top_brand_home_details">
+                          <form action="#" method="post">
+                            <fieldset>
+                              <input type="hidden" name="cmd" value="_cart" />
+                              <input type="hidden" name="add" value="1" />
+                              <input type="hidden" name="business" value=" " />
+                              <input
+                                type="hidden"
+                                name="item_name"
+                                value="Pepsi soft drink"
+                              />
+                              <input
+                                type="hidden"
+                                name="amount"
+                                value="80.00"
+                              />
+                              <input
+                                type="hidden"
+                                name="discount_amount"
+                                value="1.00"
+                              />
+                              <input
+                                type="hidden"
+                                name="currency_code"
+                                value="USD"
+                              />
+                              <input type="hidden" name="return" value=" " />
+                              <input
+                                type="hidden"
+                                name="cancel_return"
+                                value=" "
+                              />
+                              <input
+                                type="submit"
+                                name="submit"
+                                value="Add to cart"
+                                class="button"
+                              />
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="agile_top_brands_grids">
+            <div class="col-md-4 top_brand_left">
+              <div class="hover14 column">
+                <div class="agile_top_brand_left_grid">
+                  <div class="agile_top_brand_left_grid_pos">
+                    <img
+                      src="images/offer.png"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="agile_top_brand_left_grid1">
+                    <figure>
+                      <div class="snipcart-item block">
+                        <div class="snipcart-thumb">
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/bv5.png"
+                          /></a>
+                          <p>KERTAS NASI</p>
+                          <h4>Rp12,000 <span>Rp15,000</span></h4>
+                        </div>
+                        <div class="snipcart-details top_brand_home_details">
+                          <form action="#" method="post">
+                            <fieldset>
+                              <input type="hidden" name="cmd" value="_cart" />
+                              <input type="hidden" name="add" value="1" />
+                              <input type="hidden" name="business" value=" " />
+                              <input
+                                type="hidden"
+                                name="item_name"
+                                value="Fortune Sunflower Oil"
+                              />
+                              <input
+                                type="hidden"
+                                name="amount"
+                                value="35.99"
+                              />
+                              <input
+                                type="hidden"
+                                name="discount_amount"
+                                value="1.00"
+                              />
+                              <input
+                                type="hidden"
+                                name="currency_code"
+                                value="USD"
+                              />
+                              <input type="hidden" name="return" value=" " />
+                              <input
+                                type="hidden"
+                                name="cancel_return"
+                                value=" "
+                              />
+                              <input
+                                type="submit"
+                                name="submit"
+                                value="Add to cart"
+                                class="button"
+                              />
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 top_brand_left">
+              <div class="hover14 column">
+                <div class="agile_top_brand_left_grid">
+                  <div class="agile_top_brand_left_grid_pos">
+                    <img
+                      src="images/offer.png"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="agile_top_brand_left_grid1">
+                    <figure>
+                      <div class="snipcart-item block">
+                        <div class="snipcart-thumb">
+                          <a href="/single"
+                            ><img title=" " alt=" " src="images/bv6.png"
+                          /></a>
+                          <p>GADING 35M</p>
+                          <h4>Rp13,500 <span>Rp15,000</span></h4>
+                        </div>
+                        <div class="snipcart-details top_brand_home_details">
+                          <form action="#" method="post">
+                            <fieldset>
+                              <input type="hidden" name="cmd" value="_cart" />
+                              <input type="hidden" name="add" value="1" />
+                              <input type="hidden" name="business" value=" " />
+                              <input
+                                type="hidden"
+                                name="item_name"
+                                value="basmati rise"
+                              />
+                              <input
+                                type="hidden"
+                                name="amount"
+                                value="30.99"
+                              />
+                              <input
+                                type="hidden"
+                                name="discount_amount"
+                                value="1.00"
+                              />
+                              <input
+                                type="hidden"
+                                name="currency_code"
+                                value="USD"
+                              />
+                              <input type="hidden" name="return" value=" " />
+                              <input
+                                type="hidden"
+                                name="cancel_return"
+                                value=" "
+                              />
+                              <input
+                                type="submit"
+                                name="submit"
+                                value="Add to cart"
+                                class="button"
+                              />
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 top_brand_left">
+              <div class="hover14 column">
+                <div class="agile_top_brand_left_grid">
+                  <div class="agile_top_brand_left_grid_pos">
+                    <img
+                      src="images/offer.png"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="agile_top_brand_left_grid_pos">
+                    <img
+                      src="images/offer.png"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="agile_top_brand_left_grid1">
+                    <figure>
+                      <div class="snipcart-item block">
+                        <div class="snipcart-thumb">
+                          <a href="/single"
+                            ><img
+                              src="images/bv7.png"
+                              alt=" "
+                              class="img-responsive"
+                          /></a>
+                          <p>Appy</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -657,9 +728,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/pc4.png"
+                            ><img title=" " alt=" " src="images/bv8.png"
                           /></a>
-                          <p>Rash Cream</p>
+                          <p>Real</p>
                           <h4>$35.99 <span>$55.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -724,9 +795,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="/single"
-                            ><img title=" " alt=" " src="images/pc5.png"
+                            ><img title=" " alt=" " src="images/bv9.png"
                           /></a>
-                          <p>Baby Lotion</p>
+                          <p>Red Bull</p>
                           <h4>$30.99 <span>$45.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -799,225 +870,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="snipcart-thumb">
                           <a href="/single"
                             ><img
-                              src="images/pc6.png"
+                              src="images/bv1.png"
                               alt=" "
                               class="img-responsive"
                           /></a>
-                          <p>Rash Cream</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc7.png"
-                          /></a>
-                          <p>Baby Lotion</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc8.png"
-                          /></a>
-                          <p>Wipes Gentle</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/pc9.jpg"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Rash Cream</p>
+                          <p>Minute Maid</p>
                           <h4>$80.99 <span>$105.00</span></h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
@@ -1094,7 +951,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-    <!--- HDPE --->
+    <!--- paper --->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -1141,27 +998,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/opp">Oriented Polypropylene</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/pe">Polyethylene</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/hdpe">High-density Polyethylene</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastics">Plastic Bag</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/glass">Glass</a>
+                ><a href="/gelas">Gelas</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>
@@ -1170,15 +1027,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">My Wishlist</a>
+                ><a href="/wishlist">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/checkout">My Cart</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/order">My Order</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
