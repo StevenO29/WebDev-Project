@@ -148,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </button>
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-            <ul class="nav navbar-nav align-middle">
+            <ul class="nav navbar-nav">
             <li class="active"><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
               <li><a href="/opp" class="act">OPP</a></li>
@@ -157,10 +157,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li><a href="/kresek" class="act">Kresek</a></li>
               <li><a href="/gelas" class="act">Gelas</a></li>
               <li><a href="/kertas">Kertas</a></li>
-              <li><a href="/products">All Product</a></li>
-              <li><a href="/newproduct">Add New Product</a></li>
-              <li><a href="/order">Order</a></li>
-              <li><a href="/contact">Customers</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -2619,15 +2616,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/order">My Order</a>
+                ><a href="/wishlist">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/newproduct">New Product</a>
+                ><a href="/checkout">My Cart</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/login">logout</a>
+                ><a href="/login">Login</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/registered">Create Account</a>
               </li>
             </ul>
           </div>
