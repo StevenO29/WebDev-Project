@@ -173,7 +173,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           data-wow-delay=".5s"
         >
           <li>
-            <a href="/index"
+            <a href="/indexLogout"
               ><span class="glyphicon glyphicon-home" aria-hidden="true"></span
               >Home</a
             >

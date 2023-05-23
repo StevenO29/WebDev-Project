@@ -73,9 +73,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="agile-login">
           <ul>
-            <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/indexLogout">Log Out</a></li>
           </ul>
         </div>
         <div class="product_list_header">
@@ -156,7 +154,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <li><a href="/kresek" class="act">Kresek</a></li>
               <li class="active"><a href="/gelas" class="act">Gelas</a></li>
               <li><a href="/kertas">Kertas</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/newproduct">Add new Product</a></li>
+              <li><a href="/order">Order</a></li>
             </ul>
           </div>
         </nav>

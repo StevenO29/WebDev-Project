@@ -33,8 +33,8 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
-Route::get('/glass', function () {
-    return view('glass');
+Route::get('/gelas', function () {
+    return view('gelas');
 });
 Route::get('/gourmet', function () {
     return view('gourmet');
@@ -67,16 +67,16 @@ Route::get('/order', function () {
 Route::get('/orderdetails', function () {
     return view('orderdetails');
 });
-Route::get('/paper', function () {
-    return view('paper');
+Route::get('/kertas', function () {
+    return view('kertas');
 });
 
 Route::get('/pe', function () {
     return view('pe');
 });
 
-Route::get('/plastics', function () {
-    return view('plastics');
+Route::get('/kresek', function () {
+    return view('kresek');
 });
 
 Route::get('/products', function () {
