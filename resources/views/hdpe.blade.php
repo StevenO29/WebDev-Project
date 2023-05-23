@@ -303,7 +303,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Kijang.png"/>
                           </a>
                           <p>Kijang 9x18</p>
-                          <h4>Rp4,500</h4>
+                          <h4>Rp5,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -370,7 +370,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Kijang.png"/>
                           </a>
                           <p>Kijang 11x22</p>
-                          <h4>Rp5,500</h4>
+                          <h4>Rp6,500</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -444,7 +444,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Kijang.png"/>
                           </a>
                           <p>Kijang 14x27</p>
-                          <h4>Rp6,500</h4>
+                          <h4>Rp8,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -510,11 +510,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/bv5.png"
-                          /></a>
-                          <p>KERTAS NASI</p>
-                          <h4>Rp12,000 <span>Rp15,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Boyo" width="150" height="150" src="webdev_image_assets/BoyoHdpe.png"/>
+                          </a>
+                          <p>Boyo 9x18</p>
+                          <h4>Rp9,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -577,11 +577,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/bv6.png"
-                          /></a>
-                          <p>GADING 35M</p>
-                          <h4>Rp13,500 <span>Rp15,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Boyo" width="150" height="150" src="webdev_image_assets/BoyoHdpe.png"/>
+                          </a>
+                          <p>Boyo 11x22</p>
+                          <h4>Rp14,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -651,14 +651,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/bv7.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Appy</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Boyo" width="150" height="150" src="webdev_image_assets/BoyoHdpe.png"/>
+                          </a>
+                          <p>Boyo 14x27</p>
+                          <h4>Rp18,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">

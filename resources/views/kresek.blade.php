@@ -299,11 +299,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc1.png"
-                          /></a>
-                          <p>KIJANG 9x18</p>
-                          <h4>Rp5,000 <span>Rp7,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Gading35P.png"/>
+                          </a>
+                          <p>Gading 28</p>
+                          <h4>Rp10,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -366,11 +366,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc2.png"
-                          /></a>
-                          <p>KIJANG 11x22</p>
-                          <h4>Rp6,500 <span>Rp9,000</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Gading" width="150" height="150" src="webdev_image_assets/Gading35M.png"/>
+                          </a>
+                          <p>Gading 35</p>
+                          <h4>Rp13,500</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -440,14 +440,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/pc3.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Rash Cream</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Gading40H.png"/>
+                          </a>
+                          <p>Gading 40</p>
+                          <h4>Rp20,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -513,11 +510,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc4.png"
-                          /></a>
-                          <p>Rash Cream</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Milenium" width="150" height="150" src="webdev_image_assets/Milenium.png"/>
+                          </a>
+                          <p>Milenium 50</p>
+                          <h4>Rp22,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -580,11 +577,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc5.png"
-                          /></a>
-                          <p>Baby Lotion</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Beo" width="150" height="150" src="webdev_image_assets/Milenium.png"/>
+                          </a>
+                          <p>Milenium 55</p>
+                          <h4>Rp25,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -654,14 +651,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/pc6.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Rash Cream</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Kilat" width="150" height="150" src="webdev_image_assets/Kilat15P.png"/>
+                          </a>
+                          <p>Kilat 15</p>
+                          <h4>Rp5,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
@@ -727,11 +721,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc7.png"
-                          /></a>
-                          <p>Baby Lotion</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
+                          <a href="/single">
+                            <img title=" " alt="Kilat" width="150" height="150" src="webdev_image_assets/Kilat15H.png"/>
+                          </a>
+                          <p>Kilat 21</p>
+                          <h4>Rp6,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">

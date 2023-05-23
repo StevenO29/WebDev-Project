@@ -202,7 +202,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <td class="invert">1</td>
               <td class="invert-image">
                 <a href="/single"
-                  ><img src="images/1.png" alt=" " class="img-responsive"
+                  ><img alt="Gading" src="webdev_image_assets/Gading35M.png" style="object-fit:contain;
+                  width:100px;
+                  height:100px;" class="img-responsive"
                 /></a>
               </td>
               <td class="invert">
@@ -214,9 +216,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   </div>
                 </div>
               </td>
-              <td class="invert">Tata Salt</td>
+              <td class="invert">Gading 35</td>
 
-              <td class="invert">$15.00</td>
+              <td class="invert">Rp13,500</td>
               <td class="invert">
                 <div class="rem">
                   <div class="close1"></div>
@@ -236,7 +238,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <td class="invert">2</td>
               <td class="invert-image">
                 <a href="/single"
-                  ><img src="images/2.png" alt=" " class="img-responsive"
+                  ><img alt="Beo" src="webdev_image_assets/Beo.png" style="object-fit:contain;
+                  width:100px;
+                  height:100px;" class="img-responsive"
                 /></a>
               </td>
               <td class="invert">
@@ -248,9 +252,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   </div>
                 </div>
               </td>
-              <td class="invert">Fortune oil</td>
+              <td class="invert">Kertas Beo</td>
 
-              <td class="invert">$25.00</td>
+              <td class="invert">Rp23,000</td>
               <td class="invert">
                 <div class="rem">
                   <div class="close2"></div>
@@ -270,8 +274,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <td class="invert">3</td>
               <td class="invert-image">
                 <a href="/single"
-                  ><img src="images/3.png" alt=" " class="img-responsive"
-                /></a>
+                ><img alt="Boyo" src="webdev_image_assets/BoyoHdpe.png" style="object-fit:contain;
+                width:100px;
+                height:100px;" class="img-responsive"
+              /></a>
               </td>
               <td class="invert">
                 <div class="quantity">
@@ -282,9 +288,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   </div>
                 </div>
               </td>
-              <td class="invert">Aashirvaad atta</td>
+              <td class="invert">Boyo 9x18</td>
 
-              <td class="invert">$29.00</td>
+              <td class="invert">Rp9,000</td>
               <td class="invert">
                 <div class="rem">
                   <div class="close3"></div>
@@ -321,11 +327,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="checkout-left-basket">
             <h4>Continue to basket</h4>
             <ul>
-              <li>Product1 <i>-</i> <span>$15.00 </span></li>
-              <li>Product2 <i>-</i> <span>$25.00 </span></li>
-              <li>Product3 <i>-</i> <span>$29.00 </span></li>
-              <li>Total Service Charges <i>-</i> <span>$15.00</span></li>
-              <li>Total <i>-</i> <span>$84.00</span></li>
+              <li>Gading 35 <i>-</i> <span>Rp13,500 </span></li>
+              <li>Kertas Beo <i>-</i> <span>Rp23,000 </span></li>
+              <li>Boyo 9x18 <i>-</i> <span>Rp9,000 </span></li>
+              <li>Total Service Charges <i>-</i> <span>Rp2,000</span></li>
+              <li>Total <i>-</i> <span>Rp47,500</span></li>
             </ul>
           </div>
           <div class="checkout-right-basket">
