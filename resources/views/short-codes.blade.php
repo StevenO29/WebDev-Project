@@ -74,19 +74,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="agile-login">
           <ul>
             <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/newproduct">New Product</a></li>
+            <li><a href="/login">Login</a></li>
             <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/indexLogout"> Log Out </a></li>
           </ul>
         </div>
         <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
+         <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
-          </form>
+          </a>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -98,8 +95,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <ul class="phone_email">
             <br />
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
+            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
+
             </li>
           </ul>
         </div>
@@ -151,37 +148,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/index" class="act">Home</a></li>
+            <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li class="dropdown">
-                <a
-                  href="/groceries"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Oriented Polypropylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >HDPE
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper</a>
-              </li>
-              <li><a href="/offers">Offers</a></li>
+              <li><a href="/plastic" class="act">Plastic</a></li>
+              <li><a href="/paper" class="act">Paper</a></li>
+              <li><a href="/cup" class="act">Cup</a></li>
+              <li><a href="/cutleries" class="act">Cutleries</a></li>
+              <li class="active"><a href="/products">More Products</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -5426,27 +5399,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/opp">Oriented Polypropylene</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/pe">Polyethylene</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/hdpe">High-density Polyethylene</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastics">Plastic Bag</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/glass">Glass</a>
+                ><a href="/plastic">Plastic</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/paper">Paper</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/cup">Cup</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/cutleries">Cutleries</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/products">Products</a>
               </li>
             </ul>
           </div>
@@ -5455,15 +5424,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">My Wishlist</a>
+                ><a href="/wishlist">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/checkout">My Cart</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/order">My Order</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
