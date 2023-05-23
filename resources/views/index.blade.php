@@ -67,17 +67,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="w3l_offers">
           <p>
-            SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="/products">SHOP NOW</a>
+            Aneka Jaya Plastik Seller
           </p>
         </div>
         <div class="agile-login">
           <ul>
-            <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/newproduct">New Product</a></li>
-            <li><a href="/contact">Contact Us</a></li>
             <li><a href="/indexLogout"> Log Out </a></li>
-            
+
           </ul>
         </div>
         <div class="product_list_header">
@@ -98,10 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3ls_logo_products_left1">
           <ul class="phone_email">
             <br />
-            <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
-            </li>
+            
           </ul>
         </div>
         <div class="w3ls_logo_products_left">
@@ -151,39 +144,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </button>
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav justify-content-center">
               <li class="active"><a href="/index" class="act">Home</a></li>
-              <!-- Mega Menu -->
-              <li class="dropdown">
-                <a
-                  href="/groceries"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Oriented Polypropylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >HDPE
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper</a>
-              </li>
-              <li><a href="/offers">Offers</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/newproduct">New Product</a></li>
+              <li><a href="/products">All Product</a></li>
+              <li><a href="/order">Customer</a></li>
+              <li><a href="/order">Order</a></li>
             </ul>
           </div>
         </nav>

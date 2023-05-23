@@ -230,6 +230,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <input type="submit" value="Add Product" />
           </form>
         </div>
+        <br> <br>
       </div>
     </div>
     <!-- //form product -->

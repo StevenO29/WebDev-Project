@@ -68,20 +68,19 @@
         <div class="agile-login">
         <ul>
             <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/newproduct">New Product</a></li>
+            <li><a href="/login">Login</a></li>
             <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/indexLogout"> Log Out </a></li>
           </ul>
         </div>
+
         <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
+         <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
-          </form>
+          </a>
         </div>
+
         <div class="clearfix"></div>
       </div>
     </div>
@@ -92,8 +91,8 @@
           <ul class="phone_email">
             <br />
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
+            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
+
             </li>
           </ul>
         </div>
@@ -145,37 +144,14 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/index" class="act">Home</a></li>
+            <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li class="dropdown">
-                <a
-                  href="/groceries"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Oriented Polypropylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >HDPE
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper</a>
-              </li>
-              <li><a href="/offers">Offers</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li><a href="/gelas" class="act">Gelas</a></li>
+              <li><a href="/kertas">Kertas</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -208,23 +184,20 @@
         <h3 class="w3_agile_header">About Us</h3>
         <div class="about-agileinfo w3layouts">
           <div class="col-md-8 about-wthree-grids grid-top">
-            <h4>Blanditiis praesentium deleniti atque corrupti quos</h4>
             <p class="top">
-              Gnissimos voluptatum deleniti atque corrupti quos dolores et quas
-              molestias excepturi. atque corrupti quos dolores et quas molestias
-              excepturi sint occaecat officia deserunt mollitia laborum et
-              dolorum fuga
+              Welcome to Aneka Jaya Plastik, your one-stop shop for all your plastic needs! 
+              We take pride in offering a wide variety of high-quality plastics, paper packaging, 
+              cups, and cutlery for both personal and commercial use. As a trusted provider in 
+              the industry, we strive to meet the demands of our customers by offering a diverse 
+              range of products to suit their needs.
             </p>
+            <h4>Extensive Product Selection:</h4>
             <p>
-              Dignissimos at vero eos et accusamus et iusto odio ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecat officia deserunt
-              mollitia laborum et dolorum fuga. At vero eos et accusamus et
-              iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecat atque corrupti quos dolores et quas
-              molestias excepturi sint occaecat officia deserunt mollitia
-              laborum et dolorum
+            We take pride in offering a wide selection of plastics to cater to various applications. 
+            Whether you need plastic containers for storage, food-grade packaging solutions, or 
+            disposable cutlery for your next event, we have got you covered. Our inventory includes 
+            an array of sizes, shapes, and colors, ensuring that you find the perfect plastic products 
+            to suit your requirements.
             </p>
             <div class="about-w3agilerow">
               <div class="col-md-4 about-w3imgs">
@@ -342,101 +315,17 @@
     <div class="about-slid agileits-w3layouts">
       <div class="container">
         <div class="about-slid-info">
-          <h2>Lorem Ipsum is that it has a moreless normal</h2>
+          <h2>Convenience and Reliability</h2>
           <p>
-            Lorem Ipsum generators on the Internet tend to repeat predefined
-            chunks on the Internet tend as necessary, making this the first true
-            generator on the Internet embarrassing hidden in the middle of text
-            Lorem Ipsum generators on the Internet tend to repeat
-            predefinedchunks as necessary, making this the first true generator
-            on the.
+            Whether you are a business owner looking for reliable packaging solutions 
+            or an individual in need of plastic products for daily use, Aneka Jaya Plastik 
+            is here to meet your needs. We invite you to explore our wide selection of plastics, 
+            paper packaging, cups, and cutlery and experience the quality and convenience that 
+            sets us apart. Shop with us today and discover the perfect plastic solutions for your needs.
           </p>
         </div>
       </div>
     </div>
-    <!-- //about-slid -->
-    <!-- about-team -->
-    <div class="about-team">
-      <div class="container">
-        <h3 class="w3_agile_header">Meet Our Team</h3>
-        <div class="team-agileitsinfo">
-          <div class="col-md-3 about-team-grids">
-            <img src="images/t4.jpg" alt="" />
-            <div class="team-w3lstext">
-              <h4><span>ANDERSON,</span> Manager</h4>
-              <p>
-                Odio dignissimos vero eos voluptatem accusantium doloremque
-                laudantium reader will be distracted.
-              </p>
-            </div>
-            <div class="social-icons caption">
-              <ul>
-                <li><a href="#" class="fa fa-facebook facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus googleplus"> </a></li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="col-md-3 about-team-grids">
-            <img src="images/t2.jpg" alt="" />
-            <div class="team-w3lstext">
-              <h4><span>ELIFS,</span> Director</h4>
-              <p>
-                Odio dignissimos vero eos voluptatem accusantium doloremque
-                laudantium reader will be distracted.
-              </p>
-            </div>
-            <div class="social-icons caption">
-              <ul>
-                <li><a href="#" class="fa fa-facebook facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus googleplus"> </a></li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="col-md-3 about-team-grids">
-            <img src="images/t1.jpg" alt="" />
-            <div class="team-w3lstext">
-              <h4><span>JESSICA,</span> Supervisior</h4>
-              <p>
-                Odio dignissimos vero eos voluptatem accusantium doloremque
-                laudantium reader will be distracted.
-              </p>
-            </div>
-            <div class="social-icons caption">
-              <ul>
-                <li><a href="#" class="fa fa-facebook facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus googleplus"> </a></li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="col-md-3 about-team-grids">
-            <img src="images/t3.jpg" alt="" />
-            <div class="team-w3lstext">
-              <h4><span>RACKHAM,</span> Staff</h4>
-              <p>
-                Odio dignissimos vero eos voluptatem accusantium doloremque
-                laudantium reader will be distracted.
-              </p>
-            </div>
-            <div class="social-icons caption">
-              <ul>
-                <li><a href="#" class="fa fa-facebook facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus googleplus"> </a></li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-    <!-- //about-team -->
 
     <!-- //footer -->
     <div class="footer">
@@ -484,27 +373,27 @@
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/opp">Oriented Polypropylene</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/pe">Polyethylene</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/hdpe">High-density Polyethylene</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastics">Plastic Bag</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/glass">Glass</a>
+                ><a href="/gelas">Gelas</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>
@@ -513,25 +402,16 @@
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">My Wishlist</a>
+                ><a href="/login">My order</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/checkout">My Cart</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/order">My Order</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/login">Login</a>
+                ><a href="/indexLogout">Logout</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/registered">Create Account</a>
               </li>
-
             </ul>
           </div>
           <div class="clearfix"></div>
@@ -540,8 +420,7 @@
       <div class="footer-copy">
         <div class="container">
           <p>
-            © 2017 Super Market. All rights reserved | Design by
-            <a href="http://w3layouts.com/">W3layouts</a>
+            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
           </p>
         </div>
       </div>
