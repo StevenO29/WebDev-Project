@@ -186,75 +186,52 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!-- checkout -->
-    <section class="h-100 gradient-custom">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-10 col-xl-8">
-        <div class="card" style="border-radius: 10px;">
-          <div class="card-header px-4 py-5">
-            <br>
-            <h3 class="text-muted mb-0">Amy Robert</h3>
-          </div>
-          <div class="card-body p-4">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <p class="lead fw-normal mb-0" style="color: #a8729a;">Receipt</p>
-              
-            </div>
-            <div class="card shadow-0 border mb-4">
-              <div class="card-body">
-                <div class="row">
-                    <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                    <p class="text-muted mb-0">1.</p>
-                  </div>
-                  <div class="col-md-2">
-                    <img src="images/1.png"
-                      class="img-fluid" alt="Phone">
-                  </div>
-                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                    <p class="text-muted mb-0">Plastik OPP 8X10</p>
-                  </div>
-                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                    <p class="text-muted mb-0 small">10.000</p>
-                  </div>
-                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                    <p class="text-muted mb-0 small">1</p>
-                  </div>
-                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                    <p class="text-muted mb-0 small">10.000</p>
-                  </div>
-                  
-                </div>
-                <hr class="mb-4" style="background-color: #e0e0e0; opacity: 1;">
-              </div>
-            </div>
-            </div>
-            <div class="col-md-3 ">
-                <div class="d-flex justify-content-between pt-2">
-                <p class="fw-bold mb-0">Order Details</p>
-                <p class="text-muted mb-0"><span class="fw-bold me-4">Total</span> Rp10.000</p>
-                </div>
+    <!-- order details -->
+      <br>
+    <table class="orderdetails">
+    <?php
 
-                <div class="d-flex justify-content-between pt-2">
-                <p class="text-muted mb-0">Order Number : O001</p>
-                
-                </div>
+    echo "
+        <thead>
+            <tr>
+                <th>Order ID: {$listOrderBarang[0]->ID}</th>
+            </tr>
+            <tr>
+                <th>Customer Name: {$listOrderBarang[0]->name}</th>
+            </tr>
+            <tr>
+                <th>Carrier Name: {$listOrderBarang[0]->carrier}</th>
+            </tr>
+            <tr>
+                <th>Tracking Number: {$listOrderBarang[0]->tracking}</th>
+            </tr>
+        </thead>
+       ";
 
-                <div class="d-flex justify-content-between">
-                <p class="text-muted mb-0">Invoice Date : 15 May,2023</p>
+?>
+</table>
 
-                </div>
 
-                <div class="d-flex justify-content-between mb-5">
-                <p class="text-muted mb-0"><span class="fw-bold me-4">Delivery Charges:</span> Free</p>
-                </div>
-                <br>
-            </div>
-        </div>
-    </div>
-  </div>
-</section>
-    <!-- //checkout -->
+<br>
+
+            <!-- quantity -->
+            <!-- <script>
+              $(".value-plus").on("click", function () {
+                var divUpd = $(this).parent().find(".value"),
+                  newVal = parseInt(divUpd.text(), 10) + 1;
+                divUpd.text(newVal);
+              });
+
+              $(".value-minus").on("click", function () {
+                var divUpd = $(this).parent().find(".value"),
+                  newVal = parseInt(divUpd.text(), 10) - 1;
+                if (newVal >= 1) divUpd.text(newVal);
+              });
+            </script> -->
+            <!--quantity -->
+          </table>
+  
+    <!-- //order details -->
 
     <!-- //footer -->
     <div class="footer">

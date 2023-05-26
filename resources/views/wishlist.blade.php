@@ -1,9 +1,3 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
   <head>
@@ -71,16 +65,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="/products">SHOP NOW</a>
           </p>
         </div>
-        
+        <div class="agile-login">
+          <ul>
+            <li><a href="/registered"> Create Account </a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
         <div class="product_list_header">
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
-          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
-          </button>
-            <ul class="dropdown-menu">
-              <li><a href="/indexLogout">Logout</a></li>
-            </ul>
-          </div>
+         <a href="/checkout" class="w3view-cart">
+            <button class="w3view-cart" type="submit" name="submit" value="">
+              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+            </button>
+          </a>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -143,10 +140,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
-           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-            <li><a href="/index" class="act">Home</a></li>
+              <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
               <li><a href="/opp" class="act">OPP</a></li>
               <li><a href="/hdpe" class="act">HDPE</a></li>
@@ -154,8 +150,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <li><a href="/kresek" class="act">Kresek</a></li>
               <li><a href="/gelas" class="act">Gelas</a></li>
               <li><a href="/kertas">Kertas</a></li>
-              <li><a href="/newproduct">Add new Product</a></li>
-              <li><a href="/order">Order</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -166,17 +161,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- breadcrumbs -->
     <div class="breadcrumbs">
       <div class="container">
-        <ol
-          class="breadcrumb breadcrumb1 animated wow slideInLeft"
-          data-wow-delay=".5s"
-        >
+        <ol class="breadcrumb breadcrumb1">
           <li>
             <a href="/index"
               ><span class="glyphicon glyphicon-home" aria-hidden="true"></span
               >Home</a
             >
           </li>
-          <li class="active">Order Page</li>
+          <li class="active">Wishlist</li>
         </ol>
       </div>
     </div>
@@ -184,38 +176,96 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- checkout -->
     <div class="checkout">
       <div class="container">
-        <h2>Order:</h2>
+        <h2>Wishlist: </h2>
         <div class="checkout-right">
           <table class="timetable_sub">
             <thead>
               <tr>
-                <th>Order ID</th>
-                <th>Customer Name</th>
-                <th>Order Total</th>
-                <th>Status</th>
-                <th>Delivery</th>
+                <th>No.</th>
+                <th>Product</th>
+                <th>Product Name</th>
 
-                <th>Action</th> 
+                <th>Price</th>
+                <th>Remove</th>
               </tr>
             </thead>
-            <tbody>
-            <?php
-                       
-                        for ($x=0;$x<sizeof($listOrderBarang);$x++){
-                        echo"
-                        <tr text-align: center;'>
-                        <td>{$listOrderBarang[$x]->ID}</td>
-                        <td>{$listOrderBarang[$x]->name}</td>
-                        <td>{$listOrderBarang[$x]->subtotal}</td>
-                        <td>{$listOrderBarang[$x]->status}</td>
-                        <td>{$listOrderBarang[$x]->carrier}<br>{$listOrderBarang[$x]->tracking}</td>
-                        <td><a href=/orderdetails target=_blank>Order Details</a></td>
-                        </tr>";
-                        }
-                        ?>
-            </tbody>
-            <!-- quantity-->
-            <!-- <script>
+            <tr class="rem1">
+              <td class="invert">1</td>
+              <td class="invert-image">
+                <a href="/single"
+                  ><img src="images/1.png" alt=" " class="img-responsive"
+                /></a>
+              </td>
+              <td class="invert">Tata Salt</td>
+
+              <td class="invert">$290.00</td>
+              <td class="invert">
+                <div class="rem">
+                  <div class="close1"></div>
+                </div>
+                <script>
+                  $(document).ready(function (c) {
+                    $(".close1").on("click", function (c) {
+                      $(".rem1").fadeOut("slow", function (c) {
+                        $(".rem1").remove();
+                      });
+                    });
+                  });
+                </script>
+              </td>
+            </tr>
+            <tr class="rem2">
+              <td class="invert">2</td>
+              <td class="invert-image">
+                <a href="/single"
+                  ><img src="images/2.png" alt=" " class="img-responsive"
+                /></a>
+              </td>
+              <td class="invert">Fortune oil</td>
+
+              <td class="invert">$250.00</td>
+              <td class="invert">
+                <div class="rem">
+                  <div class="close2"></div>
+                </div>
+                <script>
+                  $(document).ready(function (c) {
+                    $(".close2").on("click", function (c) {
+                      $(".rem2").fadeOut("slow", function (c) {
+                        $(".rem2").remove();
+                      });
+                    });
+                  });
+                </script>
+              </td>
+            </tr>
+            <tr class="rem3">
+              <td class="invert">3</td>
+              <td class="invert-image">
+                <a href="/single"
+                  ><img src="images/3.png" alt=" " class="img-responsive"
+                /></a>
+              </td>
+              <td class="invert">Aashirvaad atta</td>
+
+              <td class="invert">$15.00</td>
+              <td class="invert">
+                <div class="rem">
+                  <div class="close3"></div>
+                </div>
+                <script>
+                  $(document).ready(function (c) {
+                    $(".close3").on("click", function (c) {
+                      $(".rem3").fadeOut("slow", function (c) {
+                        $(".rem3").remove();
+                      });
+                    });
+                  });
+                </script>
+              </td>
+            </tr>
+            <!--quantity-->
+            <script>
               $(".value-plus").on("click", function () {
                 var divUpd = $(this).parent().find(".value"),
                   newVal = parseInt(divUpd.text(), 10) + 1;
@@ -227,39 +277,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   newVal = parseInt(divUpd.text(), 10) - 1;
                 if (newVal >= 1) divUpd.text(newVal);
               });
-            </script> -->
-            <!--quantity -->
+            </script>
+            <!--quantity-->
           </table>
-          
         </div>
-       
-        <nav class="numbering">
-            <ul class="pagination paging">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">1<span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <div class="checkout-left">
+          <div class="checkout-right-basket">
+            <a href="/single"
+              ><span
+                class="glyphicon glyphicon-menu-left"
+                aria-hidden="true"
+              ></span
+              >Continue Shopping</a
+            >
+          </div>
           <div class="clearfix"></div>
         </div>
       </div>
     </div>
     <!-- //checkout -->
-
     <!-- //footer -->
     <div class="footer">
       <div class="container">

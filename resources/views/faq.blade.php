@@ -71,16 +71,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="/products">SHOP NOW</a>
           </p>
         </div>
-        
+        <div class="agile-login">
+          <ul>
+            <li><a href="/registered"> Create Account </a></li>
+            <li><a href="/newproduct">New Product</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/indexLogout"> Log Out </a></li>
+          </ul>
+        </div>
         <div class="product_list_header">
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
-          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
-          </button>
-            <ul class="dropdown-menu">
-              <li><a href="/indexLogout">Logout</a></li>
-            </ul>
-          </div>
+          <form action="#" method="post" class="last">
+            <input type="hidden" name="cmd" value="_cart" />
+            <input type="hidden" name="display" value="1" />
+            <button class="w3view-cart" type="submit" name="submit" value="">
+              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+            </button>
+          </form>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -92,8 +98,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <ul class="phone_email">
             <br />
             <li>
-            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
-
+              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
+              us : +62 896-3781-5553
             </li>
           </ul>
         </div>
@@ -143,19 +149,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
-           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-            <li><a href="/index" class="act">Home</a></li>
+              <li class="active"><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/opp" class="act">OPP</a></li>
-              <li><a href="/hdpe" class="act">HDPE</a></li>
-              <li><a href="/pe" class="act">PE</a></li>
-              <li><a href="/kresek" class="act">Kresek</a></li>
-              <li><a href="/gelas" class="act">Gelas</a></li>
-              <li><a href="/kertas">Kertas</a></li>
-              <li><a href="/newproduct">Add new Product</a></li>
-              <li><a href="/order">Order</a></li>
+              <li class="dropdown">
+                <a
+                  href="/groceries"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Oriented Polypropylene</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >Polyethylene</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >HDPE
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >Plastic</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >Glass</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >Paper</a>
+              </li>
+              <li><a href="/offers">Offers</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -176,90 +203,203 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Order Page</li>
+          <li class="active">FAQ</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!-- checkout -->
-    <div class="checkout">
+    <!-- help-page -->
+    <div class="faq-w3agile">
       <div class="container">
-        <h2>Order:</h2>
-        <div class="checkout-right">
-          <table class="timetable_sub">
-            <thead>
-              <tr>
-                <th>Order ID</th>
-                <th>Customer Name</th>
-                <th>Order Total</th>
-                <th>Status</th>
-                <th>Delivery</th>
-
-                <th>Action</th> 
-              </tr>
-            </thead>
-            <tbody>
-            <?php
-                       
-                        for ($x=0;$x<sizeof($listOrderBarang);$x++){
-                        echo"
-                        <tr text-align: center;'>
-                        <td>{$listOrderBarang[$x]->ID}</td>
-                        <td>{$listOrderBarang[$x]->name}</td>
-                        <td>{$listOrderBarang[$x]->subtotal}</td>
-                        <td>{$listOrderBarang[$x]->status}</td>
-                        <td>{$listOrderBarang[$x]->carrier}<br>{$listOrderBarang[$x]->tracking}</td>
-                        <td><a href=/orderdetails target=_blank>Order Details</a></td>
-                        </tr>";
-                        }
-                        ?>
-            </tbody>
-            <!-- quantity-->
-            <!-- <script>
-              $(".value-plus").on("click", function () {
-                var divUpd = $(this).parent().find(".value"),
-                  newVal = parseInt(divUpd.text(), 10) + 1;
-                divUpd.text(newVal);
-              });
-
-              $(".value-minus").on("click", function () {
-                var divUpd = $(this).parent().find(".value"),
-                  newVal = parseInt(divUpd.text(), 10) - 1;
-                if (newVal >= 1) divUpd.text(newVal);
-              });
-            </script> -->
-            <!--quantity -->
-          </table>
-          
-        </div>
-       
-        <nav class="numbering">
-            <ul class="pagination paging">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">1<span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
+        <h2 class="w3_agile_header">Frequently asked questions(FAQ)</h2>
+        <ul class="faq">
+          <li class="item1">
+            <a href="#" title="click here"
+              >Where is the specific location?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  We are located at Ruko Grand CBD A-09, Belahan Wedoro, Sidoarjo, 61256.
+                </p>
               </li>
             </ul>
-          </nav>
-          <div class="clearfix"></div>
-        </div>
+          </li>
+          <li class="item2">
+            <a href="#" title="click here"
+              >What payment method I could use?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  You can pay with bank transfer.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="item3">
+            <a href="#" title="click here"
+              >Are you shipping worldwide?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  No. We are currently ship to Indonesia only. We hope we can expand to worldwide as well.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="item4">
+            <a href="#" title="click here"
+              >When will I get my order?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                 We will proceed and your order the day after you placed your order. You will be able to receive your order in several days based on the expedition.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="item5">
+            <a href="#" title="click here"
+              >Euismod tincidunt laoreet Etiam faucibus viverra libero vel
+              efficitur ?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  At vero eos et Lorem ipsum dolor sit amet, consectetuer
+                  adipiscing elit, sed diam nonummy nibh euismod consectetuer
+                  adipiscing elit, sed diam nonummy nibh euismod accusamus et
+                  iusto odio dignissimos ducimus qui blanditiis praesentium
+                  voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi sint occaecati cupiditate non provident.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="item6">
+            <a href="#" title="click here"
+              >Voluptas sit aspernatur aut Ut semper nisl ut laoreet ultrices
+              ?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  At vero eos et Lorem ipsum dolor sit amet, consectetuer
+                  adipiscing elit, sed diam nonummy nibh euismod consectetuer
+                  adipiscing elit, sed diam nonummy nibh euismod accusamus et
+                  iusto odio dignissimos ducimus qui blanditiis praesentium
+                  voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi sint occaecati cupiditate non provident.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="item7">
+            <a href="#" title="click here"
+              >Donec ut quam ligula feugiat Ut semper nisl ut laoreet ultrices
+              ?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  At vero eos et Lorem ipsum dolor sit amet, consectetuer
+                  adipiscing elit, sed diam nonummy nibh euismod consectetuer
+                  adipiscing elit, sed diam nonummy nibh euismod accusamus et
+                  iusto odio dignissimos ducimus qui blanditiis praesentium
+                  voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi sint occaecati cupiditate non provident.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="item8">
+            <a href="#" title="click here"
+              >The standard Lorem Ipsum Ut semper nisl ut laoreet ultrices
+              passage ?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  Lorem ipsum dolor sit amet At vero eos et Lorem ipsum dolor
+                  sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                  euismod consectetuer adipiscing elit, sed diam nonummy nibh
+                  euismod accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="item9">
+            <a href="#" title="click here"
+              >Consectetuer adipiscing Ut semper nisl ut laoreet ultrices elit
+              ?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  Lorem ipsum dolor sit amet At vero eos et Lorem ipsum dolor
+                  sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                  euismod consectetuer adipiscing elit, sed diam nonummy nibh
+                  euismod accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="item10">
+            <a href="#" title="click here"
+              >Sed diam nonummy Ut semper nisl ut laoreet ultrices nibh euismod
+              ?</a
+            >
+            <ul>
+              <li class="subitem1">
+                <p>
+                  Consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                  consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                  accusamus et iusto odio dignissimos ducimus qui blanditiis
+                  praesentium voluptatum deleniti atque corrupti quos dolores et
+                  quas molestias excepturi sint occaecati cupiditate non
+                  provident.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- script for tabs -->
+        <script type="text/javascript">
+          $(function () {
+            var menu_ul = $(".faq > li > ul"),
+              menu_a = $(".faq > li > a");
+
+            menu_ul.hide();
+
+            menu_a.click(function (e) {
+              e.preventDefault();
+              if (!$(this).hasClass("active")) {
+                menu_a.removeClass("active");
+                menu_ul.filter(":visible").slideUp("normal");
+                $(this)
+                  .addClass("active")
+                  .next()
+                  .stop(true, true)
+                  .slideDown("normal");
+              } else {
+                $(this).removeClass("active");
+                $(this).next().stop(true, true).slideUp("normal");
+              }
+            });
+          });
+        </script>
+        <!-- script for tabs -->
       </div>
     </div>
-    <!-- //checkout -->
-
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -306,27 +446,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/opp">Opp</a>
+                ><a href="/opp">Oriented Polypropylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/hdpe">HDPE</a>
+                ><a href="/pe">Polyethylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/pe">PE</a>
+                ><a href="/hdpe">High-density Polyethylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/kresek">Kresek</a>
+                ><a href="/plastics">Plastic Bag</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/gelas">Gelas</a>
+                ><a href="/glass">Glass</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/kertas">Kertas</a>
+                ><a href="/paper">Paper</a>
               </li>
             </ul>
           </div>
@@ -335,11 +475,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/wishlist">My Wishlist</a>
+                ><a href="/products">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/checkout">My Cart</a>
+              </li>
+              <li>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><a href="/order">My Order</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
@@ -354,11 +498,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="clearfix"></div>
         </div>
       </div>
-
       <div class="footer-copy">
         <div class="container">
           <p>
-            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
+            © 2017 Super Market. All rights reserved | Design by
+            <a href="http://w3layouts.com/">W3layouts</a>
           </p>
         </div>
       </div>

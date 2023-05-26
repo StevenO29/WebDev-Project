@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\nyobaController;
+use App\Http\Controllers\orderController;
+use App\Http\Controllers\orderDetailsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,12 +64,8 @@ Route::get('/offers', function () {
 Route::get('/opp', function () {
     return view('opp');
 });
-Route::get('/order', function () {
-    return view('order');
-});
-Route::get('/orderdetails', function () {
-    return view('orderdetails');
-});
+
+
 Route::get('/kertas', function () {
     return view('kertas');
 });
@@ -99,3 +98,11 @@ Route::get('/newproduct', function () {
     return view('newproduct');
 });
 
+Route::prefix('/order')->group(function(){
+    Route::get('/',[orderController::class,"tabelorder"] );
+});
+
+ Route::prefix('/orderdetails')->group(function(){
+     Route::get('/',[orderDetailsController::class,"tabelorder"] );
+});
+// Route::get('/orderdetails/{id}', 'OrderDetailsController@show')->name('orderdetails.show');

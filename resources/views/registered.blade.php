@@ -71,16 +71,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="/products">SHOP NOW</a>
           </p>
         </div>
-        
+        <div class="agile-login">
+          <ul>
+            <li><a href="/registered"> Create Account </a></li>
+            <li><a href="/login">Log In</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
         <div class="product_list_header">
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
-          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
-          </button>
-            <ul class="dropdown-menu">
-              <li><a href="/indexLogout">Logout</a></li>
-            </ul>
-          </div>
+          <form action="#" method="post" class="last">
+            <input type="hidden" name="cmd" value="_cart" />
+            <input type="hidden" name="display" value="1" />
+            <button class="w3view-cart" type="submit" name="submit" value="">
+              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+            </button>
+          </form>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -92,8 +97,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <ul class="phone_email">
             <br />
             <li>
-            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
-
+              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
+              us : +62 896-3781-5553
             </li>
           </ul>
         </div>
@@ -143,19 +148,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
-           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-            <li><a href="/index" class="act">Home</a></li>
+              <li class="active"><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/opp" class="act">OPP</a></li>
-              <li><a href="/hdpe" class="act">HDPE</a></li>
-              <li><a href="/pe" class="act">PE</a></li>
-              <li><a href="/kresek" class="act">Kresek</a></li>
-              <li><a href="/gelas" class="act">Gelas</a></li>
-              <li><a href="/kertas">Kertas</a></li>
-              <li><a href="/newproduct">Add new Product</a></li>
-              <li><a href="/order">Order</a></li>
+              <li class="dropdown">
+                <a
+                  href="/groceries"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Oriented Polypropylene</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >Polyethylene</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >HDPE
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >Plastic</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >Glass</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >Paper</a>
+              </li>
+              <li><a href="/offers">Offers</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -176,90 +202,55 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Order Page</li>
+          <li class="active">Register Page</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!-- checkout -->
-    <div class="checkout">
+    <!-- register -->
+    <div class="register">
       <div class="container">
-        <h2>Order:</h2>
-        <div class="checkout-right">
-          <table class="timetable_sub">
-            <thead>
-              <tr>
-                <th>Order ID</th>
-                <th>Customer Name</th>
-                <th>Order Total</th>
-                <th>Status</th>
-                <th>Delivery</th>
-
-                <th>Action</th> 
-              </tr>
-            </thead>
-            <tbody>
-            <?php
-                       
-                        for ($x=0;$x<sizeof($listOrderBarang);$x++){
-                        echo"
-                        <tr text-align: center;'>
-                        <td>{$listOrderBarang[$x]->ID}</td>
-                        <td>{$listOrderBarang[$x]->name}</td>
-                        <td>{$listOrderBarang[$x]->subtotal}</td>
-                        <td>{$listOrderBarang[$x]->status}</td>
-                        <td>{$listOrderBarang[$x]->carrier}<br>{$listOrderBarang[$x]->tracking}</td>
-                        <td><a href=/orderdetails target=_blank>Order Details</a></td>
-                        </tr>";
-                        }
-                        ?>
-            </tbody>
-            <!-- quantity-->
-            <!-- <script>
-              $(".value-plus").on("click", function () {
-                var divUpd = $(this).parent().find(".value"),
-                  newVal = parseInt(divUpd.text(), 10) + 1;
-                divUpd.text(newVal);
-              });
-
-              $(".value-minus").on("click", function () {
-                var divUpd = $(this).parent().find(".value"),
-                  newVal = parseInt(divUpd.text(), 10) - 1;
-                if (newVal >= 1) divUpd.text(newVal);
-              });
-            </script> -->
-            <!--quantity -->
-          </table>
-          
+        <h2>Register Here</h2>
+        <div class="login-form-grids">
+          <h5>profile information</h5>
+          <form action="#" method="post">
+            <input type="text" placeholder="First Name..." required=" " />
+            <input type="text" placeholder="Last Name..." required=" " />
+          </form>
+          <div class="register-check-box">
+            <div class="check">
+              <label class="checkbox"
+                ><input type="checkbox" name="checkbox" /><i> </i>Subscribe to
+                Newsletter</label
+              >
+            </div>
+          </div>
+          <h6>Login information</h6>
+          <form action="#" method="post">
+            <input type="email" placeholder="Email Address" required=" " />
+            <input type="password" placeholder="Password" required=" " />
+            <input
+              type="password"
+              placeholder="Password Confirmation"
+              required=" "
+            />
+            <div class="register-check-box">
+              <div class="check">
+                <label class="checkbox"
+                  ><input type="checkbox" name="checkbox" /><i> </i>I accept the
+                  terms and conditions</label
+                >
+              </div>
+            </div>
+            <input type="submit" value="Register" />
+          </form>
         </div>
-       
-        <nav class="numbering">
-            <ul class="pagination paging">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">1<span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="clearfix"></div>
+        <div class="register-home">
+          <a href="/index">Home</a>
         </div>
       </div>
     </div>
-    <!-- //checkout -->
-
+    <!-- //register -->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -306,27 +297,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/opp">Opp</a>
+                ><a href="/opp">Oriented Polypropylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/hdpe">HDPE</a>
+                ><a href="/pe">Polyethylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/pe">PE</a>
+                ><a href="/hdpe">High-density Polyethylene</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/kresek">Kresek</a>
+                ><a href="/plastics">Plastic Bag</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/gelas">Gelas</a>
+                ><a href="/glass">Glass</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/kertas">Kertas</a>
+                ><a href="/paper">Paper</a>
               </li>
             </ul>
           </div>
@@ -335,7 +326,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/wishlist">My Wishlist</a>
+                ><a href="/products">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
@@ -358,7 +349,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="footer-copy">
         <div class="container">
           <p>
-            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
+            © 2017 Super Market. All rights reserved | Design by
+            <a href="http://w3layouts.com/">W3layouts</a>
           </p>
         </div>
       </div>
