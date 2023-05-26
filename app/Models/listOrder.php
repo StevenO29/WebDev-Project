@@ -18,7 +18,7 @@ class listOrder extends Model
         od.p_name AS `prod_name`, od.p_price AS `price`, od.o_qty AS `qty`
          FROM order2 o, customer c, order_details od, shipping s 
          where o.cust_id = c.cust_id and o.order_id = od.order_id and s.order_id = o.order_id
-             group by o.order_id;       ";
+             group by o.order_id, od.product_id;       ";
         
         $selectorder = DB::select($value);
         return $selectorder;

@@ -190,7 +190,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <br>
     <table class="orderdetails">
     <?php
-
     echo "
         <thead>
             <tr>
@@ -207,11 +206,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </tr>
         </thead>
        ";
-
-?>
-</table>
-
-
+    ?>
+    </table>
+    <div class="checkout-right orderdetailstable">
+    <table class="timetable_sub orderdetailstable">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <?php
+                       
+                        
+                        echo"
+                        <tr text-align: center;'>
+                        <td>{$listOrderBarang[0]->prod_name}</td>
+                        <td>{$listOrderBarang[0]->price}</td>
+                        <td>{$listOrderBarang[0]->qty}</td>
+                        <td>{$listOrderBarang[0]->subtotal}</td>
+                        </tr>";
+                        
+            ?>
+    </table>
+    </div>
 <br>
 
             <!-- quantity -->
