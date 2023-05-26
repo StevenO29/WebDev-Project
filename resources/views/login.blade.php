@@ -151,13 +151,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/opp" class="act">OPP</a></li>
-              <li><a href="/hdpe" class="act">HDPE</a></li>
-              <li><a href="/pe" class="act">PE</a></li>
-              <li><a href="/kresek" class="act">Kresek</a></li>
-              <li><a href="/gelas" class="act">Gelas</a></li>
-              <li><a href="/kertas">Kertas</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/login" class="act">OPP</a></li>
+              <li><a href="/login" class="act">HDPE</a></li>
+              <li><a href="/login" class="act">PE</a></li>
+              <li><a href="/login" class="act">Kresek</a></li>
+              <li><a href="/login" class="act">Gelas</a></li>
+              <li><a href="/login">Kertas</a></li>
+              <li><a href="/login">Add new Product</a></li>
+              <li><a href="/login">Order</a></li>
             </ul>
           </div>
         </nav>

@@ -71,19 +71,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="/products">SHOP NOW</a>
           </p>
         </div>
-        <div class="agile-login">
-          <ul>
-            <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-          </ul>
-        </div>
+       
         <div class="product_list_header">
-         <a href="/checkout" class="w3view-cart">
-            <button class="w3view-cart" type="submit" name="submit" value="">
-              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-            </button>
-          </a>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
+          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
+          </button>
+            <ul class="dropdown-menu">
+              <li><a href="/indexLogout">Logout</a></li>
+            </ul>
+          </div>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -156,7 +153,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <li><a href="/kresek" class="act">Kresek</a></li>
               <li><a href="/gelas" class="act">Gelas</a></li>
               <li><a href="/kertas">Kertas</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/newproduct">Add new Product</a></li>
+              <li><a href="/order">Order</a></li>
+
+
             </ul>
           </div>
         </nav>

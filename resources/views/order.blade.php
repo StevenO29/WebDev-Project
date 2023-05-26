@@ -71,22 +71,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="/products">SHOP NOW</a>
           </p>
         </div>
-        <div class="agile-login">
-          <ul>
-            <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/newproduct">New Product</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/indexLogout"> Log Out </a></li>
-          </ul>
-        </div>
+        
         <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
-            <button class="w3view-cart" type="submit" name="submit" value="">
-              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-            </button>
-          </form>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
+          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
+          </button>
+            <ul class="dropdown-menu">
+              <li><a href="/indexLogout">Logout</a></li>
+            </ul>
+          </div>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -98,8 +92,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <ul class="phone_email">
             <br />
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>Order online or call
-              us : +62 896-3781-5553
+            <i class="fa fa-phone" aria-hidden="true"></i>Contact us: +62 896-3781-5553
+
             </li>
           </ul>
         </div>
@@ -149,40 +143,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
+           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/index" class="act">Home</a></li>
+            <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li class="dropdown">
-                <a
-                  href="/groceries"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Oriented Polypropylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >HDPE
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper</a>
-              </li>
-              <li><a href="/offers">Offers</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li><a href="/gelas" class="act">Gelas</a></li>
+              <li><a href="/kertas">Kertas</a></li>
+              <li><a href="/newproduct">Add new Product</a></li>
+              <li><a href="/order">Order</a></li>
             </ul>
           </div>
         </nav>
@@ -193,7 +166,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- breadcrumbs -->
     <div class="breadcrumbs">
       <div class="container">
-        <ol class="breadcrumb breadcrumb1">
+        <ol
+          class="breadcrumb breadcrumb1 animated wow slideInLeft"
+          data-wow-delay=".5s"
+        >
           <li>
             <a href="/index"
               ><span class="glyphicon glyphicon-home" aria-hidden="true"></span
@@ -290,6 +266,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </div>
     </div>
     <!-- //checkout -->
+
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -336,27 +313,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/opp">Oriented Polypropylene</a>
+                ><a href="/opp">Opp</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/pe">Polyethylene</a>
+                ><a href="/hdpe">HDPE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/hdpe">High-density Polyethylene</a>
+                ><a href="/pe">PE</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/plastics">Plastic Bag</a>
+                ><a href="/kresek">Kresek</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/glass">Glass</a>
+                ><a href="/gelas">Gelas</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/paper">Paper</a>
+                ><a href="/kertas">Kertas</a>
               </li>
             </ul>
           </div>
@@ -365,15 +342,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="info">
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/products">My Wishlist</a>
+                ><a href="/wishlist">My Wishlist</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/checkout">My Cart</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/order">My Order</a>
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
@@ -392,8 +365,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="footer-copy">
         <div class="container">
           <p>
-            © 2017 Super Market. All rights reserved | Design by
-            <a href="http://w3layouts.com/">W3layouts</a>
+            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
           </p>
         </div>
       </div>
