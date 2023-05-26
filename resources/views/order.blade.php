@@ -209,7 +209,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <td>{$listOrderBarang[$x]->subtotal}</td>
                         <td>{$listOrderBarang[$x]->status}</td>
                         <td>{$listOrderBarang[$x]->carrier}<br>{$listOrderBarang[$x]->tracking}</td>
-                        <td><a href=/orderdetails target=_blank>Order Details</a></td>
+                        <td><a href=/orderdetails/{$listOrderBarang[$x]->ID} target=_blank>Order Details</a></td>
                         </tr>";
                         }
                         ?>
