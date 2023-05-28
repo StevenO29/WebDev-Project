@@ -7,15 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Aneka Jaya Plastik</title>
+    <title>@yield('title', 'Registration')</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta
-      name="keywords"
-      content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
-    />
     <script type="application/x-javascript">
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
        function hideURLbar(){ window.scrollTo(0,1); }
@@ -189,26 +184,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="login-form-grids">
           <h5>profile information</h5>
           <form action="#" method="post">
+            @csrf
             <input type="text" placeholder="First Name..." required=" " />
             <input type="text" placeholder="Last Name..." required=" " />
-          </form>
-          <div class="register-check-box">
-            <div class="check">
-              <label class="checkbox"
-                ><input type="checkbox" name="checkbox" /><i> </i>Subscribe to
-                Newsletter</label
-              >
-            </div>
-          </div>
+          
           <h6>Login information</h6>
-          <form action="#" method="post">
+          
             <input type="email" placeholder="Email Address" required=" " />
             <input type="password" placeholder="Password" required=" " />
-            <input
-              type="password"
-              placeholder="Password Confirmation"
-              required=" "
-            />
             <div class="register-check-box">
               <div class="check">
                 <label class="checkbox"

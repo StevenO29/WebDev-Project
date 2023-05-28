@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Aneka Jaya Plastik</title>
+    <title>@yield('title', 'Aneka Jaya Plastik-HDPE')</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -150,7 +150,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/opp" class="act">Opp</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
               <li class="active"><a href="/hdpe" class="act">HDPE</a></li>
               <li><a href="/pe" class="act">PE</a></li>
               <li><a href="/kresek" class="act">Kresek</a></li>
