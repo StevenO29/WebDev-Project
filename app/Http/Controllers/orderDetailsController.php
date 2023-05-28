@@ -8,11 +8,22 @@ use Illuminate\Support\Facades\DB;
 
 class orderDetailsController extends Controller
 {
+    
     public function tabelorderDetail(){
        
-        $user = new listOrderDetails();
+         $user = new listOrderDetails();
          $listOrderBarangDetails = $user->tabelorderDetail();
-        return view('orderdetails',compact(['listOrderBarangDetails']));
-    }
-   
+         return view('orderdetails',compact(['listOrderBarangDetails']));
+     }
+
+    // public function show($id)
+    // {
+    //     $order = orderDetailsController::find($id);
+    //     if ($order) {
+    //         return view('orderdetails.show', compact('order'));
+    //     } else {
+    //         return redirect()->back()->with('error', 'Order not found');
+    //     }
+    // }
+    
 }

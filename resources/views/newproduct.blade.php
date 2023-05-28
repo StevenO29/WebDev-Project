@@ -191,15 +191,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           class="login-form-grids animated wow slideInUp"
           data-wow-delay=".5s"
         >
-          <form>
-            Product Name: <input type="text" placeholder="Product Name" required=" " /><br>
-            Product Category: <input type="text" placeholder="Product Category" required=" " /><br>
-            Product Brand: <input type="text" placeholder="Product Brand" required=" " /><br>
-            Product Price: <input type="text" placeholder="Price" required=" " /><br>
-            Product Stock: <input type="text" placeholder="Stock" required=" " /><br>
-            Product Description: <textarea id="description" name="description" rows="4" cols="47"></textarea>
+          <form  action="/newproduct" method="POST">
+          {{ csrf_field() }}
+            Product Name: <input type="text" name="p_name" placeholder="Product Name" required=" " /><br>
+            Product Category: <select id="p_category" name="categoryList">
+  <option value="opp">OPP</option>
+  <option value="hdpe">HDPE</option>
+  <option value="pe">PE</option>
+  <option value="kresek">Kresek</option>
+  <option value="gelas">Gelas</option>
+  <option value="kertas">Kertas</option>
+</select>
+<br><br>
+            Product Brand: <input type="text" name="P_Brand" placeholder="Product Brand" required=" " /><br>
+            Product Price: <input type="text" name="P_Price" placeholder="Price" required=" " /><br>
+            Product Stock: <input type="text" name="P_Stock" placeholder="Stock" required=" " /><br>
+            Product Description: <textarea id="description" name="P_Desc" rows="4" cols="47"></textarea>
             Product Image: <input type="file" id="myfile" name="myfile"><br>      
-            <input type="submit" value="Add Product" />
+            <input type="submit" value="AddProduct" />
           </form>
         </div>
         <br> <br>

@@ -282,6 +282,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
           </div>
           <div class="agile_top_brands_grids">
+            @foreach($tabel as $t)
+            @if (($t->ID + 1) % 3 === 0)
             <div class="col-md-4 top_brand_left">
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">
@@ -299,47 +301,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <a href="/single">
                           <img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"/>
                         </a>
-                          <p>OPP 8x8</p>
-                          <h4>Rp3,000 <span>Rp5,000</span></h4>
+                          <p>{{$t->Nama}}</p>
+                          <h4>{{$t->Harga}}</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
-                            <fieldset>
+                          <fieldset>
                               <input type="hidden" name="cmd" value="_cart" />
                               <input type="hidden" name="add" value="1" />
                               <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
+                              <input type="hidden" name="item_name" value="{{$t->Nama}}"/>
+                              <input type="hidden" name="amount" value="{{$t->Harga}}"/>
+                              <input type="hidden" name="discount_amount" value="1.00"/>
+                              <input type="hidden" name="currency_code" value="USD"/>
                               <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
+                              <input type="hidden" name="cancel_return" value=" "/>
+                              <input type="submit" name="submit" value="Add to cart" class="button"/>
                             </fieldset>
                           </form>
                         </div>
@@ -349,6 +326,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
               </div>
             </div>
+            @endif
             <div class="col-md-4 top_brand_left">
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">
@@ -371,42 +349,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
-                            <fieldset>
+                          <fieldset>
                               <input type="hidden" name="cmd" value="_cart" />
                               <input type="hidden" name="add" value="1" />
                               <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
+                              <input type="hidden" name="item_name" value="Pepsi soft drink"/>
+                              <input type="hidden" name="amount" value="80.00"/>
+                              <input type="hidden" name="discount_amount" value="1.00"/>
+                              <input type="hidden" name="currency_code" value="USD"/>
                               <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
+                              <input type="hidden" name="cancel_return" value=" "/>
+                              <input type="submit" name="submit" value="Add to cart" class="button"/>
                             </fieldset>
                           </form>
                         </div>
@@ -452,38 +405,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               <input type="hidden" name="cmd" value="_cart" />
                               <input type="hidden" name="add" value="1" />
                               <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
+                              <input type="hidden" name="item_name" value="Pepsi soft drink"/>
+                              <input type="hidden" name="amount" value="80.00"/>
+                              <input type="hidden" name="discount_amount" value="1.00"/>
+                              <input type="hidden" name="currency_code" value="USD"/>
                               <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
+                              <input type="hidden" name="cancel_return" value=" "/>
+                              <input type="submit" name="submit" value="Add to cart" class="button"/>
                             </fieldset>
                           </form>
                         </div>
@@ -494,435 +422,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </div>
             </div>
             <div class="clearfix"></div>
-          </div>
+            <br><br>
+            @endforeach
+          </div> 
           <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/17.png"
-                          /></a>
-                          <p>Arhar Dal</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/14.png"
-                          /></a>
-                          <p>Toor Dal</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/15.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Moong Dal</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="clearfix"></div>
           </div>
-          <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/16.png"
-                          /></a>
-                          <p>Channa</p>
-                          <h4>$35.99 <span>$55.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/17.png"
-                          /></a>
-                          <p>Arhar Dal</p>
-                          <h4>$30.99 <span>$45.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/14.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Toor Dal</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+          
           <nav class="numbering">
             <ul class="pagination paging">
               <li>

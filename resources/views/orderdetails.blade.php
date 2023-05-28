@@ -189,24 +189,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- order details -->
       <br>
     <table class="orderdetails">
-    <?php
-    echo "
+  
         <thead>
+        @foreach ($listOrderBarangDetails as $orderDetail)
             <tr>
-                <th>Order ID: {$listOrderBarangDetails[0]->ID}</th>
+                <th>Order ID: {{$orderDetail->ID}}</th>
             </tr>
             <tr>
-                <th>Customer Name: {$listOrderBarangDetails[0]->name}</th>
+                <th>Customer Name: {{$orderDetail->name}}</th>
             </tr>
             <tr>
-                <th>Carrier Name: {$listOrderBarangDetails[0]->carrier}</th>
+                <th>Carrier Name: {{$orderDetail->carrier}}</th>
             </tr>
             <tr>
-                <th>Tracking Number: {$listOrderBarangDetails[0]->tracking}</th>
+                <th>Tracking Number: {{$orderDetail->tracking}}</th>
             </tr>
+         @endforeach
+           
         </thead>
-       ";
-    ?>
     </table>
     <div class="checkout-right orderdetailstable">
     <table class="timetable_sub orderdetailstable">
@@ -218,20 +218,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <th>Subtotal</th>
               </tr>
             </thead>
-            <?php
-                       
-                        
-                        echo"
-                        <tr text-align: center;'>
-                        <td>{$listOrderBarangDetails[0]->prod_name}</td>
-                        <td>{$listOrderBarangDetails[0]->price}</td>
-                        <td>{$listOrderBarangDetails[0]->qty}</td>
-                        <td>{$listOrderBarangDetails[0]->subtotal}</td>
+            @foreach ($listOrderBarangDetails as $orderDetail)
+            <tr style="text-align: center;">
+                        <td>{{$orderDetail->prod_name}}</td>
+                        <td>{{$orderDetail->price}}</td>
+                        <td>{{$orderDetail->qty}}</td>
+                        <td>{{$orderDetail->subtotal}}</td>
                         </tr>"
-                       
-                        ;
-                        
-            ?>
+         @endforeach
+            
     </table>
     </div>
 <br>

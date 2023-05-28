@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\newProdController;
 use App\Http\Controllers\nyobaController;
 use App\Http\Controllers\orderController;
 use App\Http\Controllers\orderDetailsController;
@@ -61,9 +62,9 @@ Route::get('/offers', function () {
     return view('offers');
 });
 
-Route::get('/opp', function () {
-    return view('opp');
-});
+// Route::get('/opp', function () {
+//     return view('opp');
+// });
 
 
 Route::get('/kertas', function () {
@@ -94,15 +95,24 @@ Route::get('/single', function () {
     return view('single');
 });
 
-Route::get('/newproduct', function () {
-    return view('newproduct');
+// Route::get('/newproduct', function () {
+//     return view('newproduct');
+// });
+Route::prefix('/opp')->group(function(){
+    Route::get('/',[newProdController::class,"tabelprod"] );
 });
 
 Route::prefix('/order')->group(function(){
     Route::get('/',[orderController::class,"tabelorder"] );
 });
 
- Route::prefix('/orderdetails')->group(function(){
-     Route::get('/',[orderDetailsController::class,"tabelorderDetail"] );
+  Route::prefix('/orderdetails')->group(function(){
+      Route::get('/',[orderDetailsController::class,"tabelorderDetail"] );
+ });
+
+ Route::prefix('/newproduct')->group(function(){
+    Route::get('/',[newProdController::class,"newproduct"]);
+    Route::POST('/',[newProdController::class,"updatebarang"]);
 });
-//Route::get('/orderdetails/{id}', 'OrderDetailsController@show')->name('orderdetails.show');
+
+// Route::get('/orderdetails/{id}', [OrderDetailsController::class, 'show'])->name('orderdetails.show');
