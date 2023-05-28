@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\listOrder;
+use App\Models\listOrderDetails;
 use Illuminate\Support\Facades\DB;
 
 class orderDetailsController extends Controller
 {
-    public function tabelorder(){
+    public function tabelorderDetail(){
        
-        $user = new listOrder();
-         $listOrderBarang = $user->tabelorder();
-        return view('orderdetails',compact(['listOrderBarang']));
+        $user = new listOrderDetails();
+         $listOrderBarangDetails = $user->tabelorderDetail();
+        return view('orderdetails',compact(['listOrderBarangDetails']));
     }
    
 }

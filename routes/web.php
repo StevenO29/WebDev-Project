@@ -103,6 +103,6 @@ Route::prefix('/order')->group(function(){
 });
 
  Route::prefix('/orderdetails')->group(function(){
-     Route::get('/',[orderDetailsController::class,"tabelorder"] );
+     Route::get('/',[orderDetailsController::class,"tabelorderDetail"] );
 });
-// Route::get('/orderdetails/{id}', 'OrderDetailsController@show')->name('orderdetails.show');
+//Route::get('/orderdetails/{id}', 'OrderDetailsController@show')->name('orderdetails.show');

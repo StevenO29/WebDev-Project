@@ -193,16 +193,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     echo "
         <thead>
             <tr>
-                <th>Order ID: {$listOrderBarang[0]->ID}</th>
+                <th>Order ID: {$listOrderBarangDetails[0]->ID}</th>
             </tr>
             <tr>
-                <th>Customer Name: {$listOrderBarang[0]->name}</th>
+                <th>Customer Name: {$listOrderBarangDetails[0]->name}</th>
             </tr>
             <tr>
-                <th>Carrier Name: {$listOrderBarang[0]->carrier}</th>
+                <th>Carrier Name: {$listOrderBarangDetails[0]->carrier}</th>
             </tr>
             <tr>
-                <th>Tracking Number: {$listOrderBarang[0]->tracking}</th>
+                <th>Tracking Number: {$listOrderBarangDetails[0]->tracking}</th>
             </tr>
         </thead>
        ";
@@ -223,11 +223,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         
                         echo"
                         <tr text-align: center;'>
-                        <td>{$listOrderBarang[0]->prod_name}</td>
-                        <td>{$listOrderBarang[0]->price}</td>
-                        <td>{$listOrderBarang[0]->qty}</td>
-                        <td>{$listOrderBarang[0]->subtotal}</td>
-                        </tr>";
+                        <td>{$listOrderBarangDetails[0]->prod_name}</td>
+                        <td>{$listOrderBarangDetails[0]->price}</td>
+                        <td>{$listOrderBarangDetails[0]->qty}</td>
+                        <td>{$listOrderBarangDetails[0]->subtotal}</td>
+                        </tr>"
+                       
+                        ;
                         
             ?>
     </table>
