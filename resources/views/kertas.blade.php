@@ -73,11 +73,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="agile-login">
           <ul>
-            <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/login">Login</a></li>
+            <li>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
+                            </li>
+                        @else    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">
+                                    {{ Auth::user()->name }}
+                                </a>
+                            </li>
+                            <li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                       style="color: white; font-weight: bold; text-decoration: none;">Logout</a>
+                                </form>
+                            </li>                                
+                        @endguest
+                    </ul>
+                </div>
+            </li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
+
         <div class="product_list_header">
          <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">

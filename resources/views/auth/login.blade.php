@@ -7,15 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title', 'Aneka Jaya Plastik-FAQ')</title>
+    <title>@yield('title', 'Login')</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta
-      name="keywords"
-      content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
-    />
     <script type="application/x-javascript">
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
        function hideURLbar(){ window.scrollTo(0,1); }
@@ -103,7 +98,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
-
         <div class="product_list_header">
          <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
@@ -172,6 +166,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
+           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
@@ -203,93 +198,64 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">FAQ</li>
+          <li class="active">Login Page</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!-- help-page -->
-    <div class="faq-w3agile">
+    <!-- login -->
+    <div class="login">
       <div class="container">
-        <h2 class="w3_agile_header">Frequently asked questions(FAQ)</h2>
-        <ul class="faq">
-          <li class="item1">
-            <a href="#" title="click here"
-              >Where is the specific location?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  We are located at Ruko Grand CBD A-09, Belahan Wedoro, Sidoarjo, 61256.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="item2">
-            <a href="#" title="click here"
-              >What payment method I could use?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  You can pay with bank transfer.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="item3">
-            <a href="#" title="click here"
-              >Are you shipping worldwide?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                  No. We are currently ship to Indonesia only. We hope we can expand to worldwide as well.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="item4">
-            <a href="#" title="click here"
-              >When will I get my order?</a
-            >
-            <ul>
-              <li class="subitem1">
-                <p>
-                 We will proceed and your order the day after you placed your order. You will be able to receive your order in several days based on the expedition.
-                </p>
-              </li>
-            </ul>
-          </li>
-   
-        <!-- script for tabs -->
-        <script type="text/javascript">
-          $(function () {
-            var menu_ul = $(".faq > li > ul"),
-              menu_a = $(".faq > li > a");
-
-            menu_ul.hide();
-
-            menu_a.click(function (e) {
-              e.preventDefault();
-              if (!$(this).hasClass("active")) {
-                menu_a.removeClass("active");
-                menu_ul.filter(":visible").slideUp("normal");
-                $(this)
-                  .addClass("active")
-                  .next()
-                  .stop(true, true)
-                  .slideDown("normal");
-              } else {
-                $(this).removeClass("active");
-                $(this).next().stop(true, true).slideUp("normal");
-              }
-            });
-          });
-        </script>
-        <!-- script for tabs -->
+        <h2>Login</h2>
+          <label for="floatingInput">
+            <h6>
+                <strong>
+                    {{ session('Cust_Name') }}
+                </strong>
+            </h6>
+          </label>
+        <div
+          class="login-form-grids animated wow slideInUp"
+          data-wow-delay=".5s">
+          <form method="post" action={{route('authenticate')}}>
+            @csrf
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}">
+              @if ($errors->has('email'))
+                <span class="text-danger">{{ $errors->first('email') }}</span>
+              @endif
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control @error('password') is-invalid @enderror" name="password">
+              @if ($errors->has('password'))
+                <span class="text-danger">{{ $errors->first('password') }}</span>
+              @endif
+            </div>
+            <input type="checkbox" placeholder="Remember Me" required=" ">
+            <label>Remember Me</label>
+            <div class="forgot">
+              <a href="#">Forgot Password?</a>
+            </div>
+            <a href="/index"><input type="submit" value="Login" /></a>
+          </form>
+      
+  {{-- @endif --}}
+        </div>
+        <h4>For New People</h4>
+        <p>
+          <a href="/registered">Register Here</a> (Or) go back to
+          <a href="/index"
+            >Home<span
+              class="glyphicon glyphicon-menu-right"
+              aria-hidden="true"
+            ></span
+          ></a>
+        </p>
       </div>
     </div>
+    <!-- //login -->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -384,6 +350,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="clearfix"></div>
         </div>
       </div>
+
       <div class="footer-copy">
         <div class="container">
           <p>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginRegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::controller(LoginRegisterController::class)->group(function() {
+    Route::get('/registered', 'register')->name('register');
+    Route::post('/store', 'store')->name('store');
+    Route::get('/login', 'login')->name('login');
+    Route::post('/authenticate', 'authenticate')->name('authenticate');
+    Route::get('/dashboard', 'dashboard')->name('dashboard');
+    Route::post('/logout', 'logout')->name('logout');
+});
+
 
 Route::get('/', function () {
     return view('index');
@@ -44,11 +55,6 @@ Route::get('/hdpe', function () {
     return view('hdpe');
 });
 
-
-Route::get('/login', function () {
-    return view('login');
-});
-
 Route::get('/offers', function () {
     return view('offers');
 });
@@ -72,9 +78,6 @@ Route::get('/kertas', function () {
     return view('kertas');
 });
 
-Route::get('/registered', function () {
-    return view('registered');
-});
 
 Route::get('/short-codes', function () {
     return view('short-codes');

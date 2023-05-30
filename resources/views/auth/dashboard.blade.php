@@ -1,13 +1,7 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title', 'Registration')</title>
+    <title>@yield('title', 'Login Dashboard')</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -55,8 +49,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- start-smoth-scrolling -->
   </head>
-
   <body>
+    
     <!-- header -->
     <div class="agileits_header">
       <div class="container">
@@ -68,8 +62,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="agile-login">
           <ul>
-            <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/login">Login</a></li>
+            <li>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
+                            </li>
+                        @else    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">
+                                    {{ Auth::user()->name }}
+                                </a>
+                            </li>
+                            <li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                       style="color: white; font-weight: bold; text-decoration: none;">Logout</a>
+                                </form>
+                            </li>                                
+                        @endguest
+                    </ul>
+                </div>
+            </li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
@@ -141,6 +160,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
+           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
@@ -157,179 +177,149 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </nav>
       </div>
     </div>
-
     <!-- //navigation -->
-    <!-- breadcrumbs -->
-    <div class="breadcrumbs">
-      <div class="container">
-        <ol
-          class="breadcrumb breadcrumb1 animated wow slideInLeft"
-          data-wow-delay=".5s"
-        >
-          <li>
-            <a href="/index"
-              ><span class="glyphicon glyphicon-home" aria-hidden="true"></span
-              >Home</a
-            >
-          </li>
-          <li class="active">Register Page</li>
-        </ol>
-      </div>
-    </div>
-    <!-- //breadcrumbs -->
-    <!-- register -->
-    <div class="register">
-      <div class="container">
-        <h2>Register Here</h2>
-        <div class="login-form-grids">
-          <h5>profile information</h5>
-          <form action="#" method="post">
-            @csrf
-            <input type="text" placeholder="First Name..." required=" " />
-            <input type="text" placeholder="Last Name..." required=" " />
-          
-          <h6>Login information</h6>
-          
-            <input type="email" placeholder="Email Address" required=" " />
-            <input type="password" placeholder="Password" required=" " />
-            <div class="register-check-box">
-              <div class="check">
-                <label class="checkbox"
-                  ><input type="checkbox" name="checkbox" /><i> </i>I accept the
-                  terms and conditions</label
-                >
-              </div>
+ {{-- Dashboard --}}
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+                <div class="card-body">
+                    @if ($message = Session::get('success'))
+                        <div class="alert alert-success">
+                            {{ $message }}
+                        </div>
+                    @else
+                        <div class="alert alert-success">
+                            You are logged in!
+                        </div>       
+                    @endif                
+                </div>
             </div>
-            <input type="submit" value="Register" />
-          </form>
-        </div>
-        <div class="register-home">
-          <a href="/index">Home</a>
-        </div>
-      </div>
+        </div>    
     </div>
-    <!-- //register -->
+    {{-- End Dashboard --}}
+
     <!-- //footer -->
     <div class="footer">
-      <div class="container">
-        <div class="w3_footer_grids">
-          <div class="col-md-3 w3_footer_grid">
-            <h3>Contact</h3>
-
-            <ul class="address">
+        <div class="container">
+          <div class="w3_footer_grids">
+            <div class="col-md-3 w3_footer_grid">
+              <h3>Contact</h3>
+  
+              <ul class="address">
+                <li>
+                  <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i
+                  >Ruko Grand CBD Wedoro A-09, <span>Sidoarjo City.</span>
+                </li>
+                <li>
+                  <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i
+                  ><a href="mailto:mrkentang.sby@gmail.com"
+                    >mrkentang.sby@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i
+                  >+62 896-3781-5553
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+              <h3>Information</h3>
+              <ul class="info">
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/about">About Us</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/contact">Contact Us</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/faq">FAQ's</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+              <h3>Category</h3>
+              <ul class="info">
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/opp">Opp</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/hdpe">HDPE</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/pe">PE</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/kresek">Kresek</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/gelas">Gelas</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/kertas">Kertas</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+              <h3>Profile</h3>
+              <ul class="info">
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/wishlist">My Wishlist</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/checkout">My Cart</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/login">Login</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><a href="/registered">Create Account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+  
+        <div class="footer-copy">
+          <div class="container">
+            <p>
+              © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-botm">
+        <div class="container">
+          <div class="w3layouts-foot">
+            <ul>
               <li>
-                <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i
-                >Ruko Grand CBD Wedoro A-09, <span>Sidoarjo City.</span>
-              </li>
-              <li>
-                <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i
-                ><a href="mailto:mrkentang.sby@gmail.com"
-                  >mrkentang.sby@gmail.com</a
-                >
-              </li>
-              <li>
-                <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i
-                >+62 896-3781-5553
+                <a href="wa.me/089637815553" class="w3_agile_whatsapp"
+                  ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                ></a>
               </li>
             </ul>
           </div>
-          <div class="col-md-3 w3_footer_grid">
-            <h3>Information</h3>
-            <ul class="info">
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/about">About Us</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/contact">Contact Us</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/faq">FAQ's</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3 w3_footer_grid">
-            <h3>Category</h3>
-            <ul class="info">
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/opp">Opp</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/hdpe">HDPE</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/pe">PE</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/kresek">Kresek</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/gelas">Gelas</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/kertas">Kertas</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3 w3_footer_grid">
-            <h3>Profile</h3>
-            <ul class="info">
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/wishlist">My Wishlist</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/checkout">My Cart</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/login">Login</a>
-              </li>
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/registered">Create Account</a>
-              </li>
-            </ul>
+          <div class="payment-w3ls">
+            <img src="images/card.png" alt=" " class="img-responsive" />
           </div>
           <div class="clearfix"></div>
         </div>
       </div>
-
-      <div class="footer-copy">
-        <div class="container">
-          <p>
-            © 2023 Toko Aneka Jaya Plastik. All rights reserved | Design by Group 8
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-botm">
-      <div class="container">
-        <div class="w3layouts-foot">
-          <ul>
-            <li>
-              <a href="wa.me/089637815553" class="w3_agile_whatsapp"
-                ><i class="fa fa-whatsapp" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="payment-w3ls">
-          <img src="images/card.png" alt=" " class="img-responsive" />
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-    <!-- //footer -->
+      <!-- //footer -->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- top-header and slider -->
@@ -382,3 +372,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //main slider-banner -->
   </body>
 </html>
+
+
+

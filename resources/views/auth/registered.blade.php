@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title', 'Login')</title>
+    <title>@yield('title', 'Registration')</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -68,8 +68,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="agile-login">
           <ul>
-            <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/login">Login</a></li>
+            <li>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
+                            </li>
+                        @else    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">
+                                    {{ Auth::user()->name }}
+                                </a>
+                            </li>
+                            <li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                       style="color: white; font-weight: bold; text-decoration: none;">Logout</a>
+                                </form>
+                            </li>                                
+                        @endguest
+                    </ul>
+                </div>
+            </li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
@@ -141,7 +166,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
-           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
@@ -173,44 +197,75 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Login Page</li>
+          <li class="active">Register Page</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!-- login -->
-    <div class="login">
+    <!-- register -->
+    <div class="register">
       <div class="container">
-        <h2>Login</h2>
-
-        <div
-          class="login-form-grids animated wow slideInUp"
-          data-wow-delay=".5s"
-        >
-          <form>
-            <input type="email" placeholder="Email Address" required=" " />
-            <input type="password" placeholder="Password" required=" " /><br>
-            <input type="checkbox" placeholder="Remember Me" required=" ">
-            <label>Remember Me</label>
-            <div class="forgot">
-              <a href="#">Forgot Password?</a>
+        <h2>Register Here</h2>
+        <div class="login-form-grids">
+          <h5>profile information</h5>
+          <form action="{{ route('store') }}" method="post">
+            @csrf
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control @error('name') is-invalid @enderror" name="name"
+                    value="{{ old('name') }}">
+                @if ($errors->has('name'))
+                    <span class="text-danger">{{ $errors->first('name') }}</span>
+                @endif
             </div>
-            <a href="/index"><input type="submit" value="Login" /></a>
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="text" class="form-control" name="number" value="{{ old('number') }}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Address</label>
+                <input type="text" class="form-control" name="address">
+            </div>
+            <h6>Login information</h6>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control  @error('email') is-invalid @enderror"
+                    name="email" value="{{ old('email') }}">
+                @if ($errors->has('email'))
+                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                @endif
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control @error('password') is-invalid @enderror"
+                    name="password">
+                @if ($errors->has('password'))
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                @endif
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password Confirm</label>
+                <input type="password" class="form-control @error('password') is-invalid @enderror"
+                    name="password_confirmation">
+                @if ($errors->has('password'))
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                @endif
+            </div>
+            <div class="register-check-box">
+                <div class="check">
+                    <label class="checkbox"><input type="checkbox" name="checkbox" /><i> </i>I accept the
+                        terms and conditions</label>
+                </div>
+            </div>
+            <input type="submit" value="Register" />
           </form>
         </div>
-        <h4>For New People</h4>
-        <p>
-          <a href="/registered">Register Here</a> (Or) go back to
-          <a href="/index"
-            >Home<span
-              class="glyphicon glyphicon-menu-right"
-              aria-hidden="true"
-            ></span
-          ></a>
-        </p>
+        <div class="register-home">
+          <a href="/index">Home</a>
+        </div>
       </div>
     </div>
-    <!-- //login -->
+    <!-- //register -->
     <!-- //footer -->
     <div class="footer">
       <div class="container">
