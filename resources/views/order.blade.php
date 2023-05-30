@@ -189,12 +189,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <table class="timetable_sub">
             <thead>
               <tr>
+              <th></th>
                 <th>Order ID</th>
                 <th>Customer Name</th>
                 <th>Order Total</th>
                 <th>Status</th>
                 <th>Delivery</th>
-
                 <th>Action</th> 
               </tr>
             </thead>
@@ -204,6 +204,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         for ($x=0;$x<sizeof($listOrderBarang);$x++){
                         echo"
                         <tr text-align: center;'>
+                        <td>
+                        <button type=button class=btn btn-default btn-sm style=background-color:transparent;>
+                        <i class='glyphicon glyphicon-remove fa-lg' aria-hidden=true></i>
+                        </button></td>
                         <td>{$listOrderBarang[$x]->ID}</td>
                         <td>{$listOrderBarang[$x]->name}</td>
                         <td>{$listOrderBarang[$x]->subtotal}</td>

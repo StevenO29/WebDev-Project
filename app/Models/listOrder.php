@@ -17,7 +17,7 @@ class listOrder extends Model
         o.order_status AS `status`,s.Carrier_Name AS `carrier`,s.Tracking_Num AS `tracking`,
         od.p_name AS `prod_name`, od.p_price AS `price`, od.o_qty AS `qty`
          FROM order2 o, customer c, order_details od, shipping s 
-         where o.cust_id = c.cust_id and o.order_id = od.order_id and s.order_id = o.order_id
+         where o.cust_id = c.cust_id and o.order_id = od.order_id and s.order_id = o.order_id and o.status_del = '0'
              group by o.order_id;       ";
         
         $selectorder = DB::select($value);

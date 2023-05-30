@@ -282,9 +282,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
           </div>
           <div class="agile_top_brands_grids">
+          <div class="row">
             @foreach($tabel as $t)
-            @if (($t->ID + 1) % 3 === 0)
-            <div class="col-md-4 top_brand_left">
+            <div class="col-md-4">
+              @foreach($t as $tabel)
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">
                   <div class="agile_top_brand_left_grid_pos">
@@ -325,106 +326,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   </div>
                 </div>
               </div>
+              @endforeach
             </div>
-            @endif
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"
-                          /></a>
-                          <p>OPP 9x9</p>
-                          <h4>Rp4,000 <span>Rp6,000</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                          <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input type="hidden" name="item_name" value="Pepsi soft drink"/>
-                              <input type="hidden" name="amount" value="80.00"/>
-                              <input type="hidden" name="discount_amount" value="1.00"/>
-                              <input type="hidden" name="currency_code" value="USD"/>
-                              <input type="hidden" name="return" value=" " />
-                              <input type="hidden" name="cancel_return" value=" "/>
-                              <input type="submit" name="submit" value="Add to cart" class="button"/>
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img
-                              src="images/16.png"
-                              alt=" "
-                              class="img-responsive"
-                          /></a>
-                          <p>Channa</p>
-                          <h4>$80.99 <span>$105.00</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input type="hidden" name="item_name" value="Pepsi soft drink"/>
-                              <input type="hidden" name="amount" value="80.00"/>
-                              <input type="hidden" name="discount_amount" value="1.00"/>
-                              <input type="hidden" name="currency_code" value="USD"/>
-                              <input type="hidden" name="return" value=" " />
-                              <input type="hidden" name="cancel_return" value=" "/>
-                              <input type="submit" name="submit" value="Add to cart" class="button"/>
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
+          @endforeach
             <div class="clearfix"></div>
             <br><br>
-            @endforeach
-          </div> 
+            </div> 
+          </div>
           <div class="agile_top_brands_grids">
             <div class="clearfix"></div>
           </div>
