@@ -981,6 +981,22 @@ a.w3_agile_vimeo:hover{
     padding: 5em 0;
 }
 /*-- //login --*/
+/*-- // dashboard -- */
+.dashboard {
+    width: 45%;
+    padding: 3em;
+	background:#F7F7F9;
+	margin:3em auto 3em;
+}
+.alert alert-success{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
 /*-- register --*/
 .register {
     padding: 5em 0;

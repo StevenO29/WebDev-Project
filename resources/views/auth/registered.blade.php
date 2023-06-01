@@ -207,6 +207,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="container">
         <h2>Register Here</h2>
         <div class="login-form-grids">
+          @if(Session::has('success'))
+            <div class="alert alert-success" role="alert">
+              {{ Session::get('success') }}
+            </div>
+          @endif
           <h5>profile information</h5>
           <form action="{{ route('store') }}" method="post">
             @csrf
@@ -220,11 +225,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="mb-3">
                 <label class="form-label">Phone Number</label>
-                <input type="text" class="form-control" name="number" value="{{ old('number') }}">
+                <input type="text" class="form-control" name="phone" value="{{ old('phone') }}">
             </div>
             <div class="mb-3">
                 <label class="form-label">Address</label>
-                <input type="text" class="form-control" name="address">
+                <input type="text" class="form-control" name="address" value="{{ old('address') }}">
             </div>
             <h6>Login information</h6>
             <div class="mb-3">
@@ -245,10 +250,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="mb-3">
                 <label class="form-label">Password Confirm</label>
-                <input type="password" class="form-control @error('password') is-invalid @enderror"
+                <input type="password" class="form-control @error('password_confirmation') is-invalid @enderror"
                     name="password_confirmation">
-                @if ($errors->has('password'))
-                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                @if ($errors->has('password_confirmation'))
+                    <span class="text-danger">{{ $errors->first('password_confirmation') }}</span>
                 @endif
             </div>
             <div class="register-check-box">

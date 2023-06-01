@@ -217,6 +217,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div
           class="login-form-grids animated wow slideInUp"
           data-wow-delay=".5s">
+          @if (session('success'))
+            <div class="alert alert-success">
+             {{ session('success') }}
+            </div>
+          @endif
+
           <form method="post" action={{route('authenticate')}}>
             @csrf
             <div class="mb-3">

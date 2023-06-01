@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class LoginRegisterController extends Controller
 {
@@ -43,21 +44,41 @@ class LoginRegisterController extends Controller
             'phone' => 'required|numeric|digits_between:10,12',
             'address' => 'required|string|max:250',
             'email' => 'required|email|max:250|unique:users',
-            'password' => 'required|min:8|confirmed',
+            'password' => 'required|min:8',
             'password_confirmation' => 'required|min:8'
         ]);
 
-        User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password)
-        ]);
+        // User::create($credentials)
+        $users = new User;
+        $users->name = $request->name;
+        $users->phone = $request->phone;
+        $users->address = $request->address;
+        $users->email = $request->email;
+        $users->password = Hash::make($request->password);
+        $users->password_confirmation = Hash::make($request->password_confirmation);
+
+        // User::create([
+        //     'name' => $request->name,
+        //     'phone' => $request->phone,
+        //     'address' => $request->address,
+        //     'email' => $request->email,
+        //     'password' => Hash::make($request->password),
+        //     'password_confirmation' => Hash::make($request->password_confirmation),
+        //     // 'password' => bcrypt($request->input('cust_password')),
+        // ]);
+        $users->save();
+        // dd($request->all());
+
+        if (!$users->save()) { // Check if saving the user fails
+            return redirect(route('register'))->with('error', 'Registration Failed');
+        }
 
         $credentials = $request->only('email', 'password');
         Auth::attempt($credentials);
         $request->session()->regenerate();
-        return redirect()->route('dashboard')
-        ->withSuccess('You have successfully registered & logged in!');
+        return redirect(route('login'))->with('success', 'Registration Success');
+        // return redirect()->route('dashboard')
+        // ->withSuccess('You have successfully registered & logged in!');
     }
 
     /**
@@ -86,7 +107,7 @@ class LoginRegisterController extends Controller
         if(Auth::attempt($credentials))
         {
             $request->session()->regenerate();
-            return redirect()->route('dashboard')
+            return redirect()->route('login')
                 ->withSuccess('You have successfully logged in!');
         }
 
@@ -122,11 +143,12 @@ class LoginRegisterController extends Controller
      */
     public function logout(Request $request)
     {
+        session::flush();
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect()->route('login')
-            ->withSuccess('You have logged out successfully!');;
+            ->withSuccess('You have logged out successfully! Log back in');
     }    
 
 }
