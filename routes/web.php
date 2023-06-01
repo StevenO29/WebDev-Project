@@ -103,7 +103,7 @@ Route::controller(TransactionController::class)->group(function() {
     Route::delete('/cart/remove/{itemId}', 'removeItem')->name('cart.remove');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// });
 
