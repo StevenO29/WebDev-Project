@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginRegisterController;
 
@@ -93,5 +94,16 @@ Route::get('/wishlist', function () {
 
 Route::get('/welcome', function () {
     return view('welcome');
+});
+
+Route::controller(TransactionController::class)->group(function() {
+    Route::get('/cart', 'index')->name('cart.index');
+    Route::post('/cart/add', 'addItem')->name('cart.add');
+    Route::patch('/cart/update/{itemId}', 'updateItem')->name('cart.update');
+    Route::delete('/cart/remove/{itemId}', 'removeItem')->name('cart.remove');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
 
