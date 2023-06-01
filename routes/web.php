@@ -67,21 +67,21 @@ Route::get('/offers', function () {
 // });
 
 
-Route::get('/kertas', function () {
-    return view('kertas');
-});
+// Route::get('/kertas', function () {
+//     return view('kertas');
+// });
 
-Route::get('/pe', function () {
-    return view('pe');
-});
+// Route::get('/pe', function () {
+//     return view('pe');
+// });
 
-Route::get('/kresek', function () {
-    return view('kresek');
-});
+// Route::get('/kresek', function () {
+//     return view('kresek');
+// });
 
-Route::get('/products', function () {
-    return view('products');
-});
+// Route::get('/products', function () {
+//     return view('products');
+// });
 
 Route::get('/registered', function () {
     return view('registered');
@@ -99,7 +99,27 @@ Route::get('/single', function () {
 //     return view('newproduct');
 // });
 Route::prefix('/opp')->group(function(){
-    Route::get('/',[newProdController::class,"tabelprod"] );
+    Route::get('/',[newProdController::class,"tabelprodOPP"] );
+});
+
+Route::prefix('/hdpe')->group(function(){
+    Route::get('/',[newProdController::class,"tabelprodHDPE"] );
+});
+
+Route::prefix('/pe')->group(function(){
+    Route::get('/',[newProdController::class,"tabelprodPE"] );
+});
+
+Route::prefix('/kresek')->group(function(){
+    Route::get('/',[newProdController::class,"tabelprodKresek"] );
+});
+
+Route::prefix('/gelas')->group(function(){
+    Route::get('/',[newProdController::class,"tabelprodGelas"] );
+});
+
+Route::prefix('/kertas')->group(function(){
+    Route::get('/',[newProdController::class,"tabelprodKertas"] );
 });
 
 Route::prefix('/order')->group(function(){

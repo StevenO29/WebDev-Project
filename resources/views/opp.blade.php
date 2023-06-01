@@ -283,7 +283,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="agile_top_brands_grids">
           <div class="row">
-            @foreach($tabel as $t)
+            @foreach($tabelOPP as $t)
             <div class="col-md-4">
               @foreach($t as $tabel)
               <div class="hover14 column">
@@ -300,7 +300,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                         <a href="/single">
-                          <img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"/>
+                          <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="webdev_image_assets/OPP.png"/>
                         </a>
                           <p>{{$t->Nama}}</p>
                           <h4>{{$t->Harga}}</h4>
