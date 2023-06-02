@@ -32,7 +32,7 @@ class newProdController extends Controller
                 $file = $req->file('product_image');
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . '.' . $extension;
-                $file->move('uploads/', $filename);
+                $file->move(public_path("public/uploads"), $filename);
                 $produkbaru->product_image = $filename;
             }
             

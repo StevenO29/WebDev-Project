@@ -296,7 +296,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 @foreach($t as $tabel)
                 <div class="snipcart-thumb">
                   <a href="/single">
-                    <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="webdev_image_assets/OPP.png" />
+                    <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{$t->product_image}}" />
                   </a>
                   <p>{{$t->Nama}}</p>
                   <h4>{{$t->Harga}}</h4>
@@ -313,7 +313,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <input type="hidden" name="currency_code" value="USD" />
                       <input type="hidden" name="return" value=" " />
                       <input type="hidden" name="cancel_return" value=" " />
-                      <input type="submit" name="submit" value="Add to cart" class="button" />
+                      <input type="submit" name="submit" value="Edit Product" class="button" />
                     </fieldset>
                   </form>
                 </div>
