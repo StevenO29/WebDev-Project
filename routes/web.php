@@ -37,14 +37,9 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
-Route::get('/gelas', function () {
-    return view('gelas');
-});
+
 Route::get('/gourmet', function () {
     return view('gourmet');
-});
-Route::get('/hdpe', function () {
-    return view('hdpe');
 });
 
 Route::get('/index', function () {

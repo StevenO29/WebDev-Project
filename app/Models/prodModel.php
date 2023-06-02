@@ -14,7 +14,7 @@ class prodModel extends Model
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
-        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`
+        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
         FROM product where p_category = 'OPP'; ;        ";
 
         $produk = DB::select($value);
@@ -24,7 +24,7 @@ class prodModel extends Model
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
-        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`
+        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
         FROM product where p_category = 'HDPE';        ";
 
         $produkHDPE = DB::select($value);
@@ -34,17 +34,28 @@ class prodModel extends Model
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
-        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`
+        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
         FROM product where p_category = 'PE';        ";
 
         $produk = DB::select($value);
         return $produk;
     }
+    
+    public function getKresekProducts()
+    {
+        $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
+        $run = DB::select($server);
+        
+        $query = $this->where('p_category', 'kresek');
+        
+        return $query;
+    }
+    
     public function tableprodukKresek(){
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
-        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`
+        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
         FROM product where p_category = 'kresek';        ";
 
         $produk = DB::select($value);
@@ -54,7 +65,7 @@ class prodModel extends Model
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
-        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`
+        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
         FROM product where p_category = 'gelas';        ";
 
         $produk = DB::select($value);
@@ -65,7 +76,7 @@ class prodModel extends Model
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
-        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`
+        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
         FROM product where p_category = 'kertas';        ";
 
         $produk = DB::select($value);

@@ -31,22 +31,6 @@ body a:hover{
 span.glyphicon.glyphicon-shopping-cart.my-cart-icon.my-cart-icon-affix {
 	position: relative !important;
 }
-
-.orderdetails {
-    background: #fff;
-    border-bottom: 2px solid #fe9126;
-    display: flex;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding-bottom: 15px;
-}
-
-.orderdetailstable {
-    margin-top: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
 .btn-danger {
     color: #fff;
     background-color: #3399cc;
@@ -66,8 +50,6 @@ span.glyphicon.glyphicon-shopping-cart.my-cart-icon.my-cart-icon-affix {
 .agile_top_brand_left_grid {
     position: relative;
     display: block;
-   
-
 }
 i.badge.badge-notify.my-cart-badge {
     font-style: normal;
@@ -321,7 +303,7 @@ ul.multi-column-dropdown h6 {
 /*-- cart --*/
 /*-- cart-box --*/ 
 .w3view-cart {
-    
+    background: transparent;
     border: none;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -2411,15 +2393,6 @@ h3.agileits-icons-title {
 	h3.icon-subheading {
 		font-size: 22px;
 	}
-    .orderdetails {
-        background: #fff;
-        border-bottom: 2px solid #fe9126;
-        display: flex;
-        margin-left:20px;
-        margin-right: 20px;
-        padding-bottom: 15px;
-    }
-    
 }
 @media (max-width:768px){
 	h3.agileits-icons-title {
@@ -2435,28 +2408,12 @@ h3.agileits-icons-title {
 	.icon-box {
 		margin: 0;
 	}
-    .orderdetails {
-        background: #fff;
-        border-bottom: 2px solid #fe9126;
-        display: flex;
-        margin-left:20px;
-        margin-right: 20px;
-        padding-bottom: 15px;
-    }
 }
 @media (max-width: 640px){
 	.icon-box {
 		float: left;
 		width: 50%;
 	}
-    .orderdetails {
-        background: #fff;
-        border-bottom: 2px solid #fe9126;
-        display: flex;
-        margin-left:20px;
-        margin-right: 20px;
-        padding-bottom: 15px;
-    }
 }
 @media (max-width: 480px){
 	.bs-glyphicons li {
@@ -2465,14 +2422,6 @@ h3.agileits-icons-title {
 	.icon-box {
 		float: none;
 		width: 100%;
-}
-.orderdetails {
-    background: #fff;
-    border-bottom: 2px solid #fe9126;
-    display: flex;
-    margin-left:20px;
-    margin-right: 20px;
-    padding-bottom: 15px;
 }
 }
 @media (max-width: 414px){
@@ -2485,29 +2434,12 @@ h3.agileits-icons-title {
 	.bs-glyphicons li {
 		width: 31.33%;
 	}
-    .orderdetails {
-        background: #fff;
-        border-bottom: 2px solid #fe9126;
-        display: flex;
-        margin-left:20px;
-        margin-right: 20px;
-        padding-bottom: 15px;
-    }
 }
 @media (max-width: 384px){
 	.icon-box {
 		float: none;
 		width: 100%;
 	}
-    .orderdetails {
-        background: #fff;
-        border-bottom: 2px solid #fe9126;
-        display: flex;
-        margin-left:20px;
-        margin-right: 20px;
-        padding-bottom: 15px;
-    }
-    
 }
 /*-- //icons --*/
 .w3_wthree_agileits_icons.main-grid-border {

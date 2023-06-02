@@ -156,8 +156,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li><a href="/kertas">Kertas</a></li>
               <li><a href="/newproduct">Add new Product</a></li>
               <li><a href="/order">Order</a></li>
-
-
             </ul>
           </div>
         </nav>

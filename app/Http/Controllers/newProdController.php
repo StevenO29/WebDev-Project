@@ -13,7 +13,6 @@ class newProdController extends Controller
     //
     public function newproduct(){
 
-
         return view('newproduct');
     }
     public function updatebarang(Request $req){
@@ -28,6 +27,15 @@ class newProdController extends Controller
             $produkbaru->P_Stock = $req->input('P_Stock');
             $produkbaru->P_Desc = $req->input('P_Desc');
             $produkbaru->P_Price = $req->input('P_Price');
+            if($req -> hasFile('product_image'))
+            {
+                $file = $req->file('product_image');
+                $extension = $file->getClientOriginalExtension();
+                $filename = time() . '.' . $extension;
+                $file->move('uploads/', $filename);
+                $produkbaru->product_image = $filename;
+            }
+            
             $produkbaru->Status_Del = '0';
             $produkbaru->save();
 
@@ -79,7 +87,7 @@ class newProdController extends Controller
 
             $user = new prodModel();
             $tabelPE = $user->tableprodukPE();
-            return view('PE',compact(['tabelPE']));
+            return view('HDPE',compact(['tabelPE']));
             
         }
         if($kategoribarang == "kresek")

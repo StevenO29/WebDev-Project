@@ -182,33 +182,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!-- //breadcrumbs -->
         <!-- form product -->
-        <div class="product">
+      <div class="product">
       <div class="container">
         <br>
+        
         <h2 style="text-align: center">New Product Form</h2>
 
         <div
           class="login-form-grids animated wow slideInUp"
           data-wow-delay=".5s"
         >
-          <form  action="/newproduct" method="POST">
+          <form  action="{{ url('newproduct') }}" method="POST" enctype="multipart/form-data">
           {{ csrf_field() }}
             Product Name: <input type="text" name="p_name" placeholder="Product Name" required=" " /><br>
             Product Category: <select id="p_category" name="categoryList">
-  <option value="opp">OPP</option>
-  <option value="hdpe">HDPE</option>
-  <option value="pe">PE</option>
-  <option value="kresek">Kresek</option>
-  <option value="gelas">Gelas</option>
-  <option value="kertas">Kertas</option>
-</select>
-<br><br>
+                                <option value="opp">OPP</option>
+                                <option value="hdpe">HDPE</option>
+                                <option value="pe">PE</option>
+                                <option value="kresek">Kresek</option>
+                                <option value="gelas">Gelas</option>
+                                <option value="kertas">Kertas</option>
+                              </select>
+            <br><br>
             Product Brand: <input type="text" name="P_Brand" placeholder="Product Brand" required=" " /><br>
             Product Price: <input type="text" name="P_Price" placeholder="Price" required=" " /><br>
             Product Stock: <input type="text" name="P_Stock" placeholder="Stock" required=" " /><br>
             Product Description: <textarea id="description" name="P_Desc" rows="4" cols="47"></textarea>
-            Product Image: <input type="file" id="myfile" name="myfile"><br>      
-            <input type="submit" value="AddProduct" />
+            Product Image: <input type="file" id="product_image" name="product_image"><br>      
+            <input type="submit" value="Add Product" />
           </form>
         </div>
         <br> <br>
