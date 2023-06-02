@@ -70,4 +70,26 @@ class TransactionController extends Controller
         // Redirect to the transactions index.
         return redirect()->route('transactions.index');
     }
+
+    public function addToCart(Request $request)
+{
+    // Get the product details from the request
+    $productName = $request->input('item_name');
+    $amount = $request->input('amount');
+    // ...
+
+    // Add the product to the cart (you can store the cart data in the session or a database)
+    // Example: store the product details in the session cart
+    $cart = session()->get('cart', []);
+    $cart[] = [
+        'item_name' => $productName,
+        'amount' => $amount,
+        // ...
+    ];
+    session()->put('cart', $cart);
+
+    // Redirect back to the checkout page or show a success message
+    return redirect()->back()->with('success', 'Product added to cart successfully!');
+}
+
 }

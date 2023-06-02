@@ -203,6 +203,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             >
           </li>
           <li class="active">Checkout Page</li>
+         
         </ol>
       </div>
     </div>
@@ -369,10 +370,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Continue Shopping</a
             >
           </div>
+          
           <div class="clearfix"></div>
         </div>
       </div>
-    </div>
+     <!-- <form action="/checkout" method="post">
+        <input type="hidden" name="product_id" value="1" />
+        <input type="hidden" name="quantity" value="1" />
+        <input type="submit" value="Checkout" />
+    </div> -->
     <!-- //checkout -->
     <!-- //footer -->
     <div class="footer">

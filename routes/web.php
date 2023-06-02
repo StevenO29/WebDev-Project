@@ -23,7 +23,13 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/dashboard', 'dashboard')->name('dashboard');
     Route::post('/logout', 'logout')->name('logout');
 });
+Route::get('/gelas', function () {
+    return view('gelas');
+});
 
+Route::controller(TransactionController::class)->group(function(){
+    Route::get('/addToCart', 'index')->name('cart.index');
+});
 
 Route::get('/', function () {
     return view('index');
@@ -37,9 +43,9 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/checkout', function () {
-    return view('checkout');
-});
+Route::post('/add-to-cart', 
+'TransactionController@addToCart')->name('transactions.addToCart');
+
 
 Route::get('/contact', function () {
     return view('contact');
@@ -49,9 +55,7 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
-Route::get('/gelas', function () {
-    return view('gelas');
-});
+
 Route::get('/hdpe', function () {
     return view('hdpe');
 });

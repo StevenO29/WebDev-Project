@@ -257,6 +257,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
         </div>
         <div class="col-md-8 products-right">
+          <script src="my-script.js"></script>
           <div class="products-right-grid">
             <div class="products-right-grids">
               <div class="sorting">
@@ -331,7 +332,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                           <h4>Rp10,000</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
+                          <form action="/checkout" method="post">
                             <fieldset>
                               <input type="hidden" name="cmd" value="_cart" />
                               <input type="hidden" name="add" value="1" />
@@ -339,22 +340,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               <input
                                 type="hidden"
                                 name="item_name"
-                                value="Fortune Sunflower Oil"
+                                value="Gelas Plastik 12oz"
                               />
                               <input
                                 type="hidden"
                                 name="amount"
-                                value="35.99"
+                                value="10,000"
                               />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
+                          
                               <input
                                 type="hidden"
                                 name="currency_code"
-                                value="USD"
+                                value="IDR"
                               />
                               <input type="hidden" name="return" value=" " />
                               <input
@@ -362,11 +359,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 name="cancel_return"
                                 value=" "
                               />
-                              <input
+                             <!--  <input
                                 type="submit"
                                 name="submit"
                                 value="Add to cart"
                                 class="button"
+                              /> -->
+
+                              <input 
+                                type="button" 
+                                value="Add to Cart" 
+                                class="button" 
+                                onclick="addProductToCheckout();" 
                               />
                             </fieldset>
                           </form>
@@ -397,6 +401,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <p>Gelas Plastik 10oz</p>
                             <h4>Rp10,000</h4>
                           </div>
+                          
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
                             <fieldset>
@@ -421,7 +426,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               <input
                                 type="hidden"
                                 name="currency_code"
-                                value="USD"
+                                value="IDR"
                               />
                               <input type="hidden" name="return" value=" " />
                               <input
@@ -472,45 +477,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <h4>Rp10,000</h4>
                           </div>
                         <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
+                          <form  action="{{ route('transactions.addToCart') }}" method="post">
+                            @csrf
+
                             <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
+                              <input type="hidden" name="item_name" value="Pepsi soft drink" />
+                              <input type="hidden" name="amount" value="80.00" />
+                              <input type="hidden" name="currency_code" value="IDR" />
+                              <input type="submit" name="submit" value="Add to Cart" class="button" />
                             </fieldset>
-                          </form>
+                          </form>                          
+                          
                         </div>
                       </div>
                     </figure>
@@ -565,7 +542,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               <input
                                 type="hidden"
                                 name="currency_code"
-                                value="USD"
+                                value="IDR"
                               />
                               <input type="hidden" name="return" value=" " />
                               <input
@@ -632,7 +609,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               <input
                                 type="hidden"
                                 name="currency_code"
-                                value="USD"
+                                value="IDR"
                               />
                               <input type="hidden" name="return" value=" " />
                               <input
@@ -706,7 +683,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               <input
                                 type="hidden"
                                 name="currency_code"
-                                value="USD"
+                                value="IDR"
                               />
                               <input type="hidden" name="return" value=" " />
                               <input
@@ -776,7 +753,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               <input
                                 type="hidden"
                                 name="currency_code"
-                                value="USD"
+                                value="IDR"
                               />
                               <input type="hidden" name="return" value=" " />
                               <input
