@@ -302,7 +302,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   <h4>Rp. {{$t->Harga}}</h4>
                 </div>
                 <div class="snipcart-details top_brand_home_details">
-                  <form action="#" method="post">
+                  <form action="/editproduct" method="post">
+                  {{ csrf_field() }}
                     <fieldset>
                       <input type="hidden" name="cmd" value="_cart" />
                       <input type="hidden" name="add" value="1" />
@@ -313,7 +314,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <input type="hidden" name="currency_code" value="USD" />
                       <input type="hidden" name="return" value=" " />
                       <input type="hidden" name="cancel_return" value=" " />
-                      <input type="submit" name="submit" value="Edit Product" class="button" />
+                      <a href="/editproduct">Edit</a>
                     </fieldset>
                   </form>
                 </div>
@@ -500,17 +501,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       });
     </script>
     <!-- //here ends scrolling icon -->
-    <script src="js/minicart.min.js"></script>
-    <script>
-      // Mini Cart
-      paypal.minicart.render({
-        action: "#",
-      });
-
-      if (~window.location.search.indexOf("reset=true")) {
-        paypal.minicart.reset();
-      }
-    </script>
+   
     <!-- main slider-banner -->
     <script src="js/skdslider.min.js"></script>
     <link href="css/skdslider.css" rel="stylesheet" />

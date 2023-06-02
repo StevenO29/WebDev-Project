@@ -82,8 +82,8 @@ Route::get('/registered', function () {
     return view('registered');
 });
 
-Route::get('/short-codes', function () {
-    return view('short-codes');
+Route::get('/editproduct', function () {
+    return view('editproduct');
 });
 
 Route::get('/single', function () {
@@ -122,10 +122,15 @@ Route::prefix('/order')->group(function(){
 });
 
   Route::prefix('/orderdetails')->group(function(){
-      Route::get('/',[orderDetailsController::class,"tabelorderDetail"] );
+      Route::get('/{id}',[orderDetailsController::class,"tabelorderDetail"] );
  });
 
  Route::prefix('/newproduct')->group(function(){
+    Route::get('/',[newProdController::class,"newproduct"]);
+    Route::POST('/',[newProdController::class,"updatebarang"]);
+});
+
+Route::prefix('/editproduct')->group(function(){
     Route::get('/',[newProdController::class,"newproduct"]);
     Route::POST('/',[newProdController::class,"updatebarang"]);
 });

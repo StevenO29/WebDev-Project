@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class listOrderDetails extends Model
 {
-    protected $table = 'order_details';
+    protected $table = 'Order_Details';
     protected $primaryKey = 'order_id';
 
     use HasFactory;

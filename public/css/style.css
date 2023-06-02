@@ -121,6 +121,7 @@ button.btn.btn-default.search {
     outline: none;
     border: none;
 }
+
 button.btn.btn-default.search:hover {
     background:#333;
 	
