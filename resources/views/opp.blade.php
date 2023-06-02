@@ -299,7 +299,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('public/uploads/' . $t->product_image)}}" />
                   </a>
                   <p>{{$t->Nama}}</p>
-                  <h4>{{$t->Harga}}</h4>
+                  <h4>Rp. {{$t->Harga}}</h4>
                 </div>
                 <div class="snipcart-details top_brand_home_details">
                   <form action="#" method="post">
