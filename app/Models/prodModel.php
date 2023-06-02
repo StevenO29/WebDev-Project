@@ -15,7 +15,7 @@ class prodModel extends Model
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
         p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
-        FROM product where p_category = 'OPP'; ;        ";
+        FROM Product where p_category = 'OPP';       ";
 
         $produk = DB::select($value);
         return $produk;
@@ -25,7 +25,7 @@ class prodModel extends Model
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
         p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
-        FROM product where p_category = 'HDPE';        ";
+        FROM Product where p_category = 'HDPE';        ";
 
         $produkHDPE = DB::select($value);
         return $produkHDPE;
@@ -35,7 +35,7 @@ class prodModel extends Model
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
         p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
-        FROM product where p_category = 'PE';        ";
+        FROM Product where p_category = 'PE';        ";
 
         $produk = DB::select($value);
         return $produk;
@@ -56,7 +56,7 @@ class prodModel extends Model
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
         p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
-        FROM product where p_category = 'kresek';        ";
+        FROM Product where p_category = 'kresek';        ";
 
         $produk = DB::select($value);
         return $produk;
@@ -66,7 +66,7 @@ class prodModel extends Model
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
         p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
-        FROM product where p_category = 'gelas';        ";
+        FROM Product where p_category = 'gelas';        ";
 
         $produk = DB::select($value);
         return $produk;
@@ -77,7 +77,7 @@ class prodModel extends Model
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
         p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
-        FROM product where p_category = 'kertas';        ";
+        FROM Product where p_category = 'kertas';        ";
 
         $produk = DB::select($value);
         return $produk;

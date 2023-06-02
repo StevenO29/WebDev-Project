@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class newProdModel extends Model
 {
     use HasFactory;
-    protected $table = "product";
+    protected $table = "Product";
 
     public $primaryKey = "product_id";
 
