@@ -207,13 +207,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="login">
       <div class="container">
         <h2>Login</h2>
-          <label for="floatingInput">
-            <h6>
-                <strong>
-                    {{ session('Cust_Name') }}
-                </strong>
-            </h6>
-          </label>
         <div
           class="login-form-grids animated wow slideInUp"
           data-wow-delay=".5s">
@@ -222,7 +215,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
              {{ session('success') }}
             </div>
           @endif
-
           <form method="post" action={{route('authenticate')}}>
             @csrf
             <div class="mb-3">
@@ -234,12 +226,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="mb-3">
               <label class="form-label">Password</label>
-              <input type="password" class="form-control @error('password') is-invalid @enderror" name="password">
+              <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" required=" ">
               @if ($errors->has('password'))
                 <span class="text-danger">{{ $errors->first('password') }}</span>
               @endif
             </div>
-            <input type="checkbox" placeholder="Remember Me" required=" ">
+            <input type="checkbox" placeholder="Remember Me" name="remember">
             <label>Remember Me</label>
             <div class="forgot">
               <a href="#">Forgot Password?</a>
