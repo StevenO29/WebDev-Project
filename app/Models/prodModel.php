@@ -18,7 +18,8 @@ class prodModel extends Model
         FROM Product where p_category = 'OPP';       ";
 
         $produk = DB::select($value);
-        return $produk;
+        
+        return collect($produk);
     }
     public function tableprodukHDPE(){
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
@@ -28,7 +29,7 @@ class prodModel extends Model
         FROM Product where p_category = 'HDPE';        ";
 
         $produkHDPE = DB::select($value);
-        return $produkHDPE;
+        return collect($produkHDPE);
     }
     public function tableprodukPE(){
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
@@ -38,7 +39,7 @@ class prodModel extends Model
         FROM Product where p_category = 'PE';        ";
 
         $produk = DB::select($value);
-        return $produk;
+        return collect($produk);
     }
     
     public function getKresekProducts()
@@ -59,7 +60,7 @@ class prodModel extends Model
         FROM Product where p_category = 'kresek';        ";
 
         $produk = DB::select($value);
-        return $produk;
+        return collect($produk);
     }
     public function tableprodukGelas(){
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
@@ -69,7 +70,7 @@ class prodModel extends Model
         FROM Product where p_category = 'gelas';        ";
 
         $produk = DB::select($value);
-        return $produk;
+        return collect($produk);
     }
 
     public function tableprodukKertas(){
@@ -80,6 +81,6 @@ class prodModel extends Model
         FROM Product where p_category = 'kertas';        ";
 
         $produk = DB::select($value);
-        return $produk;
+        return collect($produk);
     }
 }

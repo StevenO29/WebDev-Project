@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\DB;
 class listOrder extends Model
 {
     use HasFactory;
+    protected $table = 'order2';
+    protected $primaryKey = 'order_id';
     public function tabelorder(){
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
@@ -21,6 +23,6 @@ class listOrder extends Model
              group by o.order_id;       ";
         
         $selectorder = DB::select($value);
-        return $selectorder;
+        return collect($selectorder);
     }
 }

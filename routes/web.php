@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome');
 });
 
 Route::get('/about', function () {
@@ -130,9 +130,6 @@ Route::prefix('/order')->group(function(){
     Route::POST('/',[newProdController::class,"updatebarang"]);
 });
 
-Route::prefix('/editproduct')->group(function(){
-    Route::get('/',[newProdController::class,"newproduct"]);
-    Route::POST('/',[newProdController::class,"updatebarang"]);
-});
+
 
 // Route::get('/orderdetails/{id}', [OrderDetailsController::class, 'show'])->name('orderdetails.show');

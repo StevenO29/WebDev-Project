@@ -287,7 +287,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="agile_top_brands_grids">
   <div class="row">
-    @foreach($tabelKertas as $t)
+    @foreach($paginator as $t)
     <div class="col-md-4" style="padding-bottom: 15px;">
       <div class="hover14 column">
         <div class="agile_top_brand_left_grid">
@@ -336,23 +336,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <nav class="numbering">
             <ul class="pagination paging">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">1<span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
+            {{ $paginator->links() }}
             </ul>
           </nav>
         </div>

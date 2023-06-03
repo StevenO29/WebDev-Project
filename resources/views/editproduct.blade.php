@@ -186,7 +186,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="container">
         <br>
         
-        <h2 style="text-align: center">Edit Product Form</h2>
+        <h2 style="text-align: center">Edit Product</h2>
 
         <div
           class="login-form-grids animated wow slideInUp"

@@ -199,7 +199,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </tr>
             </thead>
             <tbody>
-            <?php
+              @php
+              $no = 1;
+              @endphp
+            <!-- 
                        
                         for ($x=0;$x<sizeof($listOrderBarang);$x++){
                         echo"
@@ -216,7 +219,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <td><a href=/orderdetails/{$listOrderBarang[$x]->ID} target=_blank>Order Details</a></td>
                         </tr>";
                         }
-                        ?>
+                        -->
+              @foreach($paginator  as $row)
+              <tr style="text-align: center;">
+                        <td>
+                        <button type=button class=btn btn-default btn-sm style="background-color:transparent;">
+                        <i class='glyphicon glyphicon-remove fa-lg' aria-hidden="true"></i>
+                        </button></td>
+                        <td>{{$row->ID}}</td>
+                        <td>{{$row->name}}</td>
+                        <td>{{$row->subtotal}}</td>
+                        <td>{{$row->status}}</td>
+                        <td>{{$row->carrier}}<br>{{$row->tracking}}</td>
+                        <td><a href="/orderdetails/{{$row->ID}}" target="_blank">Order Details</a></td>
+                        </tr>
+              @endforeach
             </tbody>
             <!-- quantity-->
             <!-- <script>
@@ -238,7 +255,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
        
         <nav class="numbering">
-            <ul class="pagination paging">
+        {{ $paginator->links() }}
+                    <!-- <ul class="pagination paging">
               <li>
                 <a href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
@@ -256,7 +274,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   <span aria-hidden="true">&raquo;</span>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </nav>
           <div class="clearfix"></div>
         </div>
