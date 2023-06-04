@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EditProductModel;
 use App\Models\prodModel;
 use Illuminate\Http\Request;
 use App\Models\newProdModel;
@@ -16,7 +17,7 @@ class newProdController extends Controller
 
         return view('newproduct');
     }
-    public function updatebarang(Request $req){
+    public function Addbarang(Request $req){
         $kategoribarang = $req->input('categoryList');
         $input = $req->all();
         if($kategoribarang == "opp")
@@ -44,9 +45,8 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-            $user = new prodModel();
-            $tabelOPP = $user->tableprodukOPP();
-            return view('opp',compact(['tabelOPP']));
+           
+            return redirect('/opp');
             
         }
         elseif($kategoribarang == "hdpe")
@@ -73,9 +73,7 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-            $user = new prodModel();
-            $tabelHDPE = $user->tableprodukHDPE();
-            return view('HDPE',compact(['tabelHDPE']));
+            return redirect('/HDPE');
             
         }
         elseif($kategoribarang == "pe")
@@ -102,10 +100,8 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-            $user = new prodModel();
-            $tabelPE = $user->tableprodukPE();
-            return view('PE',compact(['tabelPE']));
-            
+          
+            return redirect('/pe');
         }
         if($kategoribarang == "kresek")
         {
@@ -131,9 +127,7 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-            $user = new prodModel();
-            $tabelKresek = $user->tableprodukKresek();
-            return view('Kresek',compact(['tabelKresek']));
+            return redirect('/kresek');
             
         }
         elseif($kategoribarang == "gelas")
@@ -160,9 +154,8 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-            $user = new prodModel();
-            $tabelGelas = $user->tableprodukGelas();
-            return view('Gelas',compact(['tabelGelas']));
+            return redirect('/gelas');
+
             
         }
         elseif($kategoribarang == "kertas")
@@ -189,9 +182,8 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-            $user = new prodModel();
-            $tabelKertas = $user->tableprodukKertas();
-            return view('Kertas',compact(['tabelKertas']));
+            
+            return redirect('/kertas');
             
         }
     }
@@ -204,7 +196,7 @@ class newProdController extends Controller
         $tabelOPP = $user->tableprodukOPP();
 
         // Use LengthAwarePaginator to create a paginator instance
-        $paginatorOPP = new LengthAwarePaginator(
+        $paginator = new LengthAwarePaginator(
             $tabelOPP->forPage($currentPage, $perPage),
             $tabelOPP->count(),
             $perPage,
@@ -212,7 +204,7 @@ class newProdController extends Controller
             ['path' => Paginator::resolveCurrentPath()]
         );
 
-        return view('opp', compact('paginatorOPP'));
+        return view('opp', compact('paginator'));
         
    
     }
@@ -315,6 +307,45 @@ class newProdController extends Controller
         );
 
         return view('kertas', compact('paginator'));
+    }
+
+    public function EditBarang($id, Request $req){
+        $kategoribarang = $req->input('categoryList');
+        $input = $req->all();
+        if($kategoribarang == "opp")
+        {
+          
+            $namaproduk = $req->input('Nama');
+            $kategori = $req->input('Kategori');
+            $brandbarang = $req->input('Brand');
+            $stokbarang = $req->input('Stock');
+            $deskripsi = $req->input('Deskripsi');
+            $harga = $req->input('Harga');
+            $gambar = $req->input('product_image');
+            if($kategori == "OPP")
+            {
+                $databaru = DB::table('BARANG')
+              ->where('ID',$id)
+              ->update([
+              'p_name' => $namaproduk,
+              'p_category' => $kategoribarang,
+              'p_brand' => $brandbarang,
+              'p_price' => $harga,
+              'p_desc' => $deskripsi,
+              'p_stock' => $stokbarang]);
+            }
+            
+            $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
+
+            $run = DB::select($server);
+            $user = new EditProductModel();
+            $tabel = $user->tableprodukOPP($id);
+           
+            return view('editproduct', compact('tabel'));
+            
+        }
+        
+        
     }
 
 

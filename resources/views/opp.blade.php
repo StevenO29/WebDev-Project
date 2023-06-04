@@ -283,7 +283,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="agile_top_brands_grids">
   <div class="row">
-    @foreach($paginatorOPP as $t)
+    @foreach($paginator as $t)
     <div class="col-md-4" style="padding-bottom: 15px;">
       <div class="hover14 column">
         <div class="agile_top_brand_left_grid">
@@ -295,7 +295,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <div class="snipcart-item block">
                 @foreach($t as $tabel)
                 <div class="snipcart-thumb">
-                  <a href="/single">
+                  <a href="/single/{{$t->ID}}">
                     <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('public/uploads/' . $t->product_image)}}" />
                   </a>
                   <p>{{$t->Nama}}</p>
@@ -314,7 +314,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <input type="hidden" name="currency_code" value="USD" />
                       <input type="hidden" name="return" value=" " />
                       <input type="hidden" name="cancel_return" value=" " />
-                      <a href="/editproduct">Edit</a>
+                      <a href="/editproduct/{{$t->ID}}">Edit</a>
                     </fieldset>
                   </form>
                 </div>
@@ -337,7 +337,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           
           <nav class="numbering">
             <ul class="pagination paging">
-            {{ $paginatorOPP->links() }}
+            {{ $paginator->links() }}
             </ul>
           </nav>
         </div>

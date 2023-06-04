@@ -296,7 +296,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <div class="snipcart-item block">
                 @foreach($t as $tabel)
                   <div class="snipcart-thumb">
-                    <a href="/single">
+                    <a href="/single/{{$t->ID}}">
                       <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('public/uploads/' . $t->product_image)}}" />
                     </a>
                     <p>{{$t->Nama}}</p>

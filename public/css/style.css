@@ -2387,6 +2387,21 @@ h3.agileits-icons-title {
     text-align: center;
     word-wrap: break-word;
 }
+
+.orderdetailstable {
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.orderdetails {
+    background: #fff;
+    border-bottom: 2px solid #fe9126;
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 15px;
+}
 @media (max-width:991px){
 	h3.agileits-icons-title {
 		font-size: 28px;
@@ -2394,6 +2409,19 @@ h3.agileits-icons-title {
 	h3.icon-subheading {
 		font-size: 22px;
 	}
+    .orderdetails {
+        background: #fff;
+        border-bottom: 2px solid #fe9126;
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        padding-bottom: 15px;
+    }
+    .orderdetailstable {
+        margin-top: 10px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
 }
 @media (max-width:768px){
 	h3.agileits-icons-title {
@@ -2409,12 +2437,38 @@ h3.agileits-icons-title {
 	.icon-box {
 		margin: 0;
 	}
+    .orderdetails {
+        background: #fff;
+        border-bottom: 2px solid #fe9126;
+        display: flex;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-bottom: 15px;
+    }
+    .orderdetailstable {
+        margin-top: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 @media (max-width: 640px){
 	.icon-box {
 		float: left;
 		width: 50%;
 	}
+    .orderdetails {
+        background: #fff;
+        border-bottom: 2px solid #fe9126;
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 15px;
+    }
+    .orderdetailstable {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 @media (max-width: 480px){
 	.bs-glyphicons li {
@@ -2423,6 +2477,19 @@ h3.agileits-icons-title {
 	.icon-box {
 		float: none;
 		width: 100%;
+}
+.orderdetails {
+    background: #fff;
+    border-bottom: 2px solid #fe9126;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 15px;
+}
+.orderdetailstable {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 }
 @media (max-width: 414px){
@@ -2663,6 +2730,19 @@ ul.phone_email li {
 }
 }
 @media (max-width:800px){
+    .orderdetails {
+        background: #fff;
+        border-bottom: 2px solid #fe9126;
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 15px;
+    }
+    .orderdetailstable {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 @media (max-width: 768px){
 #PPMiniCart {
@@ -3102,6 +3182,19 @@ h3.w3_agile_header, h2.w3_agile_header {
 .agileinfo_single_left {
     padding: 2em 2em;
 }
+.orderdetails {
+    background: #fff;
+    border-bottom: 2px solid #fe9126;
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-bottom: 15px;
+}
+.orderdetailstable {
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
 }
 @media (max-width: 384px){
 #PPMiniCart form {
@@ -3167,6 +3260,19 @@ span.minicart-price {
 }
 .checkout h2 {
     font-size: 0.9em;
+}
+.orderdetails {
+    background: #fff;
+    border-bottom: 2px solid #fe9126;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 15px;
+}
+.orderdetailstable {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 }
 @media (max-width: 375px){

@@ -4,6 +4,7 @@ use App\Http\Controllers\newProdController;
 use App\Http\Controllers\nyobaController;
 use App\Http\Controllers\orderController;
 use App\Http\Controllers\orderDetailsController;
+use App\Http\Controllers\productDetailsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -78,17 +79,15 @@ Route::get('/offers', function () {
 //     return view('products');
 // });
 
-Route::get('/registered', function () {
-    return view('registered');
-});
+// Route::get('/single', function () {
+//     return view('single');
+// });
 
 Route::get('/editproduct', function () {
     return view('editproduct');
 });
 
-Route::get('/single', function () {
-    return view('single');
-});
+
 
 // Route::get('/newproduct', function () {
 //     return view('newproduct');
@@ -125,11 +124,23 @@ Route::prefix('/order')->group(function(){
       Route::get('/{id}',[orderDetailsController::class,"tabelorderDetail"] );
  });
 
- Route::prefix('/newproduct')->group(function(){
-    Route::get('/',[newProdController::class,"newproduct"]);
-    Route::POST('/',[newProdController::class,"updatebarang"]);
+Route::prefix('/single')->group(function(){
+     Route::get('/{id}',[productDetailsController::class,"tableproduk"] );
+
 });
 
 
+ Route::prefix('/newproduct')->group(function(){
+    Route::get('/',[newProdController::class,"newproduct"]);
+    Route::POST('/proses',[newProdController::class,"Addbarang"]);
+    
+});
 
-// Route::get('/orderdetails/{id}', [OrderDetailsController::class, 'show'])->name('orderdetails.show');
+ Route::prefix('/editproduct')->group(function(){
+     Route::get('/{id}',[newProdController::class,"EditBarang"]);
+
+ });
+
+
+
+// Route::get('/editproduct/{id}', [newProdController::class, "EditBarang"]);

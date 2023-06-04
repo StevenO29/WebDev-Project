@@ -189,7 +189,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <table class="timetable_sub">
             <thead>
               <tr>
-              <th></th>
                 <th>Order ID</th>
                 <th>Customer Name</th>
                 <th>Order Total</th>
@@ -222,10 +221,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         -->
               @foreach($paginator  as $row)
               <tr style="text-align: center;">
-                        <td>
-                        <button type=button class=btn btn-default btn-sm style="background-color:transparent;">
-                        <i class='glyphicon glyphicon-remove fa-lg' aria-hidden="true"></i>
-                        </button></td>
                         <td>{{$row->ID}}</td>
                         <td>{{$row->name}}</td>
                         <td>{{$row->subtotal}}</td>

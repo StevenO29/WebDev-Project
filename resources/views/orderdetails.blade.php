@@ -22,17 +22,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- //for-mobile-apps -->
     <link
-      href="css/bootstrap.css"
+      href= "<?php echo asset('css/bootstrap.css')?>"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo asset('css/style.css')?>" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href= "<?php echo asset('css/font-awesome.css')?>" rel="stylesheet" />
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="<?php echo asset('js/jquery-1.11.1.min.js')?>" ></script>
     <!-- //js -->
     <link
       href="//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
@@ -45,8 +45,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       type="text/css"
     />
     <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="<?php echo asset('js/move-top.js')?>"></script>
+    <script type="text/javascript" src="<?php echo asset('js/easing.js')?>"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
@@ -60,6 +60,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- start-smoth-scrolling -->
   </head>
+
 
   <body>
     <!-- header -->
@@ -224,7 +225,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <td>{{$orderDetail->price}}</td>
                         <td>{{$orderDetail->qty}}</td>
                         <td>{{$orderDetail->subtotal}}</td>
-                        </tr>"
+                        </tr>
          @endforeach
             
     </table>
@@ -365,14 +366,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </ul>
         </div>
         <div class="payment-w3ls">
-          <img src="images/card.png" alt=" " class="img-responsive" />
+          <img src="<?php echo asset('images/card.png')?>" alt=" " class="img-responsive" />
         </div>
         <div class="clearfix"></div>
       </div>
     </div>
     <!-- //footer -->
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo asset('js/bootstrap.min.js')?>"></script>
     <!-- top-header and slider -->
     <!-- here stars scrolling icon -->
     <script type="text/javascript">
@@ -390,7 +391,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       });
     </script>
     <!-- //here ends scrolling icon -->
-    <script src="js/minicart.min.js"></script>
+    <script src="<?php echo asset('js/minicart.min.js')?>"></script>
     <script>
       // Mini Cart
       paypal.minicart.render({
@@ -402,8 +403,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       }
     </script>
     <!-- main slider-banner -->
-    <script src="js/skdslider.min.js"></script>
-    <link href="css/skdslider.css" rel="stylesheet" />
+    <script src="<?php echo asset('js/skdslider.min.js')?>"></script>
+    <link href="<?php echo asset('css/skdslider.css')?>" rel="stylesheet" />
     <script type="text/javascript">
       jQuery(document).ready(function () {
         jQuery("#demo1").skdslider({

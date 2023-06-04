@@ -192,7 +192,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           class="login-form-grids animated wow slideInUp"
           data-wow-delay=".5s"
         >
-          <form  action="{{ url('newproduct') }}" method="POST" enctype="multipart/form-data">
+          <form  action="/newproduct/proses" method="POST" enctype="multipart/form-data">
           {{ csrf_field() }}
             Product Name: <input type="text" name="p_name" placeholder="Product Name" required=" " /><br>
             Product Category: <select id="p_category" name="categoryList">
@@ -211,6 +211,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             Product Image: <input type="file" id="product_image" name="product_image"><br>      
             <input type="submit" value="Add Product" />
           </form>
+          <script>
+  // Handle form submission
+  document.getElementById("newProductForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent the default form submission
+    var form = e.target;
+    var url = form.getAttribute("action");
+    var method = form.getAttribute("method");
+
+    // Perform your AJAX request or any other necessary actions here
+    // ...
+
+    // Redirect to the newproduct page
+    window.location.href = "/newproduct";
+  });
+</script>
         </div>
         <br> <br>
       </div>

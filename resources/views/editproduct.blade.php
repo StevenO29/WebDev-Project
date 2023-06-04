@@ -192,7 +192,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           class="login-form-grids animated wow slideInUp"
           data-wow-delay=".5s"
         >
-          <form  action="{{ url('editproduct') }}" method="POST" enctype="multipart/form-data">
+          <form  action="/editproduct/{{id}}" method="POST" enctype="multipart/form-data">
           {{ csrf_field() }}
             Product Name: <input type="text" name="p_name" placeholder="Product Name" required=" " /><br>
             Product Category: <select id="p_category" name="categoryList">

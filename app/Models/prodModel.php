@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class prodModel extends Model
 {
+    protected $table = 'Product';
+    protected $primaryKey = 'product_id';
     use HasFactory;
     public function tableprodukOPP(){
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
@@ -18,7 +20,6 @@ class prodModel extends Model
         FROM Product where p_category = 'OPP';       ";
 
         $produk = DB::select($value);
-        
         return collect($produk);
     }
     public function tableprodukHDPE(){
