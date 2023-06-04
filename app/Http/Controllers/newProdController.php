@@ -310,11 +310,7 @@ class newProdController extends Controller
     }
 
     public function EditBarang($id, Request $req){
-        $kategoribarang = $req->input('categoryList');
-        $input = $req->all();
-        if($kategoribarang == "opp")
-        {
-          
+        
             $namaproduk = $req->input('Nama');
             $kategori = $req->input('Kategori');
             $brandbarang = $req->input('Brand');
@@ -322,22 +318,19 @@ class newProdController extends Controller
             $deskripsi = $req->input('Deskripsi');
             $harga = $req->input('Harga');
             $gambar = $req->input('product_image');
-            if($kategori == "OPP")
-            {
-                $databaru = DB::table('BARANG')
+            
+            
+                $databaru = DB::table('Product')
               ->where('ID',$id)
               ->update([
               'p_name' => $namaproduk,
-              'p_category' => $kategoribarang,
+              'p_category' => $kategori,
               'p_brand' => $brandbarang,
               'p_price' => $harga,
               'p_desc' => $deskripsi,
               'p_stock' => $stokbarang]);
-            }
-            
-            $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
+        
 
-            $run = DB::select($server);
             $user = new EditProductModel();
             $tabel = $user->tableprodukOPP($id);
            
@@ -349,4 +342,4 @@ class newProdController extends Controller
     }
 
 
-}
+
