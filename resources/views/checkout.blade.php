@@ -212,6 +212,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="checkout">
       <div class="container">
         <h2>Your shopping cart: </h2>
+        {{-- checkout table --}}
+        @if(empty($products) || count($products) == 0)
+          There is no item in your cart.
+        @else
         <div class="checkout-right">
           <table class="timetable_sub">
             <thead>
@@ -225,13 +229,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <th>Remove</th>
               </tr>
             </thead>
+            <?php $no = 1;
+                  $grandtotal=0; 
+            ?>
+            @foreach($cart as $ct => $val)
+            <?php $subtotal= $val["P_Price"] * $val["total"]; ?>
             <tr class="rem1">
-              <td class="invert">1</td>
+              <td class="invert">{{$no++}}</td>
               <td class="invert-image">
                 <a href="/single"
-                  ><img alt="Gading" src="webdev_image_assets/Gading35M.png" style="object-fit:contain;
-                  width:100px;
-                  height:100px;" class="img-responsive"
+                  ><img alt="Gading" src="{{asset('webdev_image_assets/Gading35M.png')}}"" style="object-fit:contain;
+                  width:100px; height:100px;" class="img-responsive"
                 /></a>
               </td>
               <td class="invert">
@@ -243,9 +251,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   </div>
                 </div>
               </td>
-              <td class="invert">Gading 35</td>
+              <td class="invert">{{$val["P_Name"]}}</td>
 
-              <td class="invert">Rp13,500</td>
+              <td class="invert">Rp{{$val["P_Price"]}}</td>
               <td class="invert">
                 <div class="rem">
                   <div class="close1"></div>
@@ -261,7 +269,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </script>
               </td>
             </tr>
-            <tr class="rem2">
+            <?php $grandtotal+= $subtotal; ?>
+            @endforeach
+            <tr>
+              <th colspan="4">Grand Total</th>
+              <th>Rp{{$grandtotal}}</th>
+              <th></td>
+            </tr>
+
+            {{-- <tr class="rem2">
               <td class="invert">2</td>
               <td class="invert-image">
                 <a href="/single"
@@ -332,7 +348,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   });
                 </script>
               </td>
-            </tr>
+            </tr> --}}
             <!--quantity-->
             <script>
               $(".value-plus").on("click", function () {

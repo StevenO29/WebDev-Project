@@ -310,66 +310,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
           </div>
           <div class="agile_top_brands_grids">
+            {{-- display --}}
+            @php
+              $chosenCategory = 'OPP'; // Replace with the desired category
+            @endphp
+            <?php $no=1; ?>
+            @foreach ($Product as $pro)
+            @if ($Product->P_Category === $chosenCategory)
             <div class="col-md-4 top_brand_left">
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">
                   <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
+                    <img src="images/offer.png" alt=" " class="img-responsive" />
                   </div>
                   <div class="agile_top_brand_left_grid1">
                     <figure>
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                         <a href="/single">
-                          <img title=" " alt="OPP" width="150" height="150" src="webdev_image_assets/OPP.png"/>
+                          <img title=" " alt="OPP" width="150" height="150"  src="{{ asset('webdev_image_assets/OPP.png')}}"/>
                         </a>
-                          <p>OPP 8x8</p>
-                          <h4>Rp3,000 <span>Rp5,000</span></h4>
+                          {{-- <p>OPP 8x8</p>
+                          <h4>Rp3,000</h4> --}}
+                          <p>{{P_Name }}</p>
+                          <h4>{{P_Price }}</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
+                          <input
+                            type="submit"
+                            name="submit"
+                            value="Add to cart"
+                            class="button"
+                            onclick="<?php echo "alert('Item added to cart!')"; ?>"
+                          />
                         </div>
                       </div>
                     </figure>
@@ -377,6 +350,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
               </div>
             </div>
+            @endif
+            @endforeach
             <div class="col-md-4 top_brand_left">
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">

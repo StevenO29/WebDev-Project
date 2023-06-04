@@ -4,17 +4,6 @@ use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginRegisterController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/registered', 'register')->name('register');
     Route::post('/store', 'store')->name('store');
@@ -23,13 +12,19 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/dashboard', 'dashboard')->name('dashboard');
     Route::post('/logout', 'logout')->name('logout');
 });
+
+Route::get('/opp', [TransactionController::class, 'index']);
+Route::get('/checkout/{Product_ID}', [TransactionController::class, 'addToCart'])->name('addToCart');
+Route::get('/checkout', [TransactionController::class, 'checkout']);
+// Route::get('/opp', [TransactionController::class, 'checkout']);
+
 Route::get('/gelas', function () {
     return view('gelas');
 });
 
-Route::controller(TransactionController::class)->group(function(){
-    Route::get('/addToCart', 'index')->name('cart.index');
-});
+// Route::controller(TransactionController::class)->group(function(){
+//     Route::get('/addToCart', 'index')->name('cart.index');
+// });
 
 Route::get('/', function () {
     return view('index');
@@ -64,9 +59,7 @@ Route::get('/offers', function () {
     return view('offers');
 });
 
-Route::get('/opp', function () {
-    return view('opp');
-});
+
 
 Route::get('/pe', function () {
     return view('pe');
@@ -100,12 +93,12 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::controller(TransactionController::class)->group(function() {
-    Route::get('/cart', 'index')->name('cart.index');
-    Route::post('/cart/add', 'addItem')->name('cart.add');
-    Route::patch('/cart/update/{itemId}', 'updateItem')->name('cart.update');
-    Route::delete('/cart/remove/{itemId}', 'removeItem')->name('cart.remove');
-});
+// Route::controller(TransactionController::class)->group(function() {
+//     Route::get('/cart', 'index')->name('cart.index');
+//     Route::post('/cart/add', 'addItem')->name('cart.add');
+//     Route::patch('/cart/update/{itemId}', 'updateItem')->name('cart.update');
+//     Route::delete('/cart/remove/{itemId}', 'removeItem')->name('cart.remove');
+// });
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
