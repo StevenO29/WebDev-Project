@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 
 class TransactionController extends Controller
 {
-    public function index(){
+    public function OPP(){
        
         $perPage = 9; // Number of items per page
         $currentPage = Paginator::resolveCurrentPage();
@@ -28,6 +28,30 @@ class TransactionController extends Controller
         );
 
         return view('opp', compact('paginatorOPP'));
+        
+        
+   
+    }
+
+    public function HDPE(){
+       
+        $perPage = 9; // Number of items per page
+        $currentPage = Paginator::resolveCurrentPage();
+
+        $user = new product();
+        $tabelOPP = $user->tableprodukOPP();
+
+        // Use LengthAwarePaginator to create a paginator instance
+        $paginatorHDPE = new LengthAwarePaginator(
+            $tabelOPP->forPage($currentPage, $perPage),
+            $tabelOPP->count(),
+            $perPage,
+            $currentPage,
+            ['path' => Paginator::resolveCurrentPath()]
+        );
+
+        return view('HDPE', compact('paginatorHDPE'));
+        
         
    
     }

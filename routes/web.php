@@ -14,7 +14,9 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::post('/logout', 'logout')->name('logout');
 });
 
-Route::get('/opp', [TransactionController::class, 'index']);
+Route::get('/opp', [TransactionController::class, 'OPP']);
+Route::get('/HDPE', [TransactionController::class, 'HDPE']);
+
 Route::get('/checkout/{Product_ID}', [TransactionController::class, 'addToCart'])->name('addToCart');
 Route::get('/checkout', [TransactionController::class, 'checkout']);
 // Route::get('/opp', [TransactionController::class, 'checkout']);
