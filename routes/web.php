@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\productDetailsController;
 use App\Http\Controllers\Auth\LoginRegisterController;
 
 Route::controller(LoginRegisterController::class)->group(function() {
@@ -104,3 +105,7 @@ Route::get('/welcome', function () {
 //     return view('dashboard');
 // });
 
+Route::prefix('/single')->group(function(){
+    Route::get('/{id}',[productDetailsController::class,"tableproduk"] );
+
+});
