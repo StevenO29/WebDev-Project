@@ -7,6 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class product extends Model
 {
+    public function tableprodukOPP(){
+        $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
+        $run = DB::select($server);
+        $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
+        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
+        FROM Product where p_category = 'OPP';       ";
+
+        $produk = DB::select($value);
+        
+        return collect($produk);
+    }
     use HasFactory;
     protected $table = "Product";
     protected $primaryKey = "Product_ID";

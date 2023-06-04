@@ -7,11 +7,26 @@ use Illuminate\Http\Request;
 
 class TransactionController extends Controller
 {
-    public function index()
-    {
-          
-        $Product = Product::list_product();
-        return view('products')->with('products','$products');
+    public function index(){
+       
+        $perPage = 9; // Number of items per page
+        $currentPage = Paginator::resolveCurrentPage();
+
+        $user = new product();
+        $tabelOPP = $user->tableprodukOPP();
+
+        // Use LengthAwarePaginator to create a paginator instance
+        $paginatorOPP = new LengthAwarePaginator(
+            $tabelOPP->forPage($currentPage, $perPage),
+            $tabelOPP->count(),
+            $perPage,
+            $currentPage,
+            ['path' => Paginator::resolveCurrentPath()]
+        );
+
+        return view('opp', compact('paginatorOPP'));
+        
+   
     }
 
     public function addToCart(Request $request)
