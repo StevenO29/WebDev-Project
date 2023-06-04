@@ -310,7 +310,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
           </div>
           <div class="agile_top_brands_grids">
-            {{-- display --}}
+            <!-- {{-- display --}}
             @php
               $chosenCategory = 'OPP'; // Replace with the desired category
             @endphp
@@ -351,7 +351,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </div>
             </div>
             @endif
-            @endforeach
+            @endforeach -->
             <div class="col-md-4 top_brand_left">
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">
