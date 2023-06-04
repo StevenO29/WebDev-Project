@@ -22,17 +22,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- //for-mobile-apps -->
     <link
-    href="<?php echo asset('css/bootstrap.css')?>"
+      href="<?php echo asset('css/bootstrap.css')?>"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
     <link href="<?php echo asset('css/style.css')?>" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="<?php echo asset('css/font-awesome.css')?>" rel="stylesheet" />
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="<?php echo asset('js/jquery-1.11.1.min.js')?>"></script>
+    <script src="<?php echo asset('js/jquery-1.11.1.min.js')?>"> </script>
     <!-- //js -->
     <link
       href="//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
@@ -68,42 +68,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="w3l_offers">
           <p>
             SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a>SHOP NOW</a>
+            <a href="/products">SHOP NOW</a>
           </p>
         </div>
         <div class="agile-login">
           <ul>
-            <li>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
-                            </li>
-                        @else    
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" role="button">
-                                    {{ Auth::user()->name }}
-                                </a>
-                            </li>
-                            <li>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                    @csrf
-                                    <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                                       style="color: white; font-weight: bold; text-decoration: none;">Logout</a>
-                                </form>
-                            </li>                                
-                        @endguest
-                    </ul>
-                </div>
-            </li>
+            <li><a href="/registered"> Create Account </a></li>
+            <li><a href="/login">Login</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
-
         <div class="product_list_header">
          <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
@@ -172,16 +146,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
+           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li><a href="/plastic" class="act">Plastic</a></li>
-              <li><a href="/paper" class="act">Paper</a></li>
-              <li><a href="/cup" class="act">Cup</a></li>
-              <li><a href="/cutleries" class="act">Cutleries</a></li>
-              <li class="active"><a href="/products">More Products</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/hdpe" class="act">HDPE</a></li>
+              <li><a href="/pe" class="act">PE</a></li>
+              <li><a href="/kresek" class="act">Kresek</a></li>
+              <li><a href="/gelas" class="act">Gelas</a></li>
+              <li><a href="/kertas">Kertas</a></li>
+              <li><a href="/newproduct">Add new Product</a></li>
+              <li><a href="/order">Order</a></li>
             </ul>
           </div>
         </nav>
@@ -212,7 +189,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="agileinfo_single">
         @foreach ($prodDetail as $p)
           <div class="col-md-4 agileinfo_single_left">
-            <img id="example" src="{{ asset('public/uploads/' . $p->product_image)}}" alt=" "class="img-responsive"
+            <img id="example" src="{{ asset('webdev_image_assets/' . $p->product_image)}}" alt=" "class="img-responsive"
             />
           </div>
           <div class="col-md-8 agileinfo_single_right">
@@ -248,6 +225,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
       </div>
     </div>
+    <!-- new -->
           <div class="clearfix"></div>
         </div>
       </div>
@@ -364,14 +342,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </ul>
         </div>
         <div class="payment-w3ls">
-          <img src="images/card.png" alt=" " class="img-responsive" />
+          <img src="<?php echo asset('images/card.png')?>" alt=" " class="img-responsive" />
         </div>
         <div class="clearfix"></div>
       </div>
     </div>
     <!-- //footer -->
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src= "<?php echo asset('js/bootstrap.min.js')?>"></script>
     <!-- top-header and slider -->
     <!-- here stars scrolling icon -->
     <script type="text/javascript">
