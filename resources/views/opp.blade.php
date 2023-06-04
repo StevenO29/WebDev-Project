@@ -315,8 +315,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               $chosenCategory = 'OPP'; // Replace with the desired category
             @endphp
             <?php $no=1; ?>
-            @foreach ($Product as $pro)
-            @if ($Product->P_Category === $chosenCategory)
+            @foreach ($paginatorOPP as $pro)
+            @if ($paginatorOPP->P_Category === $chosenCategory)
             <div class="col-md-4 top_brand_left">
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">
