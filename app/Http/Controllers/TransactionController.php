@@ -39,21 +39,18 @@ class TransactionController extends Controller
         $currentPage = Paginator::resolveCurrentPage();
 
         $user = new product();
-        $tabelOPP = $user->tableprodukOPP();
+        $tabelHDPE = $user->tableprodukHDPE();
 
         // Use LengthAwarePaginator to create a paginator instance
         $paginatorHDPE = new LengthAwarePaginator(
-            $tabelOPP->forPage($currentPage, $perPage),
-            $tabelOPP->count(),
+            $tabelHDPE->forPage($currentPage, $perPage),
+            $tabelHDPE->count(),
             $perPage,
             $currentPage,
             ['path' => Paginator::resolveCurrentPath()]
         );
 
         return view('HDPE', compact('paginatorHDPE'));
-        
-        
-   
     }
 
     public function addToCart(Request $request)
