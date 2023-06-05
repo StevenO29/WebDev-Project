@@ -15,7 +15,8 @@ Route::controller(LoginRegisterController::class)->group(function() {
 });
 
 Route::get('/opp', [TransactionController::class, 'OPP']);
-Route::get('/HDPE', [TransactionController::class, 'HDPE']);
+
+Route::get('/hdpe', [TransactionController::class, 'HDPE']);
 
 Route::get('/checkout/{Product_ID}', [TransactionController::class, 'addToCart'])->name('addToCart');
 Route::get('/checkout', [TransactionController::class, 'checkout']);
@@ -54,9 +55,6 @@ Route::get('/faq', function () {
 });
 
 
-Route::get('/hdpe', function () {
-    return view('hdpe');
-});
 
 Route::get('/offers', function () {
     return view('offers');
@@ -71,9 +69,7 @@ Route::get('/kresek', function () {
     return view('kresek');
 });
 
-Route::get('/hdpe', function () {
-    return view('hdpe');
-});
+
 
 Route::get('/kertas', function () {
     return view('kertas');
