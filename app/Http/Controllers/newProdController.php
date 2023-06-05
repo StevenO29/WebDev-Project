@@ -311,28 +311,10 @@ class newProdController extends Controller
 
     public function EditBarang($id, Request $req){
         
-            $namaproduk = $req->input('Nama');
-            $kategori = $req->input('Kategori');
-            $brandbarang = $req->input('Brand');
-            $stokbarang = $req->input('Stock');
-            $deskripsi = $req->input('Deskripsi');
-            $harga = $req->input('Harga');
-            $gambar = $req->input('product_image');
-            
-            
-                $databaru = DB::table('Product')
-              ->where('ID',$id)
-              ->update([
-              'p_name' => $namaproduk,
-              'p_category' => $kategori,
-              'p_brand' => $brandbarang,
-              'p_price' => $harga,
-              'p_desc' => $deskripsi,
-              'p_stock' => $stokbarang]);
+        $user = new EditProductModel();
+        $tabel = $user->tableprodukOPP($id);
         
-
-            $user = new EditProductModel();
-            $tabel = $user->tableprodukOPP($id);
+        
            
             return view('editproduct', compact('tabel'));
             

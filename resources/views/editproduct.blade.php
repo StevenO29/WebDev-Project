@@ -22,12 +22,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- //for-mobile-apps -->
     <link
-      href="css/bootstrap.css"
+      href="<?php echo asset('css/bootstrap.css')?>"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo asset('css/style.css')?>" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
     <link href="css/font-awesome.css" rel="stylesheet" />
     <!-- //font-awesome icons -->
@@ -185,14 +185,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="product">
       <div class="container">
         <br>
-        
+    <div class="products">
+      <div class="container">
+        <div class="agileinfo_single">
+        @foreach ($tabel as $t)
+          <div class="col-md-4 agileinfo_single_left">
+            <img id="example" src="{{ asset('public/uploads/' . $t->product_image)}}" alt=" "class="img-responsive"
+            />
+          </div>
+          <div class="col-md-8 agileinfo_single_right">
+            <h2>{{$t->Nama}}</h2>
+            <div class="w3agile_description">
+              <h4>Description :</h4>
+              <p>{{$t->Deskripsi}}</p>
+              <h4>Category :</h4>
+              <p>{{$t->Kategori}}</p>
+              <h4>Brand :</h4>
+              <p>{{$t->Brand}}</p>
+              <h4>Stock :</h4>
+              <p>{{$t->Stock}}</p>
+              <h4>Price :</h4>
+              <p>Rp. {{$t->Harga}}</p>
+            </div>
+            
+             
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          @endforeach
+        </div>
+      </div>
+    </div>
+
+
         <h2 style="text-align: center">Edit Product</h2>
 
         <div
           class="login-form-grids animated wow slideInUp"
           data-wow-delay=".5s"
         >
-          <form  action="/editproduct/{{id}}" method="POST" enctype="multipart/form-data">
+          <form  action="" method="POST" enctype="multipart/form-data">
           {{ csrf_field() }}
             Product Name: <input type="text" name="p_name" placeholder="Product Name" required=" " /><br>
             Product Category: <select id="p_category" name="categoryList">
@@ -209,7 +241,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             Product Stock: <input type="text" name="P_Stock" placeholder="Stock" required=" " /><br>
             Product Description: <textarea id="description" name="P_Desc" rows="4" cols="47"></textarea>
             Product Image: <input type="file" id="product_image" name="product_image"><br>      
-            <input type="submit" value="Add Product" />
+            <input type="submit" value="Edit Product" />
           </form>
         </div>
         <br> <br>
