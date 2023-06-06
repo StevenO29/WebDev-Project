@@ -208,52 +208,44 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </div>
     </div>
     <!-- //breadcrumbs -->
-    <!-- checkout -->
+       <!-- checkout -->
     <div class="checkout">
       <div class="container">
-        <h2>Your shopping cart: </h2>
-        {{-- checkout table --}}
-        @if(empty($products) || count($products) == 0)
-          There is no item in your cart.
-        @else
+        <h2>Your shopping cart contains: <span>3 Products</span></h2>
         <div class="checkout-right">
+        <form method="post" action="">
           <table class="timetable_sub">
             <thead>
               <tr>
-                <th>No.</th>
+                <th>SL No.</th>
                 <th>Product</th>
-                <th>Quantity</th>
+                <th>Quality</th>
                 <th>Product Name</th>
 
                 <th>Price</th>
                 <th>Remove</th>
               </tr>
             </thead>
-            <?php $no = 1;
-                  $grandtotal=0; 
-            ?>
-            @foreach($cart as $ct => $val)
-            <?php $subtotal= $val["P_Price"] * $val["total"]; ?>
+            @foreach($listCheckout as $t)
             <tr class="rem1">
-              <td class="invert">{{$no++}}</td>
+              <td class="invert">1</td>
               <td class="invert-image">
-                <a href="/single"
-                  ><img alt="Gading" src="{{asset('webdev_image_assets/Gading35M.png')}}"" style="object-fit:contain;
-                  width:100px; height:100px;" class="img-responsive"
+                <a href="single.html"
+                  ><img src="{{ asset('webdev_image_assets/' . $t->product_image)}}" alt=" " class="img-responsive " style = "height: 100px; width: 100px;"
                 /></a>
               </td>
               <td class="invert">
                 <div class="quantity">
                   <div class="quantity-select">
                     <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
+                    <input class="entry value-plus" type="number" name="{{$t->qty}}" value="{{$t->qty}}">
                     <div class="entry value-plus active">&nbsp;</div>
                   </div>
                 </div>
               </td>
-              <td class="invert">{{$val["P_Name"]}}</td>
+              <td class="invert">{{$t->name}}</td>
 
-              <td class="invert">Rp{{$val["P_Price"]}}</td>
+              <td class="invert">{{$t->price}}</td>
               <td class="invert">
                 <div class="rem">
                   <div class="close1"></div>
@@ -269,86 +261,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </script>
               </td>
             </tr>
-            <?php $grandtotal+= $subtotal; ?>
             @endforeach
-            <tr>
-              <th colspan="4">Grand Total</th>
-              <th>Rp{{$grandtotal}}</th>
-              <th></td>
-            </tr>
+            </form>
 
-            {{-- <tr class="rem2">
-              <td class="invert">2</td>
-              <td class="invert-image">
-                <a href="/single"
-                  ><img alt="Beo" src="webdev_image_assets/Beo.png" style="object-fit:contain;
-                  width:100px;
-                  height:100px;" class="img-responsive"
-                /></a>
-              </td>
-              <td class="invert">
-                <div class="quantity">
-                  <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
-                    <div class="entry value-plus active">&nbsp;</div>
-                  </div>
-                </div>
-              </td>
-              <td class="invert">Kertas Beo</td>
-
-              <td class="invert">Rp23,000</td>
-              <td class="invert">
-                <div class="rem">
-                  <div class="close2"></div>
-                </div>
-                <script>
-                  $(document).ready(function (c) {
-                    $(".close2").on("click", function (c) {
-                      $(".rem2").fadeOut("slow", function (c) {
-                        $(".rem2").remove();
-                      });
-                    });
-                  });
-                </script>
-              </td>
-            </tr>
-            <tr class="rem3">
-              <td class="invert">3</td>
-              <td class="invert-image">
-                <a href="/single"
-                ><img alt="Boyo" src="webdev_image_assets/BoyoHdpe.png" style="object-fit:contain;
-                width:100px;
-                height:100px;" class="img-responsive"
-              /></a>
-              </td>
-              <td class="invert">
-                <div class="quantity">
-                  <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
-                    <div class="entry value"><span>1</span></div>
-                    <div class="entry value-plus active">&nbsp;</div>
-                  </div>
-                </div>
-              </td>
-              <td class="invert">Boyo 9x18</td>
-
-              <td class="invert">Rp9,000</td>
-              <td class="invert">
-                <div class="rem">
-                  <div class="close3"></div>
-                </div>
-                <script>
-                  $(document).ready(function (c) {
-                    $(".close3").on("click", function (c) {
-                      $(".rem3").fadeOut("slow", function (c) {
-                        $(".rem3").remove();
-                      });
-                    });
-                  });
-                </script>
-              </td>
-            </tr> --}}
             <!--quantity-->
             <script>
               $(".value-plus").on("click", function () {
@@ -370,15 +285,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="checkout-left-basket">
             <h4>Continue to basket</h4>
             <ul>
-              <li>Gading 35 <i>-</i> <span>Rp13,500 </span></li>
-              <li>Kertas Beo <i>-</i> <span>Rp23,000 </span></li>
-              <li>Boyo 9x18 <i>-</i> <span>Rp9,000 </span></li>
-              <li>Total Service Charges <i>-</i> <span>Rp2,000</span></li>
-              <li>Total <i>-</i> <span>Rp47,500</span></li>
+              @foreach($listCheckout as $t)
+              <li>{{$t->name}} <i>-</i> <span>{{$t->subtotal}} </span></li>
+             @endforeach
+              <li>Total <i>-</i> <span>{{$t->subtotal}}</span></li>
             </ul>
           </div>
           <div class="checkout-right-basket">
-            <a href="/products"
+            <a href="single.html"
               ><span
                 class="glyphicon glyphicon-menu-left"
                 aria-hidden="true"
@@ -386,15 +300,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Continue Shopping</a
             >
           </div>
-          
           <div class="clearfix"></div>
         </div>
       </div>
-     <!-- <form action="/checkout" method="post">
-        <input type="hidden" name="product_id" value="1" />
-        <input type="hidden" name="quantity" value="1" />
-        <input type="submit" value="Checkout" />
-    </div> -->
+    </div>
     <!-- //checkout -->
     <!-- //footer -->
     <div class="footer">

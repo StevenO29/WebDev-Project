@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\checkoutController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\productDetailsController;
@@ -22,10 +23,13 @@ Route::get('/kresek', [TransactionController::class, 'Kresek']);
 Route::get('/gelas', [TransactionController::class, 'Gelas']);
 Route::get('/kertas', [TransactionController::class, 'Kertas']);
 
-Route::get('/checkout/{Product_ID}', [TransactionController::class, 'addToCart'])->name('addToCart');
-Route::get('/checkout', [TransactionController::class, 'checkout']);
+// Route::get('/checkout/{Product_ID}', [TransactionController::class, 'addToCart'])->name('addToCart');
+// Route::get('/checkout', [TransactionController::class, 'checkout']);
 // Route::get('/opp', [TransactionController::class, 'checkout']);
 
+
+
+Route::get('/checkout', [checkoutController::class, 'tabelCart']);
 
 // Route::controller(TransactionController::class)->group(function(){
 //     Route::get('/addToCart', 'index')->name('cart.index');
