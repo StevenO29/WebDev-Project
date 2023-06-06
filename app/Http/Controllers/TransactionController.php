@@ -29,8 +29,6 @@ class TransactionController extends Controller
 
         return view('opp', compact('paginatorOPP'));
         
-        
-   
     }
 
     public function HDPE(){
@@ -51,6 +49,86 @@ class TransactionController extends Controller
         );
 
         return view('HDPE', compact('paginatorHDPE'));
+    }
+
+    public function PE(){
+       
+        $perPage = 9; // Number of items per page
+        $currentPage = Paginator::resolveCurrentPage();
+
+        $user = new product();
+        $tabelPE = $user->tableprodukPE();
+
+        // Use LengthAwarePaginator to create a paginator instance
+        $paginatorPE = new LengthAwarePaginator(
+            $tabelPE->forPage($currentPage, $perPage),
+            $tabelPE->count(),
+            $perPage,
+            $currentPage,
+            ['path' => Paginator::resolveCurrentPath()]
+        );
+
+        return view('PE', compact('paginatorPE'));
+    }
+
+    public function kresek(){
+       
+        $perPage = 9; // Number of items per page
+        $currentPage = Paginator::resolveCurrentPage();
+
+        $user = new product();
+        $tabelKresek = $user->tableprodukKresek();
+
+        // Use LengthAwarePaginator to create a paginator instance
+        $paginatorKresek = new LengthAwarePaginator(
+            $tabelKresek->forPage($currentPage, $perPage),
+            $tabelKresek->count(),
+            $perPage,
+            $currentPage,
+            ['path' => Paginator::resolveCurrentPath()]
+        );
+
+        return view('kresek', compact('paginatorKresek'));
+    }
+
+    public function gelas(){
+       
+        $perPage = 9; // Number of items per page
+        $currentPage = Paginator::resolveCurrentPage();
+
+        $user = new product();
+        $tabelGelas = $user->tableprodukGelas();
+
+        // Use LengthAwarePaginator to create a paginator instance
+        $paginatorGelas = new LengthAwarePaginator(
+            $tabelGelas->forPage($currentPage, $perPage),
+            $tabelGelas->count(),
+            $perPage,
+            $currentPage,
+            ['path' => Paginator::resolveCurrentPath()]
+        );
+
+        return view('gelas', compact('paginatorGelas'));
+    }
+
+    public function kertas(){
+       
+        $perPage = 9; // Number of items per page
+        $currentPage = Paginator::resolveCurrentPage();
+
+        $user = new product();
+        $tabelKertas = $user->tableprodukKertas();
+
+        // Use LengthAwarePaginator to create a paginator instance
+        $paginatorKertas = new LengthAwarePaginator(
+            $tabelKertas->forPage($currentPage, $perPage),
+            $tabelKertas->count(),
+            $perPage,
+            $currentPage,
+            ['path' => Paginator::resolveCurrentPath()]
+        );
+
+        return view('kertas', compact('paginatorKertas'));
     }
 
     public function addToCart(Request $request)

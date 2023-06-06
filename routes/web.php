@@ -17,14 +17,14 @@ Route::controller(LoginRegisterController::class)->group(function() {
 Route::get('/opp', [TransactionController::class, 'OPP']);
 
 Route::get('/hdpe', [TransactionController::class, 'HDPE']);
+Route::get('/pe', [TransactionController::class, 'PE']);
+Route::get('/kresek', [TransactionController::class, 'kresek']);
+Route::get('/gelas', [TransactionController::class, 'gelas']);
+Route::get('/kertas', [TransactionController::class, 'kertas']);
 
 Route::get('/checkout/{Product_ID}', [TransactionController::class, 'addToCart'])->name('addToCart');
 Route::get('/checkout', [TransactionController::class, 'checkout']);
 // Route::get('/opp', [TransactionController::class, 'checkout']);
-
-Route::get('/gelas', function () {
-    return view('gelas');
-});
 
 // Route::controller(TransactionController::class)->group(function(){
 //     Route::get('/addToCart', 'index')->name('cart.index');
@@ -54,27 +54,9 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
-
-
 Route::get('/offers', function () {
     return view('offers');
 });
-
-
-
-Route::get('/pe', function () {
-    return view('pe');
-});
-Route::get('/kresek', function () {
-    return view('kresek');
-});
-
-
-
-Route::get('/kertas', function () {
-    return view('kertas');
-});
-
 
 Route::get('/short-codes', function () {
     return view('short-codes');
