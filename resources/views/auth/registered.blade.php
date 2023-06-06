@@ -73,19 +73,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="agile-login">
           <ul>
-            <li><a href="/registered"> Create Account </a></li>
-            <li><a href="/login">Log In</a></li>
+            <li>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
+                            </li>
+                        @else    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">
+                                    {{ Auth::user()->name }}
+                                </a>
+                            </li>
+                            <li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                       style="color: white; font-weight: bold; text-decoration: none;">Logout</a>
+                                </form>
+                            </li>                                
+                        @endguest
+                    </ul>
+                </div>
+            </li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
-        </div>
-        <div class="product_list_header">
-          <form action="#" method="post" class="last">
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="display" value="1" />
-            <button class="w3view-cart" type="submit" name="submit" value="">
-              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-            </button>
-          </form>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -157,11 +173,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   href="/groceries"
                   class="dropdown-toggle"
                   data-toggle="dropdown"
-                  >Oriented Polypropylene</a>
+                  >OPP</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Polyethylene</a>
+                  >PE</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
@@ -170,15 +186,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Plastic</a>
+                  >Plastik</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Glass</a>
+                  >Gelas</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Paper</a>
+                  >Kertas</a>
               </li>
               <li><a href="/offers">Offers</a></li>
               <li><a href="/contact">Contact</a></li>
@@ -212,35 +228,60 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="container">
         <h2>Register Here</h2>
         <div class="login-form-grids">
-          <h5>profile information</h5>
-          <form action="#" method="post">
-            <input type="text" placeholder="First Name..." required=" " />
-            <input type="text" placeholder="Last Name..." required=" " />
-          </form>
-          <div class="register-check-box">
-            <div class="check">
-              <label class="checkbox"
-                ><input type="checkbox" name="checkbox" /><i> </i>Subscribe to
-                Newsletter</label
-              >
+          @if(Session::has('success'))
+            <div class="alert alert-success" role="alert">
+              {{ Session::get('success') }}
             </div>
-          </div>
-          <h6>Login information</h6>
-          <form action="#" method="post">
-            <input type="email" placeholder="Email Address" required=" " />
-            <input type="password" placeholder="Password" required=" " />
-            <input
-              type="password"
-              placeholder="Password Confirmation"
-              required=" "
-            />
+          @endif
+          <h5>profile information</h5>
+          <form action="{{ route('store') }}" method="post">
+            @csrf
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control @error('name') is-invalid @enderror" name="name"
+                    value="{{ old('name') }}">
+                @if ($errors->has('name'))
+                    <span class="text-danger">{{ $errors->first('name') }}</span>
+                @endif
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="text" class="form-control" name="phone" value="{{ old('phone') }}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Address</label>
+                <input type="text" class="form-control" name="address" value="{{ old('address') }}">
+            </div>
+            <h6>Login information</h6>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control  @error('email') is-invalid @enderror"
+                    name="email" value="{{ old('email') }}">
+                @if ($errors->has('email'))
+                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                @endif
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control @error('password') is-invalid @enderror"
+                    name="password">
+                @if ($errors->has('password'))
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                @endif
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password Confirm</label>
+                <input type="password" class="form-control @error('password_confirmation') is-invalid @enderror"
+                    name="password_confirmation">
+                @if ($errors->has('password_confirmation'))
+                    <span class="text-danger">{{ $errors->first('password_confirmation') }}</span>
+                @endif
+            </div>
             <div class="register-check-box">
-              <div class="check">
-                <label class="checkbox"
-                  ><input type="checkbox" name="checkbox" /><i> </i>I accept the
-                  terms and conditions</label
-                >
-              </div>
+                <div class="check">
+                    <label class="checkbox"><input type="checkbox" name="checkbox" /><i> </i>I accept the
+                        terms and conditions</label>
+                </div>
             </div>
             <input type="submit" value="Register" />
           </form>
