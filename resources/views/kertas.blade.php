@@ -311,75 +311,70 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <div class="agile_top_brands_grids">
           @foreach($paginatorKertas as $t)
-            <div class="col-md-4" style="padding-bottom: 15px;">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single/{{$t->ID}}">
-                            <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('webdev_image_assets/' . $t->product_image)}}"/>
-                          </a>
-                          <p>Kertas Nasi</p>
-                          <h4>Rp12,000</h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input type="hidden" name="item_name" value="{{$t->Nama}}" />
-                              <input type="hidden" name="amount" value="{{$t->Harga}}" />
-                              <input type="hidden" name="discount_amount" value="1.00" />
-                              <input type="hidden" name="currency_code" value="IDR" />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                        @break
-                        @endforeach
-                        {{-- button --}}
-                      </div>
-                    </figure>
-                  </div>
+          <div class="col-md-4" style="padding-bottom: 15px;">
+            <div class="hover14 column">
+              <div class="agile_top_brand_left_grid">
+                <div class="agile_top_brand_left_grid_pos">
+                  <img src="images/offer.png" alt=" " class="img-responsive" />
                 </div>
+                <div class="agile_top_brand_left_grid1">
+                  <figure>
+                    <div class="snipcart-item block">
+                      @foreach($t as $tabel)
+                      <div class="snipcart-thumb">
+                        <a href="/single/{{$t->ID}}">
+                          <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('webdev_image_assets/' . $t->product_image)}}" />
+                        </a>
+                        <p>{{$t->Nama}}</p>
+                        <h4>Rp. {{$t->Harga}}</h4>
+                      </div>
+                      <div class="snipcart-details top_brand_home_details">
+                        <form action="/checkout/{{$t->ID}}" method="post">
+                        {{ csrf_field() }}
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="{{$t->Nama}}" />
+                            <input type="hidden" name="amount" value="{{$t->Harga}}" />
+                            <input type="hidden" name="discount_amount" value="1.00" />
+                            <input type="hidden" name="currency_code" value="IDR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <input type="hidden" name="submit" value="true">
+                            <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
+                            <script>
+                              function redirectToCheckout() {
+                                window.location.href = "/checkout/{{$t->ID}}";
+                              }
+                            </script>
+                          </fieldset>
+                        </form>
+                      </div>
+                      @break
+                      @endforeach
+                    </div>
+                  </figure>
               </div>
+              </div>
+            </div>
+          </div>
+          @endforeach
+          </div>
+
             </div>
             <div class="clearfix"></div>
           </div>
-        
+          <nav class="numbering">
+            <ul class="pagination paging">
+            {{ $paginatorKertas->links() }}
+            </ul>
+          </nav>
+        </div>
         <div class="clearfix"></div>
       </div>
-      <div class="clearfix"></div>
-      </div>
     </div>
+        
     <!--- Kertas --->
     <!-- //footer -->
     <div class="footer">

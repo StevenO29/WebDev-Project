@@ -311,99 +311,65 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
           </div>
           <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single"
-                            ><img title=" " alt=" " src="images/pc1.png"
-                          /></a>
-                          <p>KIJANG 9x18</p>
-                          <h4>Rp5,000 <span>Rp7,000</span></h4>
-                        </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="USD"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                        @break
-                        @endforeach
-                        {{-- button --}}
-                      </div>
-                    </figure>
-                  </div>
+          @foreach($paginatorPE as $t)
+          <div class="col-md-4" style="padding-bottom: 15px;">
+            <div class="hover14 column">
+              <div class="agile_top_brand_left_grid">
+                <div class="agile_top_brand_left_grid_pos">
+                  <img src="images/offer.png" alt=" " class="img-responsive" />
                 </div>
+                <div class="agile_top_brand_left_grid1">
+                  <figure>
+                    <div class="snipcart-item block">
+                      @foreach($t as $tabel)
+                      <div class="snipcart-thumb">
+                        <a href="/single/{{$t->ID}}">
+                          <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('webdev_image_assets/' . $t->product_image)}}" />
+                        </a>
+                        <p>{{$t->Nama}}</p>
+                        <h4>Rp. {{$t->Harga}}</h4>
+                      </div>
+                      <div class="snipcart-details top_brand_home_details">
+                        <form action="/checkout/{{$t->ID}}" method="post">
+                        {{ csrf_field() }}
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="{{$t->Nama}}" />
+                            <input type="hidden" name="amount" value="{{$t->Harga}}" />
+                            <input type="hidden" name="discount_amount" value="1.00" />
+                            <input type="hidden" name="currency_code" value="IDR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <input type="hidden" name="submit" value="true">
+                            <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
+                            <script>
+                              function redirectToCheckout() {
+                                window.location.href = "/checkout/{{$t->ID}}";
+                              }
+                            </script>
+                          </fieldset>
+                        </form>
+                      </div>
+                      @break
+                      @endforeach
+                    </div>
+                  </figure>
+              </div>
               </div>
             </div>
-            @endforeach
+          </div>
+          @endforeach
+          </div>
+
             </div>
             <div class="clearfix"></div>
           </div>
           <nav class="numbering">
             <ul class="pagination paging">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">1<span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
+            {{ $paginatorPE->links() }}
+
             </ul>
           </nav>
         </div>
