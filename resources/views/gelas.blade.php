@@ -311,474 +311,68 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
           </div>
           <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
+          @foreach($paginatorGelas as $t)
+            <div class="col-md-4" style="padding-bottom: 15px;">
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">
                   <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
+                    <img src="images/offer.png" alt=" " class="img-responsive" />
                   </div>
                   <div class="agile_top_brand_left_grid1">
                     <figure>
                       <div class="snipcart-item block">
+                        @foreach($t as $tabel)
                         <div class="snipcart-thumb">
-                        <a href="/single">
-                          <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
-                        </a>
-                          <p>Gelas Plastik 12oz</p>
-                          <h4>Rp10,000</h4>
+                          <a href="/single/{{$t->ID}}">
+                            <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('webdev_image_assets/' . $t->product_image)}}"/>
+                          </a>
+                          <p>{{$t->Nama}}</p>
+                          <h4>Rp. {{$t->Harga}}</h4>
                         </div>
+                        {{--  --}}
                         <div class="snipcart-details top_brand_home_details">
-                          <form action="/checkout" method="post">
+                          <form action="/checkout/{{$t->ID}}" method="post">
+                          {{ csrf_field() }}
                             <fieldset>
                               <input type="hidden" name="cmd" value="_cart" />
                               <input type="hidden" name="add" value="1" />
                               <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Gelas Plastik 12oz"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="10,000"
-                              />
-                          
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="IDR"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                             <!--  <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              /> -->
-
-                              <input 
-                                type="button" 
-                                value="Add to Cart" 
-                                class="button" 
-                                onclick="addProductToCheckout();" 
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
-                          </a>
-                            <p>Gelas Plastik 10oz</p>
-                            <h4>Rp10,000</h4>
-                          </div>
-                          
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="IDR"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
-                          </a>
-                            <p>Gelas Plastik 14oz</p>
-                            <h4>Rp10,000</h4>
-                          </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form  action="{{ route('transactions.addToCart') }}" method="post">
-                            @csrf
-
-                            <fieldset>
-                              <input type="hidden" name="item_name" value="Pepsi soft drink" />
-                              <input type="hidden" name="amount" value="80.00" />
+                              <input type="hidden" name="item_name" value="{{$t->Nama}}" />
+                              <input type="hidden" name="amount" value="{{$t->Harga}}" />
+                              <input type="hidden" name="discount_amount" value="1.00" />
                               <input type="hidden" name="currency_code" value="IDR" />
-                              <input type="submit" name="submit" value="Add to Cart" class="button" />
-                            </fieldset>
-                          </form>                          
-                          
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
-                          </a>
-                            <p>Gelas Plastik 16oz</p>
-                            <h4>Rp10,000</h4>
-                          </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="IDR"
-                              />
                               <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
+                              <input type="hidden" name="cancel_return" value=" " />
+                              <input type="hidden" name="submit" value="true">
+                              <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
+                              <script>
+                                function redirectToCheckout() {
+                                  window.location.href = "/checkout/{{$t->ID}}";
+                                }
+                              </script>
                             </fieldset>
                           </form>
                         </div>
+                        @break
+                        @endforeach
+                        {{-- button --}}
                       </div>
                     </figure>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
-                          </a>
-                            <p>Gelas Plastik 18oz</p>
-                            <h4>Rp16,000</h4>
-                          </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="basmati rise"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="30.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="IDR"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
-                          </a>
-                            <p>Gelas Plastik 18oz</p>
-                            <h4>Rp18,000</h4>
-                          </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Pepsi soft drink"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="80.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="IDR"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="agile_top_brands_grids">
-            <div class="col-md-4 top_brand_left">
-              <div class="hover14 column">
-                <div class="agile_top_brand_left_grid">
-                  <div class="agile_top_brand_left_grid_pos">
-                    <img
-                      src="images/offer.png"
-                      alt=" "
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="agile_top_brand_left_grid1">
-                    <figure>
-                      <div class="snipcart-item block">
-                        <div class="snipcart-thumb">
-                          <a href="/single">
-                            <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
-                          </a>
-                            <p>Gelas Plastik 22oz</p>
-                            <h4>Rp20,000</h4>
-                          </div>
-                        <div class="snipcart-details top_brand_home_details">
-                          <form action="#" method="post">
-                            <fieldset>
-                              <input type="hidden" name="cmd" value="_cart" />
-                              <input type="hidden" name="add" value="1" />
-                              <input type="hidden" name="business" value=" " />
-                              <input
-                                type="hidden"
-                                name="item_name"
-                                value="Fortune Sunflower Oil"
-                              />
-                              <input
-                                type="hidden"
-                                name="amount"
-                                value="35.99"
-                              />
-                              <input
-                                type="hidden"
-                                name="discount_amount"
-                                value="1.00"
-                              />
-                              <input
-                                type="hidden"
-                                name="currency_code"
-                                value="IDR"
-                              />
-                              <input type="hidden" name="return" value=" " />
-                              <input
-                                type="hidden"
-                                name="cancel_return"
-                                value=" "
-                              />
-                              <input
-                                type="submit"
-                                name="submit"
-                                value="Add to cart"
-                                class="button"
-                              />
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+            @endforeach
 
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <nav class="numbering">
+            <ul class="pagination paging">
+            {{ $paginatorGelas->links() }}
+
+            </ul>
+          </nav>
         </div>
         <div class="clearfix"></div>
       </div>
