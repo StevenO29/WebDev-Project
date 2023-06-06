@@ -323,7 +323,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   <div class="agile_top_brand_left_grid1">
                     <figure>
                       <div class="snipcart-item block">
-                        @foreach($t as $tabel)
                         <div class="snipcart-thumb">
                         <a href="/single">
                           <img title=" " alt="gelas" width="150" height="150" src="webdev_image_assets/CupPlastik.png"/>
@@ -331,7 +330,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                           <p>Gelas Plastik 12oz</p>
                           <h4>Rp10,000</h4>
                         </div>
-                        {{--  --}}
                         <div class="snipcart-details top_brand_home_details">
                           <form action="/checkout" method="post">
                             <fieldset>
