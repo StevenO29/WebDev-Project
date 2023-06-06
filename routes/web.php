@@ -5,21 +5,27 @@ use App\Http\Controllers\nyobaController;
 use App\Http\Controllers\orderController;
 use App\Http\Controllers\orderDetailsController;
 use App\Http\Controllers\productDetailsController;
+use App\Http\Controllers\Auth\LoginRegisterController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::controller(LoginRegisterController::class)->group(function() {
+    Route::get('/registered', 'register')->name('register');
+    Route::post('/store', 'store')->name('store');
+    Route::get('/login', 'login')->name('login');
+    Route::post('/authenticate', 'authenticate')->name('authenticate');
+    // Route::get('/dashboard', 'dashboard')->name('dashboard');
+    Route::post('/logout', 'logout')->name('logout');
+});
+
+Route::get('/dashboard', [LoginRegisterController::class, 'dashboard'])->name('dashboard')->middleware('auth');
+
+
+// Route::get('/home', function () {
+//     return view('dashboard');
+// });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/about', function () {
@@ -38,20 +44,12 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
-
 Route::get('/gourmet', function () {
     return view('gourmet');
 });
 
 Route::get('/index', function () {
     return view('index');
-});
-Route::get('/indexLogout', function () {
-    return view('indexLogout');
-});
-
-Route::get('/login', function () {
-    return view('login');
 });
 
 Route::get('/offers', function () {
@@ -61,7 +59,6 @@ Route::get('/offers', function () {
 // Route::get('/opp', function () {
 //     return view('opp');
 // });
-
 
 // Route::get('/kertas', function () {
 //     return view('kertas');
@@ -140,7 +137,6 @@ Route::prefix('/single')->group(function(){
      Route::get('/{id}',[newProdController::class,"tampilinBarangEdit"]);
      Route::post('/{id}',[newProdController::class,"EditBarang"]);
  });
-
 
 
 // Route::get('/editproduct/{id}', [newProdController::class, "EditBarang"]);

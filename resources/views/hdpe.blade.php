@@ -72,15 +72,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </p>
         </div>
        
-        <div class="product_list_header">
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
-          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
-          </button>
-            <ul class="dropdown-menu">
-              <li><a href="/indexLogout">Logout</a></li>
-            </ul>
-          </div>
+        <div class="agile-login">
+          <ul>
+            @guest
+              <li class="nav-item">
+                <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
+              </li>
+            @else    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ Auth::user()->name }}
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();"
+                  >Logout</a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                    @csrf
+                  </form>
+                </li>
+                </ul>
+              </li>
+            @endguest
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
         </div>
         <div class="clearfix"></div>
       </div>
