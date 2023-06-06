@@ -239,7 +239,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             Product Brand: <input type="text" name="P_Brand" placeholder="Product Brand" required=" " /><br>
             Product Price: <input type="text" name="P_Price" placeholder="Price" required=" " /><br>
             Product Stock: <input type="text" name="P_Stock" placeholder="Stock" required=" " /><br>
-            Product Description: <textarea id="description" name="P_Desc" rows="4" cols="47"></textarea>
+            Product Description: <textarea id="description" name="P_Desc" rows="4" cols="67"></textarea>
             Product Image: <input type="file" id="product_image" name="product_image"><br>      
             <input type="submit" value="Edit Product" />
           </form>

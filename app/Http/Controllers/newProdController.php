@@ -308,13 +308,38 @@ class newProdController extends Controller
 
         return view('kertas', compact('paginator'));
     }
-
-    public function EditBarang($id, Request $req){
+    public function tampilinBarangEdit($id, Request $req){
         
         $user = new EditProductModel();
         $tabel = $user->tableprodukOPP($id);
+       
+        return view('editproduct', compact('tabel'));
         
+    }
+    public function EditBarang($id, Request $req){
         
+            $namaproduk = $req->input('p_name');
+            $kategori = $req->input('p_category');
+            $brandbarang = $req->input('P_Brand');
+            $stokbarang = $req->input('P_Stock');
+            $deskripsi = $req->input('P_Desc');
+            $harga = $req->input('P_Price');
+            $gambar = $req->input('product_image');
+            
+            
+            $databaru = DB::table('Product')
+            ->where('Product_ID', $id)
+            ->update([
+              'p_name' => $namaproduk,
+              'P_Brand' => $brandbarang,
+              'P_Price' => $harga,
+              'P_Desc' => $deskripsi,
+              'P_Stock' => $stokbarang
+            ]);
+        
+
+            $user = new EditProductModel();
+            $tabel = $user->tableprodukOPP($id);
            
             return view('editproduct', compact('tabel'));
             

@@ -315,7 +315,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <input type="hidden" name="currency_code" value="USD" />
                         <input type="hidden" name="return" value=" " />
                         <input type="hidden" name="cancel_return" value=" " />
-                        <a href="/editproduct"> <input type="submit" name="submit" value="Edit Product" class="button" /></input></a>
+                        <a href="/editproduct/{{$t->ID}}">Edit</a>
                       </fieldset>
                     </form>
                   </div>

@@ -137,8 +137,8 @@ Route::prefix('/single')->group(function(){
 });
 
  Route::prefix('/editproduct')->group(function(){
-     Route::get('/{id}',[newProdController::class,"EditBarang"]);
-
+     Route::get('/{id}',[newProdController::class,"tampilinBarangEdit"]);
+     Route::post('/{id}',[newProdController::class,"EditBarang"]);
  });
 
 
