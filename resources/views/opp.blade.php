@@ -232,7 +232,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   >PE</a
                 >
               </li>
-             <li>
+              <li>
                 <!--Category 4: Kresek-->
                 <a href="/kresek"
                   ><i class="fa fa-arrow-right" aria-hidden="true"></i
@@ -355,12 +355,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       @endforeach
                     </div>
                   </figure>
-                </div>
               </div>
             </div>
           </div>
           @endforeach
-            </div>
+          </div>
             <div class="clearfix"></div>
           </div>
           <nav class="numbering">
@@ -379,7 +378,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="w3_footer_grids">
           <div class="col-md-3 w3_footer_grid">
             <h3>Contact</h3>
-
             <ul class="address">
               <li>
                 <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i
