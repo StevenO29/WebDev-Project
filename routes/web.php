@@ -29,7 +29,6 @@ Route::get('/kertas', [TransactionController::class, 'Kertas']);
 
 
 
-Route::get('/checkout', [checkoutController::class, 'tabelCart']);
 
 // Route::controller(TransactionController::class)->group(function(){
 //     Route::get('/addToCart', 'index')->name('cart.index');
@@ -47,9 +46,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::post('/add-to-cart', 
-'TransactionController@addToCart')->name('transactions.addToCart');
-
 
 Route::get('/contact', function () {
     return view('contact');
@@ -66,10 +62,6 @@ Route::get('/offers', function () {
 
 Route::get('/short-codes', function () {
     return view('short-codes');
-});
-
-Route::get('/single', function () {
-    return view('single');
 });
 
 Route::get('/wishlist', function () {
@@ -93,5 +85,12 @@ Route::get('/welcome', function () {
 
 Route::prefix('/single')->group(function(){
     Route::get('/{id}',[productDetailsController::class,"tableproduk"] );
+
+});
+
+Route::prefix('/checkout')->group(function(){
+    Route::get('/{id}',[checkoutController::class,"tabelCart"] );
+    Route::post('/add-to-cart', 'TransactionController@addToCart')->name('transactions.addToCart');
+
 
 });

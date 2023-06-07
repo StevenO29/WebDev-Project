@@ -132,7 +132,7 @@ class TransactionController extends Controller
 
     public function addToCart(Request $request)
     {
-        $Product_ID = $request.Product_ID;
+        $Product_ID = $request->Product_ID;
         $request->validate([
             'Product_ID' => 'required|numeric',
         ]);
