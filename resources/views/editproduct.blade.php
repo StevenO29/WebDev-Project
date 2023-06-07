@@ -227,7 +227,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <form  action="" method="POST" enctype="multipart/form-data">
           {{ csrf_field() }}
             Product Name: <input type="text" name="p_name" placeholder="Product Name" required=" " /><br>
-            Product Category: <select id="p_category" name="categoryList">
+            Product Category: <select id="p_category" name="p_category">
                                 <option value="opp">OPP</option>
                                 <option value="hdpe">HDPE</option>
                                 <option value="pe">PE</option>

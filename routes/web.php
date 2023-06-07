@@ -80,9 +80,7 @@ Route::get('/offers', function () {
 //     return view('single');
 // });
 
-Route::get('/editproduct', function () {
-    return view('editproduct');
-});
+
 
 
 

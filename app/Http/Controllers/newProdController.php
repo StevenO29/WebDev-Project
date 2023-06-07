@@ -73,7 +73,7 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-            return redirect('/HDPE');
+            return redirect('/hdpe');
             
         }
         elseif($kategoribarang == "pe")
@@ -311,7 +311,7 @@ class newProdController extends Controller
     public function tampilinBarangEdit($id, Request $req){
         
         $user = new EditProductModel();
-        $tabel = $user->tableprodukOPP($id);
+        $tabel = $user->tableproduk($id);
        
         return view('editproduct', compact('tabel'));
         
@@ -333,13 +333,14 @@ class newProdController extends Controller
               'p_name' => $namaproduk,
               'P_Brand' => $brandbarang,
               'P_Price' => $harga,
+              'p_category'=>$kategori,
               'P_Desc' => $deskripsi,
               'P_Stock' => $stokbarang
             ]);
         
 
             $user = new EditProductModel();
-            $tabel = $user->tableprodukOPP($id);
+            $tabel = $user->tableproduk($id);
            
             return view('editproduct', compact('tabel'));
             
