@@ -202,6 +202,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </div>
     </div>
     <!-- //breadcrumbs -->
+    @if(session('alert'))
+        <div class="alert alert-success">
+            {{ session('alert') }}
+        </div>
+        @endif
     <!--- Kresek --->
     <div class="products">
       <div class="container">
@@ -305,6 +310,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
           </div>
           <div class="agile_top_brands_grids">
+         
   <div class="row">
     @foreach($paginator as $t)
     <div class="col-md-4" style="padding-bottom: 15px;">
@@ -325,8 +331,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <h4>{{$t->Harga}}</h4>
                   </div>
                   <div class="snipcart-details top_brand_home_details">
-                    <form action="#" method="post">
-                      <fieldset>
+                    <form action="/editproduct" method="post">
+                    {{ csrf_field() }}
+
+                    <fieldset>
                         <input type="hidden" name="cmd" value="_cart" />
                         <input type="hidden" name="add" value="1" />
                         <input type="hidden" name="business" value=" " />
@@ -337,6 +345,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <input type="hidden" name="return" value=" " />
                         <input type="hidden" name="cancel_return" value=" " />
                         <a href="/editproduct/{{$t->ID}}">Edit</a>
+                        <a href="/deleteproduct/{{$t->ID}}">Delete</a>
+
                       </fieldset>
                     </form>
                   </div>
