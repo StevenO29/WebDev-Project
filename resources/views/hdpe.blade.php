@@ -304,6 +304,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
           </div>
           <div class="agile_top_brands_grids">
+          @if(session('alert'))
+        <div class="alert alert-success">
+            {{ session('alert') }}
+        </div>
+        @endif
   <div class="row">
     @foreach($paginator as $t)
     <div class="col-md-4" style="padding-bottom: 15px;">
@@ -336,6 +341,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <input type="hidden" name="return" value=" " />
                         <input type="hidden" name="cancel_return" value=" " />
                         <a href="/editproduct/{{$t->ID}}">Edit</a>
+                        <a href="/deleteproduct/{{$t->ID}}">Delete</a>
                       </fieldset>
                     </form>
                   </div>

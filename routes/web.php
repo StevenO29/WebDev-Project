@@ -136,5 +136,11 @@ Route::prefix('/single')->group(function(){
      Route::post('/{id}',[newProdController::class,"EditBarang"]);
  });
 
+ Route::prefix('/deleteproduct')->group(function(){
+    Route::get('/{id}',[newProdController::class,"tampilinBarangDelete"]);
+    Route::post('/{id}',[newProdController::class,"DeleteBarang"]);
+});
+
+
 
 // Route::get('/editproduct/{id}', [newProdController::class, "EditBarang"]);

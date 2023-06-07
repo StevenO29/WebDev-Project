@@ -22,12 +22,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- //for-mobile-apps -->
     <link
-      href="css/bootstrap.css"
+      href="<?php echo asset('css/bootstrap.css')?>"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo asset('css/style.css')?>" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
     <link href="css/font-awesome.css" rel="stylesheet" />
     <!-- //font-awesome icons -->
@@ -72,37 +72,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </p>
         </div>
         
-        <div class="agile-login">
-          <ul>
-            <li>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
-                            </li>
-                        @else    
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" role="button">
-                                    {{ Auth::user()->name }}
-                                </a>
-                            </li>
-                            <li>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                    @csrf
-                                    <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                                       style="color: white; font-weight: bold; text-decoration: none;">Logout</a>
-                                </form>
-                            </li>                                
-                        @endguest
-                    </ul>
-                </div>
-            </li>
-            <li><a href="/contact">Contact Us</a></li>
-          </ul>
+        <div class="product_list_header">
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
+          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
+          </button>
+            <ul class="dropdown-menu">
+              <li><a href="/indexLogout">Logout</a></li>
+            </ul>
+          </div>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -165,11 +143,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <span class="icon-bar"></span>
             </button>
           </div>
+           
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav">
             <li><a href="/index" class="act">Home</a></li>
               <!-- Mega Menu -->
-              <li class="active"><a href="/opp" class="act">OPP</a></li>
+              <li><a href="/opp" class="act">OPP</a></li>
               <li><a href="/hdpe" class="act">HDPE</a></li>
               <li><a href="/pe" class="act">PE</a></li>
               <li><a href="/kresek" class="act">Kresek</a></li>
@@ -197,182 +176,69 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               >Home</a
             >
           </li>
-          <li class="active">Opp</li>
+          <li class="active">Edit Product</li>
         </ol>
       </div>
     </div>
     <!-- //breadcrumbs -->
-    @if(session('alert'))
-        <div class="alert alert-success">
-            {{ session('alert') }}
-        </div>
-        @endif
-    <!--- OPP --->
+        <!-- form product -->
+      <div class="product">
+      <div class="container">
+        <br>
     <div class="products">
       <div class="container">
-        <div class="col-md-4 products-left">
-          <div class="categories">
-            <h2>Categories</h2>
-            <ul class="cate">
-              <li>
-                 <!--Category 1: Opp-->
-                 <a href="/opp">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>Opp</a>
-              </li>
-              <li>
-                <!--Category 2: HDPE-->
-                <a href="/hdpe">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>HDPE</a>
-              </li>
-              <li>
-                <!--Category 3: PE-->
-                <a href="/pe"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >PE</a
-                >
-              </li>
-             <li>
-                <!--Category 4: Kresek-->
-                <a href="/kresek"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Kresek</a
-                >
-              </li>
-              <li>
-                <!--Category 5: Gelas-->
-                <a href="/gelas"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Gelas</a
-                >
-              </li>
-              <li>
-                <!--Category 6: Kertas-->
-                <a href="/kertas"
-                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                  >Kertas</a
-                >
-              </li>
-            </ul>
+        <div class="agileinfo_single">
+        
+        @foreach ($tabel as $t)
+          <div class="col-md-4 agileinfo_single_left">
+            <img id="example" src="{{ asset('public/uploads/' . $t->product_image)}}" alt=" "class="img-responsive"
+            />
           </div>
-        </div>
-        <div class="col-md-8 products-right">
-          <div class="products-right-grid">
-            <div class="products-right-grids">
-              <div class="sorting">
-                <select
-                  id="country"
-                  onchange="change_country(this.value)"
-                  class="frm-field required sect"
-                >
-                  <option value="null">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Default
-                    sorting
-                  </option>
-                  <option value="null">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sort by
-                    popularity
-                  </option>
-                  <option value="null">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sort by
-                    average rating
-                  </option>
-                  <option value="null">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Sort by
-                    price
-                  </option>
-                </select>
-              </div>
-              <div class="sorting-left">
-                <select
-                  id="country1"
-                  onchange="change_country(this.value)"
-                  class="frm-field required sect"
-                >
-                  <option value="null">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Item on
-                    page 9
-                  </option>
-                  <option value="null">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Item on
-                    page 18
-                  </option>
-                  <option value="null">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>Item on
-                    page 32
-                  </option>
-                  <option value="null">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>All
-                  </option>
-                </select>
-              </div>
-              <div class="clearfix"></div>
+          <div class="col-md-8 agileinfo_single_right">
+            <h2>{{$t->Nama}}</h2>
+            <div class="w3agile_description">
+              <h4>Description :</h4>
+              <p>{{$t->Deskripsi}}</p>
+              <h4>Category :</h4>
+              <p>{{$t->Kategori}}</p>
+              <h4>Brand :</h4>
+              <p>{{$t->Brand}}</p>
+              <h4>Stock :</h4>
+              <p>{{$t->Stock}}</p>
+              <h4>Price :</h4>
+              <p>Rp. {{$t->Harga}}</p>
+            </div>
+            
+             
             </div>
           </div>
-          <div class="agile_top_brands_grids">
-  <div class="row">
-    @foreach($paginator as $t)
-    <div class="col-md-4" style="padding-bottom: 15px;">
-      <div class="hover14 column">
-        <div class="agile_top_brand_left_grid">
-          <div class="agile_top_brand_left_grid_pos">
-            <img src="images/offer.png" alt=" " class="img-responsive" />
-          </div>
-          <div class="agile_top_brand_left_grid1">
-            <figure>
-              <div class="snipcart-item block">
-                @foreach($t as $tabel)
-                <div class="snipcart-thumb">
-                  <a href="/single/{{$t->ID}}">
-                    <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('public/uploads/' . $t->product_image)}}" />
-                  </a>
-                  <p>{{$t->Nama}}</p>
-                  <h4>Rp. {{$t->Harga}}</h4>
-                </div>
-                <div class="snipcart-details top_brand_home_details">
-                  <form action="/editproduct" method="post">
-                  {{ csrf_field() }}
-                    <fieldset>
-                      <input type="hidden" name="cmd" value="_cart" />
-                      <input type="hidden" name="add" value="1" />
-                      <input type="hidden" name="business" value=" " />
-                      <input type="hidden" name="item_name" value="{{$t->Nama}}" />
-                      <input type="hidden" name="amount" value="{{$t->Harga}}" />
-                      <input type="hidden" name="discount_amount" value="1.00" />
-                      <input type="hidden" name="currency_code" value="USD" />
-                      <input type="hidden" name="return" value=" " />
-                      <input type="hidden" name="cancel_return" value=" " />
-                      <a href="/editproduct/{{$t->ID}}">Edit</a>
-                      <a href="/deleteproduct/{{$t->ID}}">Delete</a>
-                    </fieldset>
-                  </form>
-                </div>
-                @break
-                @endforeach
-              </div>
-            </figure>
-          </div>
+          <div class="clearfix"></div>
+          @endforeach
         </div>
       </div>
     </div>
-    @endforeach
-            <div class="clearfix"></div>
-            <br><br>
-            </div> 
-          </div>
-          <div class="agile_top_brands_grids">
-            <div class="clearfix"></div>
-          </div>
-          
-          <nav class="numbering">
-            <ul class="pagination paging">
-            {{ $paginator->links() }}
-            </ul>
-          </nav>
+
+     
+        <h2 style="text-align: center">Delete Product</h2>
+
+        <div
+          class="login-form-grids animated wow slideInUp"
+          data-wow-delay=".5s"
+        >
+        <form action="{{ url('/deleteproduct/' . $t->ID) }}" method="POST" enctype="multipart/form-data">
+    {{ csrf_field() }}
+    Are you sure you want to delete this product?
+    <input type="hidden" name="cat" value="{{ '/' . strtolower($t->Kategori) }}">
+    <input type="submit" name="delete" value="Yes">
+    <input type="submit" name="cancel" value="No">
+</form>
+
         </div>
-        <div class="clearfix"></div>
+        <br> <br>
       </div>
     </div>
-    <!--- OPP --->
+    <!-- //form product -->
+
     <!-- //footer -->
     <div class="footer">
       <div class="container">
@@ -513,7 +379,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       });
     </script>
     <!-- //here ends scrolling icon -->
-   
+    <script src="js/minicart.min.js"></script>
+    <script>
+      // Mini Cart
+      paypal.minicart.render({
+        action: "#",
+      });
+
+      if (~window.location.search.indexOf("reset=true")) {
+        paypal.minicart.reset();
+      }
+    </script>
     <!-- main slider-banner -->
     <script src="js/skdslider.min.js"></script>
     <link href="css/skdslider.css" rel="stylesheet" />

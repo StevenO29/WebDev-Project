@@ -17,7 +17,7 @@ class prodModel extends Model
         $run = DB::select($server);
         $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
         p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
-        FROM Product where p_category = 'OPP';       ";
+        FROM Product where p_category = 'OPP' and status_del = 0;       ";
 
         $produk = DB::select($value);
         return collect($produk);

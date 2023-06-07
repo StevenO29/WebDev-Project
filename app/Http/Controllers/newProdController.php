@@ -3,25 +3,28 @@
 namespace App\Http\Controllers;
 
 use App\Models\EditProductModel;
+use App\Models\deleteProdModel;
 use App\Models\prodModel;
 use Illuminate\Http\Request;
 use App\Models\newProdModel;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Redirect;
 
 class newProdController extends Controller
 {
     //
-    public function newproduct(){
+    public function newproduct()
+    {
 
         return view('newproduct');
     }
-    public function Addbarang(Request $req){
+    public function Addbarang(Request $req)
+    {
         $kategoribarang = $req->input('categoryList');
         $input = $req->all();
-        if($kategoribarang == "opp")
-        {
+        if ($kategoribarang == "opp") {
             $produkbaru = new newProdModel();
             $produkbaru->P_Name = $req->input('p_name');
             $produkbaru->P_Category = 'OPP';
@@ -29,15 +32,14 @@ class newProdController extends Controller
             $produkbaru->P_Stock = $req->input('P_Stock');
             $produkbaru->P_Desc = $req->input('P_Desc');
             $produkbaru->P_Price = $req->input('P_Price');
-            if($req -> hasFile('product_image'))
-            {
+            if ($req->hasFile('product_image')) {
                 $file = $req->file('product_image');
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . '.' . $extension;
                 $file->move(public_path("public/uploads"), $filename);
                 $produkbaru->product_image = $filename;
             }
-            
+
             $produkbaru->Status_Del = '0';
             $produkbaru->save();
 
@@ -45,12 +47,10 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-           
+
             return redirect('/opp');
-            
-        }
-        elseif($kategoribarang == "hdpe")
-        {
+
+        } elseif ($kategoribarang == "hdpe") {
             $produkbaru = new newProdModel();
             $produkbaru->P_Name = $req->input('p_name');
             $produkbaru->P_Category = 'HDPE';
@@ -58,8 +58,7 @@ class newProdController extends Controller
             $produkbaru->P_Stock = $req->input('P_Stock');
             $produkbaru->P_Desc = $req->input('P_Desc');
             $produkbaru->P_Price = $req->input('P_Price');
-            if($req -> hasFile('product_image'))
-            {
+            if ($req->hasFile('product_image')) {
                 $file = $req->file('product_image');
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . '.' . $extension;
@@ -74,10 +73,8 @@ class newProdController extends Controller
             $run = DB::select($server);
 
             return redirect('/hdpe');
-            
-        }
-        elseif($kategoribarang == "pe")
-        {
+
+        } elseif ($kategoribarang == "pe") {
             $produkbaru = new newProdModel();
             $produkbaru->P_Name = $req->input('p_name');
             $produkbaru->P_Category = 'PE';
@@ -85,8 +82,7 @@ class newProdController extends Controller
             $produkbaru->P_Stock = $req->input('P_Stock');
             $produkbaru->P_Desc = $req->input('P_Desc');
             $produkbaru->P_Price = $req->input('P_Price');
-            if($req -> hasFile('product_image'))
-            {
+            if ($req->hasFile('product_image')) {
                 $file = $req->file('product_image');
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . '.' . $extension;
@@ -100,11 +96,10 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-          
+
             return redirect('/pe');
         }
-        if($kategoribarang == "kresek")
-        {
+        if ($kategoribarang == "kresek") {
             $produkbaru = new newProdModel();
             $produkbaru->P_Name = $req->input('p_name');
             $produkbaru->P_Category = 'Kresek';
@@ -112,8 +107,7 @@ class newProdController extends Controller
             $produkbaru->P_Stock = $req->input('P_Stock');
             $produkbaru->P_Desc = $req->input('P_Desc');
             $produkbaru->P_Price = $req->input('P_Price');
-            if($req -> hasFile('product_image'))
-            {
+            if ($req->hasFile('product_image')) {
                 $file = $req->file('product_image');
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . '.' . $extension;
@@ -128,10 +122,8 @@ class newProdController extends Controller
             $run = DB::select($server);
 
             return redirect('/kresek');
-            
-        }
-        elseif($kategoribarang == "gelas")
-        {
+
+        } elseif ($kategoribarang == "gelas") {
             $produkbaru = new newProdModel();
             $produkbaru->P_Name = $req->input('p_name');
             $produkbaru->P_Category = 'Gelas';
@@ -139,8 +131,7 @@ class newProdController extends Controller
             $produkbaru->P_Stock = $req->input('P_Stock');
             $produkbaru->P_Desc = $req->input('P_Desc');
             $produkbaru->P_Price = $req->input('P_Price');
-            if($req -> hasFile('product_image'))
-            {
+            if ($req->hasFile('product_image')) {
                 $file = $req->file('product_image');
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . '.' . $extension;
@@ -156,10 +147,8 @@ class newProdController extends Controller
 
             return redirect('/gelas');
 
-            
-        }
-        elseif($kategoribarang == "kertas")
-        {
+
+        } elseif ($kategoribarang == "kertas") {
             $produkbaru = new newProdModel();
             $produkbaru->P_Name = $req->input('p_name');
             $produkbaru->P_Category = 'Kertas';
@@ -167,8 +156,7 @@ class newProdController extends Controller
             $produkbaru->P_Stock = $req->input('P_Stock');
             $produkbaru->P_Desc = $req->input('P_Desc');
             $produkbaru->P_Price = $req->input('P_Price');
-            if($req -> hasFile('product_image'))
-            {
+            if ($req->hasFile('product_image')) {
                 $file = $req->file('product_image');
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . '.' . $extension;
@@ -182,13 +170,14 @@ class newProdController extends Controller
 
             $run = DB::select($server);
 
-            
+
             return redirect('/kertas');
-            
+
         }
     }
-    public function tabelprodOPP(){
-       
+    public function tabelprodOPP()
+    {
+
         $perPage = 9; // Number of items per page
         $currentPage = Paginator::resolveCurrentPage();
 
@@ -205,12 +194,13 @@ class newProdController extends Controller
         );
 
         return view('opp', compact('paginator'));
-        
-   
+
+
     }
-    public function tabelprodHDPE(){
-       
-       
+    public function tabelprodHDPE()
+    {
+
+
         $perPage = 9; // Number of items per page
         $currentPage = Paginator::resolveCurrentPage();
 
@@ -228,9 +218,10 @@ class newProdController extends Controller
 
         return view('HDPE', compact('paginator'));
     }
-    public function tabelprodPE(){
-       
-      
+    public function tabelprodPE()
+    {
+
+
         $perPage = 9; // Number of items per page
         $currentPage = Paginator::resolveCurrentPage();
 
@@ -249,8 +240,9 @@ class newProdController extends Controller
         return view('pe', compact('paginator'));
     }
 
-    public function tabelprodKresek(){
-       
+    public function tabelprodKresek()
+    {
+
         $perPage = 9; // Number of items per page
         $currentPage = Paginator::resolveCurrentPage();
 
@@ -269,8 +261,9 @@ class newProdController extends Controller
         return view('kresek', compact('paginator'));
     }
 
-    public function tabelprodGelas(){
-       
+    public function tabelprodGelas()
+    {
+
         $perPage = 9; // Number of items per page
         $currentPage = Paginator::resolveCurrentPage();
 
@@ -289,8 +282,9 @@ class newProdController extends Controller
         return view('gelas', compact('paginator'));
     }
 
-    public function tabelprodKertas(){
-       
+    public function tabelprodKertas()
+    {
+
         $perPage = 9; // Number of items per page
         $currentPage = Paginator::resolveCurrentPage();
 
@@ -308,46 +302,78 @@ class newProdController extends Controller
 
         return view('kertas', compact('paginator'));
     }
-    public function tampilinBarangEdit($id, Request $req){
-        
+    public function tampilinBarangEdit($id, Request $req)
+    {
+
         $user = new EditProductModel();
         $tabel = $user->tableproduk($id);
-       
+
         return view('editproduct', compact('tabel'));
-        
+
     }
-    public function EditBarang($id, Request $req){
-        
-            $namaproduk = $req->input('p_name');
-            $kategori = $req->input('p_category');
-            $brandbarang = $req->input('P_Brand');
-            $stokbarang = $req->input('P_Stock');
-            $deskripsi = $req->input('P_Desc');
-            $harga = $req->input('P_Price');
-            $gambar = $req->input('product_image');
-            
-            
-            $databaru = DB::table('Product')
+    public function EditBarang($id, Request $req)
+    {
+
+        $namaproduk = $req->input('p_name');
+        $kategori = $req->input('p_category');
+        $brandbarang = $req->input('P_Brand');
+        $stokbarang = $req->input('P_Stock');
+        $deskripsi = $req->input('P_Desc');
+        $harga = $req->input('P_Price');
+        $gambar = $req->input('product_image');
+
+
+        $databaru = DB::table('Product')
             ->where('Product_ID', $id)
             ->update([
-              'p_name' => $namaproduk,
-              'P_Brand' => $brandbarang,
-              'P_Price' => $harga,
-              'p_category'=>$kategori,
-              'P_Desc' => $deskripsi,
-              'P_Stock' => $stokbarang
+                'p_name' => $namaproduk,
+                'P_Brand' => $brandbarang,
+                'P_Price' => $harga,
+                'p_category' => $kategori,
+                'P_Desc' => $deskripsi,
+                'P_Stock' => $stokbarang
             ]);
-        
 
-            $user = new EditProductModel();
-            $tabel = $user->tableproduk($id);
-           
-            return view('editproduct', compact('tabel'));
-            
+
+        $user = new EditProductModel();
+        $tabel = $user->tableproduk($id);
+
+        return view('editproduct', compact('tabel'));
+
+    }
+
+    public function tampilinBarangDelete($id, Request $req)
+    {
+
+        $user = new deleteProdModel();
+        $tabel = $user->tableproduk($id);
+
+        return view('deleteproduct', compact('tabel'));
+
+    }
+
+    public function DeleteBarang($id, Request $req)
+    {
+        $target = $req->input('cat');
+        if ($req->input('cancel') == 'No') {
+            return redirect($target);
         }
-        
-        
+        else {
+            $databaru = DB::table('Product')
+                ->where('Product_ID', $id)
+                ->update([
+                    'status_del' => 1,
+                ]);
+
+
+            $user = new deleteProdModel();
+            $tabel = $user->tableproduk($id);
+
+
+            return redirect($target)->with('alert', 'Product Deleted');
+        }
     }
 
 
 
+}
