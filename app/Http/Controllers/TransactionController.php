@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\product;
 use App\Models\newCartModel;
+use App\Models\newOrderModel;
 use App\Models\checkoutModel;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
@@ -140,7 +141,8 @@ class TransactionController extends Controller
     public function addToCart(Request $request)
     {
         $input = $request->all();
-        $cartBaru = new newCartModel();
+        $cartBaru = new newOrderModel();
+
         // $Product_ID = $request->Product_ID;
         // $request->validate([
         //     'Product_ID' => 'required|numeric',
@@ -154,24 +156,13 @@ class TransactionController extends Controller
         $cartBaru->save();
        // $Product = Product::detail_product($Product_ID);
 
-        // $cart["Product_ID"] = [
-        //     "P_Name" => $Product->P_Name,
-        //     "P_Category" => $Product->P_Category,
-        //     "P_Brand" => $Product->P_Brand,
-        //     "P_Stock" => $Product->P_Stock,
-        //     "P_Desc" => $Product->P_Desc,
-        //     "P_Price" => $Product->P_Price,
-        //     "Status_Del" => $Product->Status_Del,
-        //     "product_image" => $Product->product_image,
-        //     "total" => 1
-        // ];
-
+   
 
 
        // session(["checkout" => $cart]);
         return redirect("/checkout");
     }
-
+    
     public static function detail_product($Product_ID)
     {
         $data = Product::where("Product_ID", $Product_ID)->first();
@@ -210,4 +201,52 @@ class TransactionController extends Controller
         return view('checkout', compact('listCheckout'));
 
     }
+
+    // public function addToOrder(Request $request)
+    // {
+
+    //     $input = $request->all();
+    //     $orderBaru = new newOrderModel();
+    //     $orderBaru->Order_Date = now();
+    //     $orderBaru->Order_Status = 'Pending';
+    //     $orderBaru->Order_Qty  = $request->input('qty');
+    //     $orderBaru->Status_Del = 0;
+    //     $orderBaru->save();
+
+    // }
+
+    public function addToOrder(Request $request)
+{
+    $c_email = 'sophia.lee@email.com';
+    // $customerID = DB::table('Customer')
+    //     ->where('Cust_Email', $customerEmail)
+    //     ->value('Cust_ID');
+    // $customerID = $customerID->Cust_ID;
+
+    $id = DB::select('select Cust_ID as Cust_ID from Customer where Cust_Email = ?', [$c_email]);
+    $id = $id[0]->Cust_ID;
+    
+
+    // Retrieve other necessary input values
+    $productID = $request->input('Product_ID');
+    $quantity = $request->input('Order_Qty');
+
+    // Retrieve the product details based on the product ID
+    $product = DB::table('product')
+        ->where('Product_ID', $productID)
+        ->first();
+
+    // Calculate the subtotal based on the product price and quantity
+
+    // Insert the order record into the database
+    DB::table('order2')->insert([
+        'Cust_ID' => $id,
+        'Order_Date' => now(),
+        'Order_Status' => 'Pending',
+        'Order_Qty' => $quantity,
+        'Status_Del' => 0    ]);
+    return redirect("/index");
+    // Redirect or return a response as needed
+}
+
 }

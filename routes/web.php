@@ -109,6 +109,7 @@ Route::prefix('/checkout')->group(function(){
     Route::get('/',[TransactionController::class,"tabelCart"] );
     Route::post('/add-to-cart', 'TransactionController@addToCart')->name('transactions.addToCart');
     Route::post('/updateCart',[TransactionController::class,"EditCart"]);
+    Route::post('/checkout', [TransactionController::class,"addToOrder"]);
 
 
 });

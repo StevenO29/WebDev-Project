@@ -274,10 +274,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </form>
             <form method="post" action="/checkout/checkout">
             {{ csrf_field() }}
+
+         
             <input type="hidden" name="id" value="{{$t->Product_ID}}">
             <input type="hidden" name="name" value="{{$t->name}}">
+            <input type="hidden" name="cust_name" value="{{$t->cust_name}}">
             <input type="hidden" name="price" value="{{$t->price}}">
-            <input type="hidden" name="qty" value="{{$t->qty}}">
+            <input type="hidden" name="Order_Qty" value="{{$t->qty}}">
             <input type="hidden" name="total" value="{{$t->subtotal}}">
             <input type="submit" name="checkout" value="Checkout" />
         </form>
