@@ -330,27 +330,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <h4>Rp. {{$t->Harga}}</h4>
                       </div>
                       <div class="snipcart-details top_brand_home_details">
-                        <form action="/checkout/{{$t->ID}}" method="post">
+                      <form action="/opp/proses" method="post">
                         {{ csrf_field() }}
                           <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="{{$t->Nama}}" />
-                            <input type="hidden" name="amount" value="{{$t->Harga}}" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="IDR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="hidden" name="submit" value="true">
-                            <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
+                            <input type="hidden" name="Cart_Qty" value="1" />
+                            <input type="hidden" id="product_image" name="product_image" value="{{$t->product_image}}">
+                            <input type="hidden" name="Product_ID" value="{{$t->ID}}" />
+                            <input type="hidden" name="P_Price" value="{{$t->Harga}}" />
+                            <input type="submit" value="Add to Cart" />
+                            <!-- <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
                             <script>
                               function redirectToCheckout() {
-                                window.location.href = "/checkout/{{$t->ID}}";
-                              }
+                                window.location.href = "/checkout";
+                              } -->
                             </script>
                           </fieldset>
                         </form>
+                        <script>
+                          document.getElementById("oppForm").addEventListener("submit", function(e) {
+                          e.preventDefault(); // Prevent the default form submission
+                          var form = e.target;
+                          var url = form.getAttribute("action");
+                          var method = form.getAttribute("method");
+
+                          // Perform your AJAX request or any other necessary actions here
+                          // ...
+
+                          // Redirect to the newproduct page
+                          window.location.href = "/opp";
+                          });
+                          </script>
                       </div>
                       @break
                       @endforeach

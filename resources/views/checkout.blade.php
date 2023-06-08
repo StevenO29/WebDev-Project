@@ -213,7 +213,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="container">
         <h2>Your shopping cart contains: <span>3 Products</span></h2>
         <div class="checkout-right">
-        <form method="post" action="">
+        {{ csrf_field() }}
           <table class="timetable_sub">
             <thead>
               <tr>
@@ -223,12 +223,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <th>Product Name</th>
 
                 <th>Price</th>
+                <th>subtotal</th>
+
                 <th>Remove</th>
               </tr>
             </thead>
-            @foreach($listCheckout as $t)
+            @foreach($listCheckout as $index => $t)
+            <form method="post" action="/checkout/updateCart">
+            {{ csrf_field() }}
             <tr class="rem1">
-              <td class="invert">1</td>
+              <td class="invert">{{ $index + 1 }}</td>
               <td class="invert-image">
                 <a href="/single"
                   ><img src="{{ asset('webdev_image_assets/' . $t->product_image)}}" alt=" " class="img-responsive " style = "height: 100px; width: 100px;"
@@ -238,7 +242,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="quantity">
                   <div class="quantity-select">
                     <div class="entry value-minus">&nbsp;</div>
-                    <input class="entry value-plus" style="color:black" type="number" name="{{$t->qty}}" value="{{$t->qty}}">
+                    <input class="entry value-plus" style="color:black" type="number" name="qty[{{$t->Product_ID}}]" value="{{$t->qty}}">
                     <div class="entry value-plus active">&nbsp;</div>
                   </div>
                 </div>
@@ -246,6 +250,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <td class="invert">{{$t->name}}</td>
 
               <td class="invert">{{$t->price}}</td>
+              <td class="invert">{{$t->subtotal}}</td>
+
               <td class="invert">
                 <div class="rem">
                   <div class="close1"></div>
@@ -264,8 +270,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             @endforeach            
             </table>
             <input type="submit" value="Update Cart" />
+            <input type="submit" value="Checkout" />
 
-            </form>
+        </form>
 
 
 
@@ -289,20 +296,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="checkout-left">
           <div class="checkout-left-basket">
             <ul>
-              @foreach($listCheckout as $t)
-              <li>{{$t->name}} <i>-</i> <span>{{$t->subtotal}} </span></li>
-             @endforeach
-              <li>Total <i>-</i> <span>{{$t->subtotal}}</span></li>
+              <li>Total  <span><i>-</i>{{$t->subtotal}}</span></li>
             </ul>
-          </div>
-          <div class="checkout-right-basket">
-            <a href="single.html"
-              ><span
-                class="glyphicon glyphicon-menu-left"
-                aria-hidden="true"
-              ></span
-              >Continue Shopping</a
-            >
           </div>
           <div class="clearfix"></div>
         </div>

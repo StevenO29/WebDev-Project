@@ -87,12 +87,7 @@ Route::prefix('/single')->group(function(){
 
 });
 
-Route::prefix('/checkout')->group(function(){
-    Route::get('/',[TransactionController::class,"tabelCart"] );
-    Route::post('/add-to-cart', 'TransactionController@addToCart')->name('transactions.addToCart');
 
-
-});
 Route::prefix('/opp')->group(function(){
     Route::get('/',[newProdController::class,"tabelprodOPP"] );
 });
@@ -110,6 +105,14 @@ Route::prefix('/opp')->group(function(){
     
 });
 
+Route::prefix('/checkout')->group(function(){
+    Route::get('/',[TransactionController::class,"tabelCart"] );
+    Route::post('/add-to-cart', 'TransactionController@addToCart')->name('transactions.addToCart');
+    Route::post('/updateCart',[TransactionController::class,"EditCart"]);
+
+
+});
+
 
 
  Route::prefix('/newproduct')->group(function(){
@@ -118,10 +121,10 @@ Route::prefix('/opp')->group(function(){
     
 });
 
- Route::prefix('/editproduct')->group(function(){
-     Route::get('/{id}',[newProdController::class,"tampilinBarangEdit"]);
-     Route::post('/{id}',[newProdController::class,"EditBarang"]);
- });
+//  Route::prefix('/editproduct')->group(function(){
+//      Route::get('/{id}',[newProdController::class,"tampilinBarangEdit"]);
+//      Route::post('/{id}',[newProdController::class,"EditBarang"]);
+//  });
 
  Route::prefix('/deleteproduct')->group(function(){
     Route::get('/{id}',[newProdController::class,"tampilinBarangDelete"]);

@@ -190,4 +190,24 @@ class TransactionController extends Controller
 
         return view('checkout', compact('listCheckout'));
 }
+    public function EditCart(Request $req)
+    {
+       
+        $quantities = $req->input('qty');
+
+        foreach($quantities as $product_id => $qty) {
+             $databaru = DB::table('cart_coba')
+            ->where('product_ID', $product_id)
+            ->update([
+                'Cart_Qty' => $qty,
+            ]);
+
+        }
+
+        $user = new checkoutModel();
+        $listCheckout = $user->tabelCart();
+
+        return view('checkout', compact('listCheckout'));
+
+    }
 }
