@@ -337,16 +337,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <input type="hidden" name="business" value=" " />
                             <input type="hidden" name="item_name" value="{{$t->Nama}}" />
                             <input type="hidden" name="amount" value="{{$t->Harga}}" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="IDR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="hidden" name="submit" value="true">
-                            <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
+                            <a href="/checkout">Add to Cart</a>
+                            <!-- <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
                             <script>
                               function redirectToCheckout() {
                                 window.location.href = "/checkout";
-                              }
+                              } -->
                             </script>
                           </fieldset>
                         </form>
