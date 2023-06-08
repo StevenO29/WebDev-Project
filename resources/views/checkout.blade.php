@@ -270,10 +270,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             @endforeach            
             </table>
             <input type="submit" value="Update Cart" />
-            <input type="submit" value="Checkout" />
 
         </form>
-
+            <form method="post" action="/checkout/checkout">
+            {{ csrf_field() }}
+            <input type="hidden" name="id" value="{{$t->Product_ID}}">
+            <input type="hidden" name="name" value="{{$t->name}}">
+            <input type="hidden" name="total" value="{{$t->subtotal}}">
+            <input type="submit" name="checkout" value="Checkout" />
+            </form>
 
 
 
