@@ -110,7 +110,6 @@ Route::prefix('/checkout')->group(function(){
     Route::post('/add-to-cart', 'TransactionController@addToCart')->name('transactions.addToCart');
     Route::post('/updateCart',[TransactionController::class,"EditCart"]);
     Route::post('/checkout', [TransactionController::class,"addToOrder"]);
-    Route::post('/delete/{id}', [TransactionController::class, 'removeCartItem']);
 
 
 });

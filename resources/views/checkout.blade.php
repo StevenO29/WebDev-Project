@@ -253,8 +253,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <td class="invert">
                 <div class="rem">
                   <div class="close1"></div>
-                  <button type="submit" name="delete"
-                                        onclick="{{route('/delete/{id}')}}">Delete</button>
+                  
                 </div>
                 <script>
                   $(document).ready(function (c) {
