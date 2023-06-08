@@ -329,7 +329,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <h4>Rp. {{$t->Harga}}</h4>
                       </div>
                       <div class="snipcart-details top_brand_home_details">
-                        <form action="/checkout/proses" method="post">
+                        <form action="/opp/proses" method="post">
                         {{ csrf_field() }}
                           <fieldset>
                             <input type="hidden" name="Cart_Qty" value="1" />
@@ -346,7 +346,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                           </fieldset>
                         </form>
                         <script>
-                          document.getElementById("checkoutForm").addEventListener("submit", function(e) {
+                          document.getElementById("oppForm").addEventListener("submit", function(e) {
                           e.preventDefault(); // Prevent the default form submission
                           var form = e.target;
                           var url = form.getAttribute("action");
@@ -356,7 +356,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                           // ...
 
                           // Redirect to the newproduct page
-                          window.location.href = "/checkout";
+                          window.location.href = "/opp";
                           });
                           </script>
                       </div>
