@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\product;
 use App\Models\newCartModel;
+use App\Models\checkoutModel;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -144,11 +145,12 @@ class TransactionController extends Controller
         // $request->validate([
         //     'Product_ID' => 'required|numeric',
         // ]);
-       // $cart = session("checkout");
-        $cartBaru->P_Name  = $request->input('p_name');
-        $cartBaru->P_Price  = $request->input('P_Price');
-        $cartBaru->P_Name  = $request->input('product_image');
-        $cartBaru->P_Name  = $request->input('Cart_Qty');
+        // $cart = session("checkout");
+//        $cartBaru->cart_id = session('cart_id');
+        // $cartBaru->c_email = session('c_email');
+        $cartBaru->cart_id  = 'CT001';
+        $cartBaru->product_id  = $request->input('Product_ID');
+        $cartBaru->Cart_Qty  = $request->input('Cart_Qty');
         $cartBaru->save();
        // $Product = Product::detail_product($Product_ID);
 
@@ -181,5 +183,11 @@ class TransactionController extends Controller
         $cart = session("checkout");
         return view("checkout")->with("checkout", $cart);
     }
+    public function tabelCart(Request $req){
 
+        $pindahCart = new checkoutModel();
+        $listCheckout = $pindahCart->tabelCart();
+
+        return view('checkout', compact('listCheckout'));
+}
 }

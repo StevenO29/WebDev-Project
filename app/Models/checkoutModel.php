@@ -13,13 +13,15 @@ class checkoutModel extends Model
     protected $primaryKey = 'order_id';
     public function tabelCart(){
         //$c_email = session()->get('email');
+        //$cart_id = session()->get('cart_id');
+        $cart_id = 'CT001';
         $c_email = 'sophia.lee@email.com';
         $value = "SELECT p.Product_ID as `Product_ID`, 
         p.product_image as `product_image`, 
         c.Cart_Qty as `qty`, p.p_name as `name`, 
         p.P_Price as `price`, SUM(p.p_price*c.cart_qty) as `subtotal`
         FROM product p, cart_coba c, customer cu
-        WHERE c.product_id = p.product_id AND c.cust_id = cu.cust_id AND cu.cust_email = '$c_email'
+        WHERE c.product_id = p.product_id  AND cu.cust_email = '$c_email' AND c.cart_id = '$cart_id'
         GROUP BY p.product_image, c.Cart_Qty, p.p_name, p.P_Price,p.product_id;";
         
         $selectorder = DB::select($value);

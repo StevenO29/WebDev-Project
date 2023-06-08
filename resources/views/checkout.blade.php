@@ -226,11 +226,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <th>Remove</th>
               </tr>
             </thead>
-            @foreach($cart as $t)
+            @foreach($listCheckout as $t)
             <tr class="rem1">
               <td class="invert">1</td>
               <td class="invert-image">
-                <a href="single.html"
+                <a href="/single"
                   ><img src="{{ asset('webdev_image_assets/' . $t->product_image)}}" alt=" " class="img-responsive " style = "height: 100px; width: 100px;"
                 /></a>
               </td>
@@ -238,7 +238,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="quantity">
                   <div class="quantity-select">
                     <div class="entry value-minus">&nbsp;</div>
-                    <input class="entry value-plus" type="number" name="{{$t->qty}}" value="{{$t->qty}}">
+                    <input class="entry value-plus" style="color:black" type="number" name="{{$t->qty}}" value="{{$t->qty}}">
                     <div class="entry value-plus active">&nbsp;</div>
                   </div>
                 </div>
@@ -261,8 +261,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </script>
               </td>
             </tr>
-            @endforeach
+            @endforeach            
+            </table>
+            <input type="submit" value="Update Cart" />
+
             </form>
+
+
+
 
             <!--quantity-->
             <script>
@@ -279,11 +285,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               });
             </script>
             <!--quantity-->
-          </table>
         </div>
         <div class="checkout-left">
           <div class="checkout-left-basket">
-            <h4>Continue to basket</h4>
             <ul>
               @foreach($listCheckout as $t)
               <li>{{$t->name}} <i>-</i> <span>{{$t->subtotal}} </span></li>

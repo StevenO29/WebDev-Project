@@ -88,10 +88,13 @@ Route::prefix('/single')->group(function(){
 });
 
 Route::prefix('/checkout')->group(function(){
-    Route::get('/',[checkoutController::class,"tabelCart"] );
+    Route::get('/',[TransactionController::class,"tabelCart"] );
     Route::post('/add-to-cart', 'TransactionController@addToCart')->name('transactions.addToCart');
 
 
+});
+Route::prefix('/opp')->group(function(){
+    Route::get('/',[newProdController::class,"tabelprodOPP"] );
 });
 
 
@@ -102,10 +105,12 @@ Route::prefix('/checkout')->group(function(){
 Route::get('/opp', [TransactionController::class, 'OPP']);
 
 Route::prefix('/opp')->group(function(){
-    Route::get('/',[TransactionController::class,"newCart"]);
+    Route::get('/',[TransactionController::class,"OPP"]);
     Route::POST('/proses',[TransactionController::class,"addToCart"]);
     
 });
+
+
 
  Route::prefix('/newproduct')->group(function(){
     Route::get('/',[newProdController::class,"newproduct"]);
