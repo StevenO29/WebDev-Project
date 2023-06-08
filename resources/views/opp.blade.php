@@ -329,15 +329,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <h4>Rp. {{$t->Harga}}</h4>
                       </div>
                       <div class="snipcart-details top_brand_home_details">
-                        <form action="/checkout" method="post">
+                        <form action="/checkout/proses" method="post">
                         {{ csrf_field() }}
                           <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="{{$t->Nama}}" />
-                            <input type="hidden" name="amount" value="{{$t->Harga}}" />
-                            <a href="/checkout">Add to Cart</a>
+                            <input type="hidden" name="Cart_Qty" value="1" />
+                            <input type="hidden" id="product_image" name="product_image" value="{{$t->product_image}}">
+                            <input type="hidden" name="p_name" value="{{$t->Nama}}" />
+                            <input type="hidden" name="P_Price" value="{{$t->Harga}}" />
+                            <input type="submit" value="Add to Cart" />
                             <!-- <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
                             <script>
                               function redirectToCheckout() {
@@ -346,6 +345,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </script>
                           </fieldset>
                         </form>
+                        <script>
+                          document.getElementById("checkoutForm").addEventListener("submit", function(e) {
+                          e.preventDefault(); // Prevent the default form submission
+                          var form = e.target;
+                          var url = form.getAttribute("action");
+                          var method = form.getAttribute("method");
+
+                          // Perform your AJAX request or any other necessary actions here
+                          // ...
+
+                          // Redirect to the newproduct page
+                          window.location.href = "/checkout";
+                          });
+                          </script>
                       </div>
                       @break
                       @endforeach
