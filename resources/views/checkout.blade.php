@@ -241,9 +241,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <td class="invert">
                 <div class="quantity">
                   <div class="quantity-select">
-                    <div class="entry value-minus">&nbsp;</div>
                     <input class="entry value-plus" style="color:black" type="number" name="qty[{{$t->Product_ID}}]" value="{{$t->qty}}">
-                    <div class="entry value-plus active">&nbsp;</div>
                   </div>
                 </div>
               </td>
@@ -255,6 +253,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <td class="invert">
                 <div class="rem">
                   <div class="close1"></div>
+                  <button type="submit" name="delete"
+                                        onclick="{{route('/delete/{id}')}}">Delete</button>
                 </div>
                 <script>
                   $(document).ready(function (c) {
@@ -272,6 +272,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <input type="submit" value="Update Cart" />
 
         </form>
+        
             <form method="post" action="/checkout/checkout">
             {{ csrf_field() }}
 

@@ -254,7 +254,7 @@ class TransactionController extends Controller
     
 
         DB::table('Order_Details')->insert([
-            'Order_ID' => "O026",
+            'Order_ID' => "O028",
             'P_Name' => $productName,
             'Product_ID' => $prod_id,
             'P_price' => $price,

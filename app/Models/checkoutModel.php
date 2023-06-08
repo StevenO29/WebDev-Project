@@ -14,7 +14,7 @@ class checkoutModel extends Model
     public function tabelCart(){
         //$c_email = session()->get('email');
         //$cart_id = session()->get('cart_id');
-        $cart_id = 'CT001';
+        $cart_id = 'CT005';
         $c_email = 'sophia.lee@email.com';
         $value = "SELECT p.Product_ID as `Product_ID`, cu.cust_name as `cust_name`,
         p.product_image as `product_image`, 
