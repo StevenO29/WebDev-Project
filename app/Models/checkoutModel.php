@@ -20,7 +20,7 @@ class checkoutModel extends Model
         p.product_image as `product_image`, 
         c.Cart_Qty as `qty`, p.p_name as `name`, 
         p.P_Price as `price`, SUM(p.p_price*c.cart_qty) as `subtotal`
-        FROM product p, cart_coba c, customer cu
+        FROM Product p, cart_coba c, Customer cu
         WHERE c.product_id = p.product_id  AND cu.cust_email = '$c_email' AND c.cart_id = '$cart_id'
         GROUP BY p.product_image, c.Cart_Qty, p.p_name, p.P_Price,p.product_id, cu.cust_name;";
         

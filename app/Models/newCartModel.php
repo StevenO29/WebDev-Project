@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class newCartModel extends Model
 {
     use HasFactory;
-    protected $table = "Cart_coba";
+    protected $table = "cart_coba";
 
     public $incrementing = false;
 

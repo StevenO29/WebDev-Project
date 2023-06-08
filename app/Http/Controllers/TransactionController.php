@@ -148,7 +148,7 @@ class TransactionController extends Controller
         //     'Product_ID' => 'required|numeric',
         // ]);
         // $cart = session("checkout");
-//        $cartBaru->cart_id = session('cart_id');
+        // $cartBaru->cart_id = session('cart_id');
         // $cartBaru->c_email = session('c_email');
         $cartBaru->cart_id  = 'CT001';
         $cartBaru->product_id  = $request->input('Product_ID');
@@ -218,6 +218,7 @@ class TransactionController extends Controller
     public function addToOrder(Request $request)
 {
     $c_email = 'sophia.lee@email.com';
+    $product_id = $request->input('prod_id');
     // $customerID = DB::table('Customer')
     //     ->where('Cust_Email', $customerEmail)
     //     ->value('Cust_ID');
@@ -227,12 +228,17 @@ class TransactionController extends Controller
     $id = $id[0]->Cust_ID;
     
 
+    $productName = DB::select('select P_Name as P_Name from Product where Product_ID = ?', [$product_id]);
+    $productName = $productName[0]->P_Name;
+
     // Retrieve other necessary input values
     $productID = $request->input('Product_ID');
     $quantity = $request->input('Order_Qty');
+    $price = $request->input('price');
+    $prod_id = $request->input('prod_id');
 
     // Retrieve the product details based on the product ID
-    $product = DB::table('product')
+    $product = DB::table('Product')
         ->where('Product_ID', $productID)
         ->first();
 
@@ -245,6 +251,15 @@ class TransactionController extends Controller
         'Order_Status' => 'Pending',
         'Order_Qty' => $quantity,
         'Status_Del' => 0    ]);
+    
+
+        DB::table('Order_Details')->insert([
+            'Order_ID' => "O026",
+            'P_Name' => $productName,
+            'Product_ID' => $prod_id,
+            'P_price' => $price,
+            'O_Qty' => $quantity,
+            'Status_Del' => 0    ]);
     return redirect("/index");
     // Redirect or return a response as needed
 }
