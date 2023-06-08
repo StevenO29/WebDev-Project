@@ -226,7 +226,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <th>Remove</th>
               </tr>
             </thead>
-            @foreach($listCheckout as $t)
+            @foreach($cart as $t)
             <tr class="rem1">
               <td class="invert">1</td>
               <td class="invert-image">

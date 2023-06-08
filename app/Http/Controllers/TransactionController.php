@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\product;
+use App\Models\newCartModel;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -130,29 +131,42 @@ class TransactionController extends Controller
         return view('Kertas', compact('paginatorKertas'));
     }
 
+    public function newCart()
+    {
+
+        return view('checkout');
+    }
     public function addToCart(Request $request)
     {
-        $Product_ID = $request->Product_ID;
-        $request->validate([
-            'Product_ID' => 'required|numeric',
-        ]);
-        $cart = session("checkout");
+        $input = $request->all();
+        $cartBaru = new newCartModel();
+        // $Product_ID = $request->Product_ID;
+        // $request->validate([
+        //     'Product_ID' => 'required|numeric',
+        // ]);
+       // $cart = session("checkout");
+        $cartBaru->P_Name  = $request->input('p_name');
+        $cartBaru->P_Price  = $request->input('P_Price');
+        $cartBaru->P_Name  = $request->input('product_image');
+        $cartBaru->P_Name  = $request->input('Cart_Qty');
+        $cartBaru->save();
+       // $Product = Product::detail_product($Product_ID);
 
-        $Product = Product::detail_product($Product_ID);
+        // $cart["Product_ID"] = [
+        //     "P_Name" => $Product->P_Name,
+        //     "P_Category" => $Product->P_Category,
+        //     "P_Brand" => $Product->P_Brand,
+        //     "P_Stock" => $Product->P_Stock,
+        //     "P_Desc" => $Product->P_Desc,
+        //     "P_Price" => $Product->P_Price,
+        //     "Status_Del" => $Product->Status_Del,
+        //     "product_image" => $Product->product_image,
+        //     "total" => 1
+        // ];
 
-        $cart["Product_ID"] = [
-            "P_Name" => $Product->P_Name,
-            "P_Category" => $Product->P_Category,
-            "P_Brand" => $Product->P_Brand,
-            "P_Stock" => $Product->P_Stock,
-            "P_Desc" => $Product->P_Desc,
-            "P_Price" => $Product->P_Price,
-            "Status_Del" => $Product->Status_Del,
-            "product_image" => $Product->product_image,
-            "total" => 1
-        ];
 
-        session(["checkout" => $cart]);
+
+       // session(["checkout" => $cart]);
         return redirect("/checkout");
     }
 

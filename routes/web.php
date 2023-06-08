@@ -15,7 +15,6 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::post('/logout', 'logout')->name('logout');
 });
 
-Route::get('/opp', [TransactionController::class, 'OPP']);
 
 Route::get('/hdpe', [TransactionController::class, 'HDPE']);
 Route::get('/pe', [TransactionController::class, 'PE']);
@@ -94,3 +93,36 @@ Route::prefix('/checkout')->group(function(){
 
 
 });
+
+
+
+
+//
+
+Route::get('/opp', [TransactionController::class, 'OPP']);
+
+Route::prefix('/opp')->group(function(){
+    Route::get('/',[TransactionController::class,"newCart"]);
+    Route::POST('/proses',[TransactionController::class,"addToCart"]);
+    
+});
+
+ Route::prefix('/newproduct')->group(function(){
+    Route::get('/',[newProdController::class,"newproduct"]);
+    Route::POST('/proses',[newProdController::class,"Addbarang"]);
+    
+});
+
+ Route::prefix('/editproduct')->group(function(){
+     Route::get('/{id}',[newProdController::class,"tampilinBarangEdit"]);
+     Route::post('/{id}',[newProdController::class,"EditBarang"]);
+ });
+
+ Route::prefix('/deleteproduct')->group(function(){
+    Route::get('/{id}',[newProdController::class,"tampilinBarangDelete"]);
+    Route::post('/{id}',[newProdController::class,"DeleteBarang"]);
+});
+
+
+
+// Route::get('/editproduct/{id}', [newProdController::class, "EditBarang"]);
