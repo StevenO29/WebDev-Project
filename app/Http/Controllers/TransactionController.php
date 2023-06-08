@@ -150,7 +150,7 @@ class TransactionController extends Controller
         // $cart = session("checkout");
         // $cartBaru->cart_id = session('cart_id');
         // $cartBaru->c_email = session('c_email');
-        $cartBaru->cart_id  = 'CT001';
+        $cartBaru->cart_id  = 'CT005';
         $cartBaru->product_id  = $request->input('Product_ID');
         $cartBaru->Cart_Qty  = $request->input('Cart_Qty');
         $cartBaru->save();
