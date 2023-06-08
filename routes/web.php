@@ -89,7 +89,7 @@ Route::prefix('/single')->group(function(){
 });
 
 Route::prefix('/checkout')->group(function(){
-    Route::get('/{id}',[checkoutController::class,"tabelCart"] );
+    Route::get('/',[checkoutController::class,"tabelCart"] );
     Route::post('/add-to-cart', 'TransactionController@addToCart')->name('transactions.addToCart');
 
 

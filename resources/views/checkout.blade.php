@@ -22,17 +22,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- //for-mobile-apps -->
     <link
-      href="css/bootstrap.css"
+      href="<?php echo asset('css/bootstrap.css')?>"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo asset('css/style.css')?>" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="<?php echo asset('css/font-awesome.css')?>" rel="stylesheet" />
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="<?php echo asset('js/jquery-1.11.1.min.js')?>"></script>
     <!-- //js -->
     <link
       href="//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
@@ -45,8 +45,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       type="text/css"
     />
     <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="<?php echo asset('js/move-top.js')?>"></script>
+    <script type="text/javascript" src="<?php echo asset('js/easing.js')?>"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {

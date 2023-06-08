@@ -329,7 +329,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <h4>Rp. {{$t->Harga}}</h4>
                       </div>
                       <div class="snipcart-details top_brand_home_details">
-                        <form action="/checkout/{{$t->ID}}" method="post">
+                        <form action="/checkout" method="post">
                         {{ csrf_field() }}
                           <fieldset>
                             <input type="hidden" name="cmd" value="_cart" />
@@ -345,7 +345,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
                             <script>
                               function redirectToCheckout() {
-                                window.location.href = "/checkout/{{$t->ID}}";
+                                window.location.href = "/checkout";
                               }
                             </script>
                           </fieldset>
