@@ -67,21 +67,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="container">
         <div class="w3l_offers">
           <p>
-            SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="/products">SHOP NOW</a>
+            SALE UP TO 70% OFF. USE CODE "SALE70%"
           </p>
         </div>
         
-        <div class="product_list_header">
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
-          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
-          </button>
-            <ul class="dropdown-menu">
-              <li><a href="/indexLogout">Logout</a></li>
-            </ul>
-          </div>
-        </div>
         <div class="clearfix"></div>
       </div>
     </div>
@@ -305,10 +294,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="col-md-3 w3_footer_grid">
             <h3>Profile</h3>
             <ul class="info">
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/wishlist">My Wishlist</a>
-              </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/checkout">My Cart</a>

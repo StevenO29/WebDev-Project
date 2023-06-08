@@ -67,40 +67,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="container">
         <div class="w3l_offers">
           <p>
-            SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="/products">SHOP NOW</a>
+            SALE UP TO 70% OFF. USE CODE "SALE70%"
           </p>
         </div>
         
-        <div class="agile-login">
-          <ul>
-            @guest
-              <li class="nav-item">
-                <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
-              </li>
-            @else    
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  {{ Auth::user()->name }}
-                </a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{{ route('logout') }}"
-                  onclick="event.preventDefault();
-                  document.getElementById('logout-form').submit();"
-                  >Logout</a>
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                    @csrf
-                  </form>
-                </li>
-                </ul>
-              </li>
-            @endguest
-            <li><a href="/contact">Contact Us</a></li>
-          </ul>
-        </div>
         <div class="clearfix"></div>
       </div>
     </div>
@@ -279,7 +249,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   </option>
                 </select>
               </div>
-              <div class="sorting-left">
+              {{-- <div class="sorting-left">
                 <select
                   id="country1"
                   onchange="change_country(this.value)"
@@ -301,7 +271,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>All
                   </option>
                 </select>
-              </div>
+              </div> --}}
               <div class="clearfix"></div>
             </div>
           </div>
@@ -440,10 +410,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="col-md-3 w3_footer_grid">
             <h3>Profile</h3>
             <ul class="info">
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/wishlist">My Wishlist</a>
-              </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/checkout">My Cart</a>

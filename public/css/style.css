@@ -82,7 +82,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 }
 .w3l_offers p {
     font-size: 15px;
-    color: #fff;
+    color: transparent;
 }
 .w3l_offers p a {
     color: #fe9126;
@@ -290,7 +290,7 @@ ul.multi-column-dropdown h6 {
     margin-left: 17px;
 }
 .navbar-nav > li:nth-child(1) {
-    margin-left: 0px;
+    margin-left: 150px;
 }
 /*-- banner --*/
 .navbar-collapse {
@@ -396,7 +396,7 @@ ul.multi-column-dropdown h6 {
 .btn-danger.my-cart-btn:focus {
     outline: none;
 }
-.snipcart-details input.button {
+.snipcart-details button.button {
     font-size: 14px;
     color: #fff;
     background: #3399cc;
@@ -409,7 +409,7 @@ ul.multi-column-dropdown h6 {
     padding: .5em 0;
     outline: none;
 }
-.agile_top_brand_left_grid:hover .snipcart-details input.button,.snipcart-details input.button:hover{
+.agile_top_brand_left_grid:hover .snipcart-details button.button,.snipcart-details button.button:hover{
     background: #fe9126;
 }
 .product_list_header input.button {
@@ -1413,6 +1413,7 @@ select#country,select#country1 {
 }
 ul.paging {
     margin: 4em auto 0;
+
 }
 .paging > .active > a,.paging > .active > a:hover {
     background-color:#ffc229;

@@ -67,21 +67,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="container">
         <div class="w3l_offers">
           <p>
-            SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a href="/products">SHOP NOW</a>
+            SALE UP TO 70% OFF. USE CODE "SALE70%"
           </p>
         </div>
         
-        <div class="product_list_header">
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle w3view-cart" type="button" data-toggle="dropdown">
-          <i class="glyphicon glyphicon-user fa-lg" aria-hidden="true"></i>
-          </button>
-            <ul class="dropdown-menu">
-              <li><a href="/indexLogout">Logout</a></li>
-            </ul>
-          </div>
-        </div>
         <div class="clearfix"></div>
       </div>
     </div>
@@ -201,24 +190,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               @php
               $no = 1;
               @endphp
-            <!-- 
-                       
-                        for ($x=0;$x<sizeof($listOrderBarang);$x++){
-                        echo"
-                        <tr text-align: center;'>
-                        <td>
-                        <button type=button class=btn btn-default btn-sm style=background-color:transparent;>
-                        <i class='glyphicon glyphicon-remove fa-lg' aria-hidden=true></i>
-                        </button></td>
-                        <td>{$listOrderBarang[$x]->ID}</td>
-                        <td>{$listOrderBarang[$x]->name}</td>
-                        <td>{$listOrderBarang[$x]->subtotal}</td>
-                        <td>{$listOrderBarang[$x]->status}</td>
-                        <td>{$listOrderBarang[$x]->carrier}<br>{$listOrderBarang[$x]->tracking}</td>
-                        <td><a href=/orderdetails/{$listOrderBarang[$x]->ID} target=_blank>Order Details</a></td>
-                        </tr>";
-                        }
-                        -->
               @foreach($paginator  as $row)
               <tr style="text-align: center;">
                         <td>{{$row->ID}}</td>
@@ -251,25 +222,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        
         <nav class="numbering">
         {{ $paginator->links() }}
-                    <!-- <ul class="pagination paging">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">1<span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul> -->
           </nav>
           <div class="clearfix"></div>
         </div>
@@ -350,10 +302,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="col-md-3 w3_footer_grid">
             <h3>Profile</h3>
             <ul class="info">
-              <li>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i
-                ><a href="/wishlist">My Wishlist</a>
-              </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/checkout">My Cart</a>
