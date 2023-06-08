@@ -276,9 +276,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$t->Product_ID}}">
             <input type="hidden" name="name" value="{{$t->name}}">
+            <input type="hidden" name="price" value="{{$t->price}}">
+            <input type="hidden" name="qty" value="{{$t->qty}}">
             <input type="hidden" name="total" value="{{$t->subtotal}}">
             <input type="submit" name="checkout" value="Checkout" />
-            </form>
+        </form>
+        <script>
+                          document.getElementById("checkoutForm").addEventListener("submit", function(e) {
+                          e.preventDefault(); // Prevent the default form submission
+                          var form = e.target;
+                          var url = form.getAttribute("action");
+                          var method = form.getAttribute("method");
+
+                          // Perform your AJAX request or any other necessary actions here
+                          // ...
+
+                          // Redirect to the newproduct page
+                          window.location.href = "/index";
+                          });
+        </script>
 
 
 
