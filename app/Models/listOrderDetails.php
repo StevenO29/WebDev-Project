@@ -16,12 +16,15 @@ class listOrderDetails extends Model
     public function tabelorderDetail($id){
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
-        $value = "SELECT o.order_id AS `ID`,c.cust_name AS `name`,sum(od.o_qty*od.p_price) AS `subtotal`,
-        o.order_status AS `status`,s.Carrier_Name AS `carrier`,s.Tracking_Num AS `tracking`,
+        $value = "SELECT o.order_id AS `ID`, c.cust_name AS `name`, SUM(od.o_qty * od.p_price) AS `subtotal`,
+        o.order_status AS `status`, s.Carrier_Name AS `carrier`, s.Tracking_Num AS `tracking`,
         od.p_name AS `prod_name`, od.p_price AS `price`, od.o_qty AS `qty`
-         FROM order2 o, Customer c, Order_Details od, Shipping s 
-         where o.cust_id = c.cust_id and o.order_id = od.order_id and s.order_id = o.order_id AND o.order_id LIKE '%".$id."%'
-        group by o.order_id, od.product_id;";
+ FROM order2 o
+ LEFT JOIN Customer c ON o.cust_id = c.cust_id
+ LEFT JOIN Order_Details od ON o.order_id = od.order_id
+ LEFT JOIN Shipping s ON s.order_id = o.order_id
+ WHERE o.order_id LIKE '%".$id."%'
+ GROUP BY o.order_id, od.product_id;";
         
         $selectorder = DB::select($value);
         return $selectorder;
