@@ -141,7 +141,7 @@ class TransactionController extends Controller
     public function addToCart(Request $request)
     {
         $input = $request->all();
-        $cartBaru = new newOrderModel();
+        $cartBaru = new newCartModel();
 
         // $Product_ID = $request->Product_ID;
         // $request->validate([
