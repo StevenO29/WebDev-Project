@@ -59,12 +59,7 @@
     <!-- header -->
     <div class="agileits_header">
       <div class="container">
-        <div class="w3l_offers">
-          <p>
-            SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a>SHOP NOW</a>
-          </p>
-        </div>
+     
         <div class="agile-login">
           <ul>
             <li>
@@ -94,7 +89,6 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
 
@@ -216,7 +210,7 @@
               cups, and cutlery for both personal and commercial use. As a trusted provider in 
               the industry, we strive to meet the demands of our customers by offering a diverse 
               range of products to suit their needs.
-            </p>
+            </p><br><br>
             <h4>Extensive Product Selection:</h4>
             <p>
             We take pride in offering a wide selection of plastics to cater to various applications. 
@@ -228,21 +222,21 @@
             <div class="about-w3agilerow">
               <div class="col-md-4 about-w3imgs">
                 <img
-                  src="images/p3.jpg"
+                  src="webdev_image_assets/PapercupPolos2.png"
                   alt=""
                   class="img-responsive zoom-img"
                 />
               </div>
               <div class="col-md-4 about-w3imgs">
                 <img
-                  src="images/p4.jpg"
+                  src="webdev_image_assets/SendokTeh.png"
                   alt=""
                   class="img-responsive zoom-img"
                 />
               </div>
               <div class="col-md-4 about-w3imgs">
                 <img
-                  src="images/p3.jpg"
+                  src="webdev_image_assets/OPP.png"
                   alt=""
                   class="img-responsive zoom-img"
                 />
@@ -250,88 +244,7 @@
               <div class="clearfix"></div>
             </div>
           </div>
-          <div class="col-md-4 about-wthree-grids">
-            <div class="offic-time">
-              <div class="time-top">
-                <h4>Praesentium :</h4>
-              </div>
-              <div class="time-bottom">
-                <h5>At vero eos</h5>
-                <h5>Accusamus et</h5>
-                <p>
-                  Dignissimos at vero eos et accusamus et iusto odio ducimus qui
-                  accusamus et.
-                </p>
-              </div>
-            </div>
-            <div class="testi">
-              <h3 class="w3_agile_header">Testimonial</h3>
-              <!--//End-slider-script -->
-              <script src="js/responsiveslides.min.js"></script>
-              <script>
-                // You can also use "$(window).load(function() {"
-                $(function () {
-                  // Slideshow 5
-                  $("#slider5").responsiveSlides({
-                    auto: true,
-                    pager: false,
-                    nav: true,
-                    speed: 500,
-                    namespace: "callbacks",
-                    before: function () {
-                      $(".events").append("<li>before event fired.</li>");
-                    },
-                    after: function () {
-                      $(".events").append("<li>after event fired.</li>");
-                    },
-                  });
-                });
-              </script>
-              <div id="top" class="callbacks_container">
-                <ul class="rslides" id="slider5">
-                  <li>
-                    <div class="testi-slider">
-                      <h4>" I AM VERY PLEASED.</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse eu magna dolor, quisque semper.
-                      </p>
-                      <div class="testi-subscript">
-                        <p><a href="#">John Doe,</a>Adipiscing</p>
-                        <span class="w3-agilesub"> </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="testi-slider">
-                      <h4>" I AM LOREM IPSUM.</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse eu magna dolor, quisque semper.
-                      </p>
-                      <div class="testi-subscript">
-                        <p><a href="#">elit semper,</a>Dolor Elit</p>
-                        <span class="w3-agilesub"> </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="testi-slider">
-                      <h4>" CONSECTETUR PIMAGNA.</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse eu magna dolor, quisque semper.
-                      </p>
-                      <div class="testi-subscript">
-                        <p><a href="#">Amet Doe,</a>Suspendisse</p>
-                        <span class="w3-agilesub"> </span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+     
           <div class="clearfix"></div>
         </div>
       </div>
@@ -372,10 +285,11 @@
                 >
               </li>
               <li>
-                <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i
-                >+62 896-3781-5553
+                <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>                  
+                <a href="https://wa.me/+6289637815553">+62 896-3781-5553</a>
               </li>
             </ul>
+
           </div>
           <div class="col-md-3 w3_footer_grid">
             <h3>Information</h3>
@@ -455,23 +369,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-botm">
-      <div class="container">
-        <div class="w3layouts-foot">
-          <ul>
-            <li>
-              <a href="wa.me/089637815553" class="w3_agile_whatsapp"
-                ><i class="fa fa-whatsapp" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="payment-w3ls">
-          <img src="images/card.png" alt=" " class="img-responsive" />
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
+    
     <!-- //footer -->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

@@ -65,12 +65,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- header -->
     <div class="agileits_header">
       <div class="container">
-        <div class="w3l_offers">
-          <p>
-            SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a>SHOP NOW</a>
-          </p>
-        </div>
+       
         <div class="agile-login">
           <ul>
             <li>
@@ -100,7 +95,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </ul>
                 </div>
             </li>
-            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
 
@@ -224,30 +218,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <ul class="wthree_contact_info_address">
                 <li>
                   <i class="fa fa-envelope" aria-hidden="true"></i
-                  ><a href="mailto:info@example.com">mrkentang.sby@gmail.com</a>
+                  ><a href="mailto:mrkentang.sby@gmail.com">mrkentang.sby@gmail.com</a>
                 </li>
                 <li>
-                  <i class="fa fa-phone" aria-hidden="true"></i>+62
-                  896-3781-5553
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <a href="https://wa.me/+6289637815553">+62 896-3781-5553</a>
                 </li>
+                
               </ul>
-              <div class="w3_agile_social_icons w3_agile_social_icons_contact">
-                <ul>
-                  <li>
-                    <a
-                      href="wa.me/089637815553"
-                      class="icon icon-cube fa-whatsapp"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+           
             </div>
           </div>
         </div>
         <div class="col-md-6 w3_agileits_contact_grid_right">
           <h2 class="w3_agile_header">Leave a<span> Message</span></h2>
-
-          <form action="#" method="post">
+        
+          <form action="mailto:mrkentang.sby@gmail.com" method="post" enctype="text/plain">
             <span class="input input--ichiro">
               <input
                 class="input__field input__field--ichiro"
@@ -258,9 +244,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 required=""
               />
               <label class="input__label input__label--ichiro" for="input-25">
-                <span class="input__label-content input__label-content--ichiro"
-                  >Your Name</span
-                >
+                <span class="input__label-content input__label-content--ichiro">Your Name</span>
               </label>
             </span>
             <span class="input input--ichiro">
@@ -273,19 +257,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 required=""
               />
               <label class="input__label input__label--ichiro" for="input-26">
-                <span class="input__label-content input__label-content--ichiro"
-                  >Your Email</span
-                >
+                <span class="input__label-content input__label-content--ichiro">Your Email</span>
               </label>
             </span>
-            <textarea
-              name="Message"
-              placeholder="Your message here..."
-              required=""
-            ></textarea>
+            <textarea name="Message" placeholder="Your message here..." required=""></textarea>
             <input type="submit" value="Submit" />
           </form>
         </div>
+        
         <div class="clearfix"></div>
       </div>
     </div>
@@ -310,8 +289,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 >
               </li>
               <li>
-                <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i
-                >+62 896-3781-5553
+                <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>                  
+                <a href="https://wa.me/+6289637815553">+62 896-3781-5553</a>
               </li>
             </ul>
           </div>
@@ -325,6 +304,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
                 ><a href="/contact">Contact Us</a>
+                
               </li>
               <li>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i
@@ -394,23 +374,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
       </div>
     </div>
-    <div class="footer-botm">
-      <div class="container">
-        <div class="w3layouts-foot">
-          <ul>
-            <li>
-              <a href="wa.me/089637815553" class="w3_agile_whatsapp"
-                ><i class="fa fa-whatsapp" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="payment-w3ls">
-          <img src="images/card.png" alt=" " class="img-responsive" />
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
+   
     <!-- //footer -->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
