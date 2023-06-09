@@ -338,7 +338,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <input type="hidden" id="product_image" name="product_image" value="{{$t->product_image}}">
                             <input type="hidden" name="Product_ID" value="{{$t->ID}}" />
                             <input type="hidden" name="P_Price" value="{{$t->Harga}}" />
-                            <input type="submit" value="Add to Cart" />
+                            <button type="submit" onclick="redirectToCheckout()" class="button">Add to cart</button>
+                            {{-- <input type="submit" value="Add to Cart" /> --}}
                             <!-- <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
                             <script>
                               function redirectToCheckout() {
