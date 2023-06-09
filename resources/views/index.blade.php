@@ -65,7 +65,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- header -->
     <div class="agileits_header">
       <div class="container">
-        
+        <div class="w3l_offers">
+          <p>
+            SALE UP TO 70% OFF. USE CODE "SALE70%" .
+            <a>SHOP NOW</a>
+          </p>
+        </div>
         <div class="agile-login">
           <ul>
             <li>
@@ -92,19 +97,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </form>
                             </li>                                
                         @endguest
+                        <li>
+                          <a href="/checkout" class="w3view-cart">
+                            <button class="w3view-cart" type="submit" name="submit" value="">
+                              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            </button>
+                          </a>
+                        </li>
                     </ul>
+                   
                 </div>
             </li>
           </ul>
         </div>
 
-        <div class="product_list_header">
+       <!-- <div class="product_list_header">
          <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
           </a>
-        </div>
+        </div> -->
 
         <div class="clearfix"></div>
       </div>
