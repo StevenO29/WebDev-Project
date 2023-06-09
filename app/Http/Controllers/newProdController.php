@@ -182,7 +182,7 @@ class newProdController extends Controller
         $perPage = 9; // Number of items per page
         $currentPage = Paginator::resolveCurrentPage();
 
-        $user = new product();
+        $user = new prodModel();
         $tabelProduk = $user->tableprodukSemua();
 
         // Use LengthAwarePaginator to create a paginator instance
@@ -197,7 +197,7 @@ class newProdController extends Controller
         return view('index', compact('tabelProdukSemua'));
         
     }
-    
+
     public function tabelprodOPP()
     {
 

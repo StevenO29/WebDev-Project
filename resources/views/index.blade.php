@@ -1519,69 +1519,63 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div> -->
     <!-- //top-brands -->
     <!-- new -->
+    
     <div class="newproducts-w3agile">
       <div class="container">
         <h3>Products Recommendation</h3>
         <div class="agile_top_brands_grids">
         @foreach($tabelProdukSemua as $t)
-          <div class="col-md-4" style="padding-bottom: 15px;">
-            <div class="hover14 column">
-              <div class="agile_top_brand_left_grid">
-                <div class="agile_top_brand_left_grid_pos">
-                  <img src="images/offer.png" alt=" " class="img-responsive" />
+    <div class="col-md-4" style="padding-bottom: 15px;">
+      <div class="hover14 column">
+        <div class="agile_top_brand_left_grid">
+          <div class="agile_top_brand_left_grid_pos">
+            <img src="images/offer.png" alt=" " class="img-responsive" />
+          </div>
+          <div class="agile_top_brand_left_grid1">
+            <figure>
+              <div class="snipcart-item block">
+                @foreach($t as $tabel)
+                <div class="snipcart-thumb">
+                  <a href="/single/{{$t->ID}}">
+                    <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('public/uploads/' . $t->product_image)}}" />
+                  </a>
+                  <p>{{$t->Nama}}</p>
+                  <h4>Rp. {{$t->Harga}}</h4>
                 </div>
-                <div class="agile_top_brand_left_grid1">
-                  <figure>
-                    <div class="snipcart-item block">
-                      @foreach($t as $tabel)
-                      <div class="snipcart-thumb">
-                        <a href="/single/{{$t->ID}}">
-                          <img title=" " alt="{{$t->Nama}}" width="150" height="150" src="{{ asset('webdev_image_assets/' . $t->product_image)}}" />
-                        </a>
-                        <p>{{$t->Nama}}</p>
-                        <h4>Rp. {{$t->Harga}}</h4>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details">
-                      <form action="/opp/proses" method="post">
-                        {{ csrf_field() }}
-                          <fieldset>
-                            <input type="hidden" name="Cart_Qty" value="1" />
-                            <input type="hidden" id="product_image" name="product_image" value="{{$t->product_image}}">
-                            <input type="hidden" name="Product_ID" value="{{$t->ID}}" />
-                            <input type="hidden" name="P_Price" value="{{$t->Harga}}" />
-                            <input type="submit" value="Add to Cart" />
-                            <!-- <button type="button" onclick="redirectToCheckout()" class="button">Add to cart</button>
+                <div class="snipcart-details top_brand_home_details">
+                  <form action="/editproduct" method="post">
+                  {{ csrf_field() }}
+                    <fieldset>
+                      <input type="hidden" name="cmd" value="_cart" />
+                      <input type="hidden" name="add" value="1" />
+                      <input type="hidden" name="business" value=" " />
+                      <input type="hidden" name="item_name" value="{{$t->Nama}}" />
+                      <input type="hidden" name="amount" value="{{$t->Harga}}" />
+                      <input type="hidden" name="discount_amount" value="1.00" />
+                      <input type="hidden" name="currency_code" value="USD" />
+                      <input type="hidden" name="return" value=" " />
+                      <input type="hidden" name="cancel_return" value=" " />
+                      {{-- <a href="/editproduct/{{$t->ID}}">Edit</a>
+                      <a href="/deleteproduct/{{$t->ID}}">Delete</a> --}}
+                      <button type="button" onclick="redirectToCheckout()" class="button">Edit</button>
                             <script>
                               function redirectToCheckout() {
-                                window.location.href = "/checkout";
-                              } -->
+                                window.location.href = "/editproduct/{{$t->ID}}";
+                              }
                             </script>
-                          </fieldset>
-                        </form>
-                        <script>
-                          document.getElementById("oppForm").addEventListener("submit", function(e) {
-                          e.preventDefault(); // Prevent the default form submission
-                          var form = e.target;
-                          var url = form.getAttribute("action");
-                          var method = form.getAttribute("method");
-
-                          // Perform your AJAX request or any other necessary actions here
-                          // ...
-
-                          // Redirect to the newproduct page
-                          window.location.href = "/opp";
-                          });
-                          </script>
-                      </div>
-                      @break
-                      @endforeach
-                    </div>
-                  </figure>
+                      <a href="/deleteproduct/{{$t->ID}}">Delete</a>
+                    </fieldset>
+                  </form>
+                </div>
+                @break
+                @endforeach
               </div>
-              </div>
-            </div>
+            </figure>
           </div>
-          @endforeach
+        </div>
+      </div>
+    </div>
+    @endforeach
           </div>
             <div class="clearfix"></div>
           </div>

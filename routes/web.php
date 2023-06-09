@@ -24,10 +24,16 @@ Route::get('/dashboard', [LoginRegisterController::class, 'dashboard'])->name('d
 //     return view('dashboard');
 // });
 
-Route::get('/', function () {
-    return view('index');
+Route::prefix('/')->group(function(){
+    Route::get('/index',[newProdController::class,"indexHome"]);
+    
 });
 
+
+Route::prefix('/index')->group(function(){
+    Route::get('/',[newProdController::class,"indexHome"]);
+    
+});
 Route::get('/about', function () {
     return view('about');
 });
@@ -48,9 +54,6 @@ Route::get('/gourmet', function () {
     return view('gourmet');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
 
 Route::get('/offers', function () {
     return view('offers');
