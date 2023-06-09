@@ -175,6 +175,29 @@ class newProdController extends Controller
 
         }
     }
+
+    public function indexHome(){
+       
+
+        $perPage = 9; // Number of items per page
+        $currentPage = Paginator::resolveCurrentPage();
+
+        $user = new product();
+        $tabelProduk = $user->tableprodukSemua();
+
+        // Use LengthAwarePaginator to create a paginator instance
+        $tabelProdukSemua = new LengthAwarePaginator(
+            $tabelProduk->forPage($currentPage, $perPage),
+            $tabelProduk->count(),
+            $perPage,
+            $currentPage,
+            ['path' => Paginator::resolveCurrentPath()]
+        );
+
+        return view('index', compact('tabelProdukSemua'));
+        
+    }
+    
     public function tabelprodOPP()
     {
 
