@@ -256,7 +256,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="col-md-8 products-right">
           <div class="products-right-grid">
             <div class="products-right-grids">
-              <div class="sorting">
+              {{-- <div class="sorting">
                 <select
                   id="country"
                   onchange="change_country(this.value)"
@@ -279,8 +279,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     price
                   </option>
                 </select>
-              </div>
-              <div class="sorting-left">
+              </div> --}}
+              {{-- <div class="sorting-left">
                 <select
                   id="country1"
                   onchange="change_country(this.value)"
@@ -302,7 +302,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>All
                   </option>
                 </select>
-              </div>
+              </div> --}}
               <div class="clearfix"></div>
             </div>
           </div>
@@ -367,16 +367,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           @endforeach
           </div>
-
-            </div>
-            <div class="clearfix"></div>
-          </div>
           <nav class="numbering">
             <ul class="pagination paging">
             {{ $paginatorKresek->links() }}
-
             </ul>
           </nav>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          {{-- <nav class="numbering">
+            <ul class="pagination paging">
+            {{ $paginatorKresek->links() }}
+            </ul>
+          </nav> --}}
         </div>
         <div class="clearfix"></div>
       </div>
