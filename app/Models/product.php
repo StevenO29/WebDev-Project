@@ -8,6 +8,18 @@ use Illuminate\Support\Facades\DB;
 
 class product extends Model
 {
+    public function tableprodukSemua(){
+        $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
+        $run = DB::select($server);
+        $value = "SELECT product_id AS `ID`,p_name AS `Nama`, p_category AS `Kategori`,
+        p_brand AS `Brand`, p_stock AS `Stock`, p_desc AS `Deskripsi`, p_price AS `Harga`, product_image AS `product_image`
+        FROM Product;       ";
+
+        $produk = DB::select($value);
+        
+        return collect($produk);
+    }
+
     public function tableprodukOPP(){
         $server = "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));";
         $run = DB::select($server);
