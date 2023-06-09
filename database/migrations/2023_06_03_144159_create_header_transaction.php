@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTransactionsTable extends Migration
+class CreateHeaderTransaction extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateTransactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('transactions', function (Blueprint $table) {
-            $table->id();
-            $table->foreignIdFor(App\Models\User::class);
-            $table->dateTime('paid_at')->nullable();
+        Schema::create('header_transaction', function (Blueprint $table) {
+            $table->id("id_header_transaction");
+            $table->date("date_transaction");
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateTransactionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transactions');
+        Schema::dropIfExists('header_transaction');
     }
 }

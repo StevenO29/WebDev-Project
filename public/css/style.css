@@ -395,7 +395,7 @@ ul.multi-column-dropdown h6 {
 .btn-danger.my-cart-btn:focus {
     outline: none;
 }
-.snipcart-details input.button {
+.snipcart-details button.button {
     font-size: 14px;
     color: #fff;
     background: #3399cc;
@@ -408,7 +408,8 @@ ul.multi-column-dropdown h6 {
     padding: .5em 0;
     outline: none;
 }
-.agile_top_brand_left_grid:hover .snipcart-details input.button,.snipcart-details input.button:hover{
+.agile_top_brand_left_grid:hover .snipcart-details button.button,
+.snipcart-details button.button:hover{
     background: #fe9126;
 }
 .product_list_header input.button {
@@ -1228,7 +1229,7 @@ td.invert-image a img {
 .checkout-left-basket ul li span {
     float: right;
 }
-.checkout-left-basket ul li:nth-child(5) {
+.checkout-left-basket ul {
     font-size: 1em;
     color: #212121;
     font-weight: 600;
