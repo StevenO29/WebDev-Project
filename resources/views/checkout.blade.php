@@ -95,7 +95,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </ul>
                 </div>
             </li>
-            <li><a href="/contact">Contact Us</a></li>
+            {{-- <li><a href="/contact">Contact Us</a></li> --}}
           </ul>
         </div>
 
@@ -206,7 +206,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <!-- checkout -->
     <div class="checkout">
       <div class="container">
-        <h2>Your shopping cart contains: <span>3 Products</span></h2>
+        <h2>Your shopping cart contains: </h2>
         <div class="checkout-right">
         {{ csrf_field() }}
           <table class="timetable_sub">
@@ -214,7 +214,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <tr>
                 <th>SL No.</th>
                 <th>Product</th>
-                <th>Quality</th>
+                <th>Quantity</th>
                 <th>Product Name</th>
 
                 <th>Price</th>
@@ -277,7 +277,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <input type="hidden" name="price" value="{{$t->price}}">
             <input type="hidden" name="Order_Qty" value="{{$t->qty}}">
             <input type="hidden" name="total" value="{{$t->subtotal}}">
-            <input type="submit" name="checkout" value="Checkout" />
+            {{-- <input type="submit" name="checkout" value="Checkout" /> --}}
+            <button type="submit" onclick="redirectToCheckout()" class="button">Add to cart</button>
+                            
+            <nav class="numbering">
+            {{-- <ul class="pagination paging">
+            {{ $tabelProdukSemua->links() }}
+            </ul> --}}
+          </nav>
         </form>
         <script>
                           document.getElementById("checkoutForm").addEventListener("submit", function(e) {

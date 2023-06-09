@@ -82,7 +82,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 }
 .w3l_offers p {
     font-size: 15px;
-    color: #fff;
+    color: transparent;
 }
 .w3l_offers p a {
     color: #fe9126;

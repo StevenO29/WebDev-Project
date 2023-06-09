@@ -62,7 +62,6 @@
         <div class="w3l_offers">
           <p>
             SALE UP TO 70% OFF. USE CODE "SALE70%" .
-            <a>SHOP NOW</a>
           </p>
         </div>
         <div class="agile-login">
@@ -92,18 +91,21 @@
                             </li>                                
                         @endguest
                     </ul>
+                    <li>
+                      <a href="/checkout" class="w3view-cart">
+                        <button class="w3view-cart" type="submit" name="submit" value="">
+                          <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </li>
                 </div>
             </li>
-            <li><a href="/contact">Contact Us</a></li>
+            
           </ul>
         </div>
 
         <div class="product_list_header">
-         <a href="/checkout" class="w3view-cart">
-            <button class="w3view-cart" type="submit" name="submit" value="">
-              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-            </button>
-          </a>
+         
         </div>
         <div class="clearfix"></div>
       </div>

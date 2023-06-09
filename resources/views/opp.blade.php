@@ -92,6 +92,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </form>
                             </li>                                
                         @endguest
+                        <li>
+                          <a href="/checkout" class="w3view-cart">
+                            <button class="w3view-cart" type="submit" name="submit" value="">
+                              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            </button>
+                          </a>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -99,11 +106,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
 
         <div class="product_list_header">
-         <a href="/checkout" class="w3view-cart">
+         {{-- <a href="/checkout" class="w3view-cart">
             <button class="w3view-cart" type="submit" name="submit" value="">
               <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </button>
-          </a>
+          </a> --}}
         </div>
         <div class="clearfix"></div>
       </div>
@@ -337,7 +344,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               function redirectToCheckout() {
                                 window.location.href = "/checkout";
                               } -->
-                            </script>
                           </fieldset>
                         </form>
                         <script>
