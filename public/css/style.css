@@ -125,23 +125,20 @@ button.btn.btn-default.search:hover {
     background:#333;
 	
 }
-/*Login sign up*/
 .agile-login {
-    float: right;
+    float: left;
     width: 40%;
+    text-align: center;
     padding: 9px 0;
-    text-align: right;
 }
 .agile-login ul li {
     display: inline-block;
-    text-align: right;
     padding: 0em 1em;
 }
 .agile-login ul li a {
     font-size: 1em;
     text-transform: capitalize;
     color: #fff;
-    text-align: right;
     text-decoration: none;
 }
 .w3l_search input[type="search"] {
@@ -190,7 +187,6 @@ button.w3view-cart:focus{
     float: left;
     text-align: center;
     width: 33.33%;
-
 }
 .w3ls_logo_products_left h1 a{
 	font-size: 40px;
