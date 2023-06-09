@@ -33,13 +33,8 @@ Route::get('/kertas', [TransactionController::class, 'Kertas']);
 //     Route::get('/addToCart', 'index')->name('cart.index');
 // });
 
-Route::get('/', function () {
-    return view('index');
-});
 
-Route::get('/index', function () {
-    return view('index');
-});
+
 
 Route::get('/about', function () {
     return view('about');
@@ -98,6 +93,21 @@ Route::prefix('/opp')->group(function(){
 //
 
 Route::get('/opp', [TransactionController::class, 'OPP']);
+
+Route::get('/', [TransactionController::class, 'indexHome']);
+
+Route::prefix('/')->group(function(){
+    Route::get('/index',[TransactionController::class,"indexHome"]);
+    Route::POST('/proses',[TransactionController::class,"addToCart"]);
+    
+});
+
+
+Route::prefix('/index')->group(function(){
+    Route::get('/',[TransactionController::class,"indexHome"]);
+    Route::POST('/proses',[TransactionController::class,"addToCart"]);
+    
+});
 
 Route::prefix('/opp')->group(function(){
     Route::get('/',[TransactionController::class,"OPP"]);
